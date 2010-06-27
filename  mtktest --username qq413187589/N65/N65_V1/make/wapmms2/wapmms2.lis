@@ -1,0 +1,6 @@
+plutommi\mmi\WapMms2\WapAdp\cms_wap_custom_config.c
+plutommi\mmi\WapMms2\MmsSrc\MmsMmiInterface.c
+plutommi\mmi\WapMms2\WapSrc\WapMmiInterface.c
+plutommi\mmi\WapMms2\WapAdp\CmsTaskCreate.c
+plutommi\mmi\WapMms2\WapAdp\CmsWapMmsAdp.c
+plutommi\mmi\WapMms2\WapAdp\cms_java_temp_api.c

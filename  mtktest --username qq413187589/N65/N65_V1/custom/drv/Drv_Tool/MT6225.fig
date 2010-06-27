@@ -1,0 +1,77 @@
+[Chip Type]
+Chip = MT6225
+
+
+[GPIO]
+GPIO0 = MODE0(GPIO0)        MODE1()             MODE2()              MODE3(EINT4)         PU
+GPIO1 = MODE0(GPIO1)        MODE1()             MODE2()              MODE3(EINT5)         PU
+GPIO2 = MODE0(GPIO2)        MODE1()             MODE2(UCTS1)         MODE3(EINT6)         PU
+GPIO3 = MODE0(GPIO3)        MODE1(BSI_RFIN)     MODE2(URTS1)         MODE3(EINT7)         PU
+GPIO4 = MODE0(GPIO4)        MODE1(DAIRST)       MODE2(IRDA_PDN)      MODE3(DSP_CLK)       PU
+GPIO5 = MODE0(GPIO5)        MODE1(EDICK)        MODE2(26MHZ)         MODE3(AHB_CLK)       PD
+GPIO6 = MODE0(GPIO6)        MODE1(EDIWS)        MODE2(32KHZ)         MODE3(ARM_CLK)       PD
+GPIO7 = MODE0(GPIO7)        MODE1(EDIDAT)       MODE2()              MODE3(SLOW_CLK)      PD
+GPIO8 = MODE0(GPIO8)        MODE1(SCL)          MODE2()              MODE3()              PU
+GPIO9 = MODE0(GPIO9)        MODE1(SDA)          MODE2()              MODE3()              PU
+GPIO10= MODE0(GPIO10)       MODE1(CMRST)        MODE2(DRF_DATA)      MODE3()              PD
+GPIO11= MODE0(GPIO11)       MODE1(CMPDN)        MODE2(DRF_EN)        MODE3()              PD
+GPIO12= MODE0(GPIO12)       MODE1(CMVREF)       MODE2(MIRQ)          MODE3()              PD/PU
+GPIO13= MODE0(GPIO13)       MODE1(CMHREF)       MODE2(MFIQ)          MODE3()              PD/PU
+GPIO14= MODE0(GPIO14)       MODE1(CMMCLK)       MODE2(26MHZ)         MODE3(6.5MHZ)        PD
+GPIO15= MODE0(GPIO15)       MODE1(CMDAT7)       MODE2(MCDA7)         MODE3()              PD
+GPIO16= MODE0(GPIO16)       MODE1(CMDAT6)       MODE2(MCDA6)         MODE3(DICK)          PD
+GPIO17= MODE0(GPIO17)       MODE1(CMDAT5)       MODE2(MCDA5)         MODE3(DID)           PD
+GPIO18= MODE0(GPIO18)       MODE1(CMDAT4)       MODE2(MCDA4)         MODE3(DIMS)          PD
+GPIO19= MODE0(GPIO19)       MODE1(CMDAT3)       MODE2(DSP_GPO3)      MODE3(TBTXEN)        PD
+GPIO20= MODE0(GPIO20)       MODE1(CMDAT2)       MODE2(DSP_GPO2)      MODE3(TBTXFS)        PD
+GPIO21= MODE0(GPIO21)       MODE1(CMDAT1)       MODE2(DSP_GPO1)      MODE3(TBRXEN)        PD
+GPIO22= MODE0(GPIO22)       MODE1(CMDAT0)       MODE2(DSP_GPO0)      MODE3(TBRXFS)        PD
+GPIO23= MODE0()	            MODE1()             MODE2()              MODE3()              PD/PU
+GPIO24= MODE0()             MODE1()             MODE2()              MODE3()              PD/PU
+GPIO25= MODE0(GPIO25)       MODE1(BPI_BUS6)     MODE2(PWM1)          MODE3(13MHZ)         PD
+GPIO26= MODE0(GPIO26)       MODE1(BPI_BUS7)     MODE2(PWM2)          MODE3(32KHZ)         PD
+GPIO27= MODE0(GPIO27)       MODE1(BPI_BUS8)     MODE2(ALERTER)       MODE3(26MHZ)         PD
+GPIO28= MODE0(GPIO28)       MODE1(BPI_BUS9)     MODE2(BSI_CS1)       MODE3()              PD
+GPIO29= MODE0(GPIO29)       MODE1(LSCK)         MODE2(TDMA_CK)       MODE3(DSP_TID0)      PU
+GPIO30= MODE0(GPIO30)       MODE1(LSA0)         MODE2(TDMA_D1)       MODE3(TDTIRQ)        PU
+GPIO31= MODE0(GPIO31)       MODE1(LSDA)         MODE2(TDMA_D0)       MODE3(TCTIRQ2)       PU
+GPIO32= MODE0(GPIO32)       MODE1(LSCE0B)       MODE2(TDMA_FS)       MODE3(TCTIRQ1)       PU
+GPIO33= MODE0(GPIO33)       MODE1(LSCE1B)       MODE2(LPCE2B)        MODE3(TEVTVAL)       PU
+GPIO34= MODE0(GPIO34)       MODE1(LPCE1B)       MODE2(NCE1B)         MODE3()              PU
+GPIO35= MODE0(GPIO35)       MODE1(NLD17)        MODE2(KCOL5)         MODE3(VPP65)         PD
+GPIO36= MODE0(GPIO36)       MODE1(NLD16)        MODE2(KCOL6)         MODE3()              PD
+GPIO37= MODE0(GPIO37)       MODE1(NRNB)         MODE2(DSP_TID1)      MODE3()              PU
+GPIO38= MODE0(GPIO38)       MODE1(NCLE)         MODE2(DSP_TID2)      MODE3()              PD
+GPIO39= MODE0(GPIO39)       MODE1(NALE)         MODE2(DSP_TID3)      MODE3()              PD
+GPIO40= MODE0(GPIO40)       MODE1(NWEB)         MODE2(DSP_TID4)      MODE3()              PU
+GPIO41= MODE0(GPIO41)       MODE1(NREB)         MODE2(DSP_TID5)      MODE3()              PU
+GPIO42= MODE0(GPIO42)       MODE1(NCEB0)        MODE2(DSP_TID6)      MODE3()              PU
+GPIO43= MODE0(GPIO43)       MODE1(SRCLKENAI)    MODE2()              MODE3()              PD
+GPIO44= MODE0(GPIO44)       MODE1(MCWP)         MODE2()              MODE3()              PU
+GPIO45= MODE0(GPIO45)       MODE1(MCINS)        MODE2()              MODE3()              PU
+GPIO46= MODE0(GPIO46)       MODE1(SIMSEL)       MODE2()              MODE3()              PD
+GPIO47= MODE0(GPIO47)       MODE1(URXD2)        MODE2(UCTS3)         MODE3(IRDA_RXD)      PU
+GPIO48= MODE0(GPIO48)       MODE1(UTXD2)        MODE2(URTS3)         MODE3(IRDA_TXD)      PU
+GPIO49= MODE0(GPIO49)       MODE1(URXD3)        MODE2(UCTS2)         MODE3()              PU
+GPIO50= MODE0(GPIO50)       MODE1(UTXD3)        MODE2(URTS2)         MODE3()              PU
+GPIO51= MODE0(GPIO51)       MODE1(DAICLK)       MODE2()              MODE3()              PU
+GPIO52= MODE0(GPIO52)       MODE1(DAIPCMOUT)    MODE2()              MODE3()              PD
+GPIO53= MODE0(GPIO53)       MODE1(DAIPCMIN)     MODE2()              MODE3()              PU
+GPIO54= MODE0(GPIO54)       MODE1(DAISYNC)      MODE2()              MODE3()              PU
+
+[GPO]
+GPO0  = MODE0(GPO0)               MODE1(SRCLKENA)           MODE2()                   MODE3()                   
+GPO1  = MODE0(GPO1)               MODE1(EA24)               MODE2(26MHZ)              MODE3(32KHZ)              
+GPO2  = MODE0(GPO2)               MODE1(EA25)               MODE2(32KHZ)              MODE3(26MHZ)              
+GPO3  = MODE0(GPO3)               MODE1(EPDN_B)             MODE2(6.5MHZ)             MODE3(26MHZ)              
+
+[EINT]
+EINT_COUNT=8
+EINT_DEBOUNE_TIME_COUNT=4
+
+[ADC]
+ADC_COUNT=7
+
+[KEYPAD]
+KEY_ROW=6
+KEY_COLUMN=7

@@ -1,0 +1,5 @@
+fs\fat\src\fs_kal.c
+fs\fat\src\rtfbs.c
+fs\fat\src\rtfex.c
+fs\fat\src\format.c
+fs\fat\src\rtfiles.c

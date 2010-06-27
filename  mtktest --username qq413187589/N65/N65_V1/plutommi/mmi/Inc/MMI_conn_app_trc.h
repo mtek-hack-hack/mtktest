@@ -1,0 +1,344 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MediaTek Inc. (C) 2005
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE. 
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*****************************************************************************/
+
+/*******************************************************************************
+ * Filename:
+ * ---------
+ *  MMI_conn_app_trc.h
+ *
+ * Project:
+ * --------
+ *  MAUI
+ *
+ * Description:
+ * ------------
+ *  
+ *
+ * Author:
+ * -------
+ * -------
+ *
+ *==============================================================================
+ *             HISTORY
+ * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!! 
+ *------------------------------------------------------------------------------
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ * removed!
+ *------------------------------------------------------------------------------
+ * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!! 
+ *==============================================================================
+ *******************************************************************************/
+#ifndef _MMI_CONN_APP_TRC_H_
+#define _MMI_CONN_APP_TRC_H_
+
+
+    /* --------------------------------------------------------------- */
+    /* ------------- Centralised Configuration Agent ----------------- */
+    /* --------------------------------------------------------------- */
+
+    /* CCA MAIN */
+    TRC_MSG(MMI_CCA_INIT_BEGIN, "[OTAP][CCA] Initialising...")
+    TRC_MSG(MMI_CCA_INIT_END, "[OTAP][CCA] Initialised")
+    TRC_MSG(MMI_CCA_MALLOC_NULL, "[OTAP][CCA] malloc returns 0.")
+    TRC_MSG(MMI_CCA_RESET, "[OTAP][CCA] Reset CCA")
+    TRC_MSG(MMI_CCA_MALLOC_MEMORY_INFO, "[OTAP][CCA] MemoryFull (alloc=%d,max-allow-size=%d,total-mem-left=%d)")
+    TRC_MSG(MMI_CCA_RESET_CONTEXT, "[OTAP][CCA] mmi_cca_reset_context")
+    TRC_MSG(MMI_CCA_RESET_PROVISIONING_CONTEXT, "[OTAP][CCA] mmi_cca_reset_provisioning_context")
+    TRC_MSG(MMI_CCA_HAS_PROVISIONING_CONTEXT, "[OTAP][CCA] mmi_cca_has_provisioning_context (has=%d)")
+    TRC_MSG(MMI_CCA_START_PROVISIONING_JOB, "[OTAP][CCA] mmi_cca_start_provisioning_job (state=%d)")
+    TRC_MSG(MMI_CCA_RESET_ASYNC_CONTEXT, "[OTAP][CCA] mmi_cca_reset_async_context")
+    TRC_MSG(MMI_CCA_HAS_ASYNC_CONTEXT, "[OTAP][CCA] mmi_cca_has_async_context (oper=%d)")
+    TRC_MSG(MMI_CCA_START_ASYNC_JOB, "[OTAP][CCA] mmi_cca_start_async_job (srcmod=%d,state=%d,oper=%d)")
+    TRC_MSG(MMI_CCA_HAS_QUEUED_JOB, "[OTAP][CCA] mmi_cca_has_queued_job")
+    TRC_MSG(MMI_CCA_DO_NEXT_QUEUED_JOB, "[OTAP][CCA] mmi_cca_do_next_queued_job")
+
+    TRC_MSG(MMI_CCA_NEW_CONFIG_RESULT, "[OTAP][CCA] mmi_cca_new_config_result (config_id=%X, result=%d)")
+    TRC_MSG(MMI_CCA_NEW_CONFIG_RESULT_ERROR_EXIST, "[OTAP][CCA] config ID already exists")
+    TRC_MSG(MMI_CCA_GET_CONFIG_RESULT, "[OTAP][CCA] mmi_cca_get_config_result (config_id=%X)")
+    TRC_MSG(MMI_CCA_CONFIG_RESULT_ERROR_CONFIG_ID_NOT_FOUND, "[OTAP][CCA] config ID not found")
+    TRC_MSG(MMI_CCA_UPDATE_CONFIG_RESULT, "[OTAP][CCA] mmi_cca_update_config_result (config_id=%X, result=%d)")
+    TRC_MSG(MMI_CCA_CONFIG_COMPLETE, "[OTAP][CCA] mmi_cca_configure_complete")
+    TRC_MSG(MMI_CCA_APP_CONFIG_RSP_HDLR, "[OTAP][CCA] mmi_cca_app_configure_rsp_hdlr(config_id=%X,status=%d)")
+    TRC_MSG(MMI_CCA_APP_CONFIG_RSP_HDLR_DEFAULT_STATUS, "[OTAP][CCA] ERROR: return staus must be one of:\n\t{CCA_STATUS_OK, CCA_STATUS_INVALID_SETTING, CCA_STATUS_SETTING_SKIPPED, CCA_STATUS_ENDKEY_PRESSED}")
+    TRC_MSG(MMI_CCA_SOURCE_NEW_DOC_IND_HDLR, "mmi_cca_source_new_doc_ind_hdlr(spec_id=%X,hConfig=%X)")
+    TRC_MSG(MMI_CCA_SOURCE_NEW_DOC_IND_HDLR_BUSY, "[OTAP][CCA] pending provisioning job (state=%d)")
+
+    TRC_MSG(MMI_CCA_GET_PROF_IND_HDLR, "[OTAP][CCA] mmi_cca_get_prof_ind_hdlr (srcmod=%d,app_id=%X,prof_id=%d)")
+    TRC_MSG(MMI_CCA_GET_PROF_IND_HDLR_BUSY, "[OTAP][CCA] failed async-GET request due to CCA non-idle (state=%d)")
+    TRC_MSG(MMI_CCA_UPDATE_PROF_IND_HDLR, "[OTAP][CCA] mmi_cca_update_prof_ind_hdlr (srcmod=%d,app_id=%X,prof_id=%d,hConfig=%X)")
+    TRC_MSG(MMI_CCA_UPDATE_PROF_IND_HDLR_BUSY, "[OTAP][CCA] failed async-UPDATE request due to CCA non-idle (state=%d)")
+    TRC_MSG(MMI_CCA_APP_GET_PROF_RSP_HDLR_CCA_STATE, "[OTAP][CCA] mmi_cca_app_get_prof_rsp_hdlr (state=%d,oper=%d)")
+    TRC_MSG(MMI_CCA_APP_GET_PROF_RSP_HDLR_DATA_INFO, "[OTAP][CCA] mmi_cca_app_get_prof_rsp_hdlr (app_id=%X,prof_id=%d,hConfig=%X,result=%d)")
+    TRC_MSG(MMI_CCA_APP_UPDATE_PROF_RSP_HDLR_CCA_STATE, "[OTAP][CCA] mmi_cca_app_update_prof_rsp_hdlr (state=%d,oper=%d)")
+    TRC_MSG(MMI_CCA_APP_UPDATE_PROF_RSP_HDLR_DATA_INFO, "[OTAP][CCA] mmi_cca_app_update_prof_rsp_hdlr (app_id=%X,prof_id=%d,hConfig=%X,result=%d)")
+ 
+    TRC_MSG(MMI_CCA_SEND_APP_CONFIG_IND, "[OTAP][CCA] mmi_cca_send_app_configure_ind (config_id=%X,hConfig=%X,crtConfigIndex=%d)")
+    TRC_MSG(MMI_CCA_SEND_NEW_DOC_CONTINUE_IND, "[OTAP][CCA] mmi_cca_send_new_doc_continue_ind")
+    TRC_MSG(MMI_CCA_SEND_SOURCE_NEW_DOC_RSP, "[OTAP][CCA] mmi_cca_send_source_new_doc_rsp")
+    TRC_MSG(MMI_CCA_SEND_SOURCE_UI_NEW_SETTING_RSP, "[OTAP][CCA] mmi_cca_send_source_ui_new_setting_rsp (trans_id=%d,response=%d)")
+    TRC_MSG(MMI_CCA_SEND_SOURCE_UI_AUTH_RSP, "[OTAP][CCA] mmi_cca_send_source_ui_auth_rsp (trans_id=%d,pin=%s,status=%d)")
+    TRC_MSG(MMI_CCA_SEND_CCA_APP_CONFIGURE_RSP, "[OTAP][CCA] mmi_cca_send_cca_app_configure_rsp (conf_id=%X,doc_hdl=%X,status=%d)")
+
+    TRC_MSG(MMI_CCA_SEND_CCA_GET_PROF_RSP, "[OTAP][CCA] mmi_cca_send_cca_get_prof_rsp (dest_mod_id=%d,app_id=%X,prof_id=%d,hConfig=%X,result=%d)")
+    TRC_MSG(MMI_CCA_SEND_CCA_APP_GET_PROF_IND, "[OTAP][CCA] mmi_cca_send_cca_app_get_prof_ind (app_id=%X,prof_id=%d)")
+    TRC_MSG(MMI_CCA_SEND_CCA_UPDATE_PROF_RSP, "[OTAP][CCA] mmi_cca_send_cca_update_prof_rsp (dest_mod_id=%d,app_id=%X,prof_id=%d,hConfig=%X,result=%d)")
+    TRC_MSG(MMI_CCA_SEND_CCA_APP_UPDATE_PROF_IND, "[OTAP][CCA] mmi_cca_send_cca_app_update_prof_ind (app_id=%X,prof_id=%d,hConfig=%X)")
+    TRC_MSG(MMI_CCA_SEND_CCA_APP_GET_PROF_RSP, "[OTAP][CCA] mmi_cca_send_cca_app_get_prof_rsp (app_id=%X,prof_id=%d,hConfig=%X,result=%d)")
+    TRC_MSG(MMI_CCA_SEND_CCA_APP_UPDATE_PROF_RSP, "[OTAP][CCA] mmi_cca_send_cca_app_update_prof_rsp (app_id=%X,prof_id=%d,hConfig=%X,result=%d)")
+ 
+    /* CCA UI */
+    TRC_MSG(MMI_CCA_UI_ENTRY_SETTINGS_INFO, "[OTAP][CCA] mmi_cca_ui_entry_settings_info()")
+    TRC_MSG(MMI_CCA_CHECK_APP_CONFIG_ID, "[OTAP][CCA] \t (index=%d, config_id=%X)")
+    TRC_MSG(MMI_CCA_CHECK_APP_L1NODE_NOT_FOUND, "[OTAP][CCA] -->level 1 node symbol not found (i=%d,configID=%d)")
+    TRC_MSG(MMI_CCA_CHECK_APP_APPCHECK_FAIL, "[OTAP][CCA] -->app check failed (i=%d,configID=%d)")
+    TRC_MSG(MMI_CCA_CHECK_APP_APPID_NOT_FOUND, "[OTAP][CCA] -->appid not found in doc (i=%d,configID=%d)")
+    TRC_MSG(MMI_CCA_CHECK_APP_CHECK_STATUS, "[OTAP][CCA] appid found result (i=%d,configID=%d,result=%d)")
+    TRC_MSG(MMI_CCA_CHECK_APP_APPID_NOT_DEFINED, "[OTAP][CCA] -->no appid defined")
+    TRC_MSG(MMI_CCA_CHECK_APP_INCLUDED_APPNUM, "[OTAP][CCA] -->included in configuration (i=%d,configID=%d,num-app=%d)")
+    TRC_MSG(MMI_CCA_UI_SHOW_POPUP_IN_CALL, "[OTAP][CCA] mmi_cca_ui_show_popup(strid=%d,imgid=%d) blocked due to in-call")
+ 
+    /* CCA OMA */
+    TRC_MSG(MMI_CCA_OMA_NEW_DOC_CONTINUE, "[OTAP][CCA] mmi_cca_oma_new_doc_continue (crtConfigIndex=%d)")
+    TRC_MSG(MMI_CCA_OMA_NEW_DOC_CONTINUE_FIND_APP, "[OTAP][CCA] find an app included in configuration (configID=%d)")
+    TRC_MSG(MMI_CCA_OMA_NEW_DOC_PROCESS_NEXT_APP, "[OTAP][CCA] mmi_cca_oma_new_doc_process_next_app (index=%d)")
+    TRC_MSG(MMI_CCA_OMA_VALIDATE_ADD_ID, "[OTAP][CCA] mmi_cca_oma_validate_add_id (count=%d,total=%d) FULL!")
+    TRC_MSG(MMI_CCA_OMA_VALIDATE_ADD_NODE, "[OTAP][CCA] mmi_cca_oma_validate_add_node (count=%d,total=%d) FULL!")
+
+    /* CCA DISPATCHER */
+    TRC_MSG(MMI_CCA_DISPATCHER_PROV, "[OTAP][CCA] mmi_cca_dispatch_mmi_cca_app_configure_ind (config_id=%X)")
+    TRC_MSG(MMI_CCA_DISPATCHER_PROV_APP_NOT_SUPPORT, "[OTAP][CCA] mmi_cca_dispatch_mmi_cca_app_configure_ind() app not supported")
+    TRC_MSG(MMI_CCA_DISPATCHER_PROV_CONFIG_ID_NOT_FOUND, "[OTAP][CCA] mmi_cca_dispatch_mmi_cca_app_configure_ind() config id not found")
+    TRC_MSG(MMI_CCA_DISPATCHER_ASYNC, "[OTAP][CCA] mmi_cca_dispatch_mmi_profile_operations (oper=%d,app_id=%X)")
+    TRC_MSG(MMI_CCA_DISPATCHER_ASYNC_GET, "[OTAP][CCA] OPER-GET (app_id=%X,prof_id=%d)")
+    TRC_MSG(MMI_CCA_DISPATCHER_ASYNC_UPDATE, "[OTAP][CCA] OPER-UPDATE (app_id=%X,prof_id=%d,hConfig=%X)")
+    TRC_MSG(MMI_CCA_DISPATCHER_ASYNC_APP_NOT_FOUND, "[OTAP][CCA] mmi_cca_dispatch_mmi_profile_operations() app not found")
+
+
+
+
+/* WLAN */
+TRC_MSG(MMI_CCA_WLAN_RECV_DOC, "[OTAP][WLAN] Start WLAN OTAP.")
+TRC_MSG(MMI_CCA_WLAN_SEND_RSP, "[OTAP][WLAN] Finish WLAN OTAP, result: %d")
+TRC_MSG(MMI_CCA_WLAN_ENCRYPTION, "[OTAP][WLAN] encryption: %d")
+TRC_MSG(MMI_CCA_WLAN_AUTHENTICATION, "[OTAP][WLAN] authentication: %d")
+TRC_MSG(MMI_CCA_WLAN_PRE_DISCARD_PROF, "[OTAP][WLAN] Discard profile during document extraction.")
+TRC_MSG(MMI_CCA_WLAN_POST_DISCARD_PROF, "[OTAP][WLAN] Discard profile during post validation.")
+
+
+   //USBDevice.c
+   /* USB MMI trace functions */
+   TRC_MSG(MMI_USB_FUNC_DETECT_QUERY_SCR, "[UsbMMI] EntryUsbDetectQueryScr() ")
+   TRC_MSG(MMI_USB_FUNC_EXIT_DETECT_QUERY_SCR, "[UsbMMI] ExitUsbDetectQueryScr() ")
+   TRC_MSG(MMI_USB_FUNC_DETECT_SCR_END_KEY_HDLR, "[UsbMMI] UsbDetectScrENDKeyHdlr() ")
+   TRC_MSG(MMI_USB_FUNC_PEND_DETECT_TIMEOUT, "[UsbMMI] PendingUsbDetectionTimeoutHdlr() ")
+   TRC_MSG(MMI_USB_FUNC_START_TIMER, "[UsbMMI] PendingUsbDetectionHdlr() ")
+   TRC_MSG(MMI_USB_FUNC_DETECT_SCR, "[UsbMMI] UsbDetectIndHdlr() ")
+   TRC_MSG(MMI_USB_FUNC_CONF_FIRST_PAGE, "[UsbMMI] UsbConfigFirstPage(): mode = %d ")
+   TRC_MSG(MMI_USB_FUNC_CONF_RSP_HDLR, "[UsbMMI] UsbConfigRspHdlr() ")
+   TRC_MSG(MMI_USB_FUNC_CONF_MS, "[UsbMMI] UsbConfigMassStorage() ")
+   TRC_MSG(MMI_USB_FUNC_CONF_CDCACM, "[UsbMMI] UsbConfigCDCACM() ")
+   TRC_MSG(MMI_USB_FUNC_UART_SWITCH_RSP_HDLE, "[UsbMMI] UsbUartSwitchRspHdlr() ")
+   TRC_MSG(MMI_USB_FUNC_GET_UART_PORT_RSP_HDLE, "[UsbMMI] UsbGetUartPortRspHdlr() ")
+
+
+   /* USB MMI trace Group 7 */
+   TRC_MSG(MMI_USB_G7_CONF_SCR_NOT_ALLOW, "[UsbMMI] PermitUsbCfgScreenDisplay(): FALSE ")
+   TRC_MSG(MMI_USB_G7_CONF_SCR_ALLOW, "[UsbMMI] PermitUsbCfgScreenDisplay(): TRUE ")
+   TRC_MSG(MMI_USB_G7_DETECT_SCR_END_KEY, "[UsbMMI] UsbDetectScrENDKeyHdlr(): Handler-> %X ")
+   TRC_MSG(MMI_USB_G7_CONF_AS_MS, "[UsbMMI] UsbDetectScrLskHdlr(): MS Selected ")
+   TRC_MSG(MMI_USB_G7_CONF_AS_CDCACM, "[UsbMMI] UsbDetectScrLskHdlr(): CDCACM Selected ")
+   TRC_MSG(MMI_USB_G7_CONF_AS_NOTHING, "[UsbMMI] UsbDetectScrLskHdlr(): Unrecognized! ")
+   TRC_MSG(MMI_USB_G7_PEND_DETECT_TIMEOUT_ALLOW, "[UsbMMI] PendingUsbDetectionTimeoutHdlr(): Enter Config Screen ")
+   TRC_MSG(MMI_USB_G7_PEND_DETECT_TIMEOUT_NOT_ALLOW, "[UsbMMI] PendingUsbDetectionTimeoutHdlr(): Wait again ")
+   TRC_MSG(MMI_USB_G7_START_PEND_TIMEER, "[UsbMMI] PendingUsbDetectionHdlr(): Start Timer ")
+   TRC_MSG(MMI_USB_G7_DETECT_SCR_PLUGIN, "[UsbMMI] UsbDetectIndHdlr(): Plug in ")
+   TRC_MSG(MMI_USB_G7_DETECT_SCR_PLUGOUT, "[UsbMMI] UsbDetectIndHdlr(): Plug out ")
+   TRC_MSG(MMI_USB_G7_SEND_SWITCH_PORT, "[UsbMMI] SendUsbUartSwitchToHW(): app:%d, new_port: %d")
+
+
+
+   /* USB MMI trace state */
+   TRC_MSG(MMI_USB_CUR_STATE, "[UsbMMI] current state (%d)")
+   TRC_MSG(MMI_USB_STATE_TRANSITION, "[UsbMMI] state transition. (%d -> %d)")
+
+    /* --------------------------------------------------------------- */
+    /* ----------------- MODULE NAME:Download agent   ---------------- */
+    /* --------------------------------------------------------------- */
+    TRC_MSG( MMI_DA_RB_KILL,  	"*--- mmi_da_rb_kill(), reader = [%d] ---*")
+    TRC_MSG( MMI_DA_RB_KILL2, 	"*--- mmi_da_rb_kill() ---*")
+    TRC_MSG( MMI_DA_RB_FETCH,		"*--- mmi_da_rb_fetch(), reader = [%d] ---*")
+    TRC_MSG( MMI_DA_RB_INSERT, 		"*--- mmi_da_rb_insert(), writer = [%d] ---*")
+    TRC_MSG( MMI_DA_STACK_PUSH,		"*--- mmi_da_stack_push(), stack_size = [%d] ---*")
+    TRC_MSG( MMI_DA_STACK_POP, 		"*--- mmi_da_stack_pop(), stack_size = [%d] ---*")
+    TRC_MSG( MMI_DA_FINALLY_GO_BACK_HISTORY, 		"*--- mmi_da_finally_go_back_history() ---*")
+    TRC_MSG( MMI_DA_ENTER_IDLE_SCREEN_NOTIFY,		"*--- mmi_da_enter_idle_screen_notiry(), stack_size = [%d] ---*")
+    TRC_MSG( MMI_DA_EXIT_NEW_PUSH_IND,				"*--- mmi_da_exit_new_push_ind() ---*")
+    TRC_MSG( MMI_DA_ENTRY_NEW_PUSH_IND,				"*--- mmi_da_entry_new_push_ind() ---*")
+    TRC_MSG( MMI_DA_PROCESS_DRM_FILE,				"*--- mmi_da_process_drm_file(), result = [%d] ---*")
+    TRC_MSG( MMI_DA_DOWNLOAD_FILE,				    "*--- mmi_da_entry_download_file() ---*")
+    TRC_MSG( MMI_DA_DISPATCH_FILE,				    "*--- mmi_da_entry_dispatch_file() ---*")
+    TRC_MSG( MMI_DA_RECV_GET_FILE_IND,				"*--- mmi_da_recv_get_file_ind() ---*")
+    TRC_MSG( MMI_DA_GET_DRIVE_CALLBACK, "*--- mmi_da_get_drive_callback(), drv = [%c] ---*")
+    TRC_MSG( MMI_DA_ENTRY_SAVE,         "*--- mmi_da_entry_save() ---*")
+    TRC_MSG( MMI_DA_FINAL_STATE, "*--- mmi_da_final_state(), action = [%d], state = [%d] ---*")
+    TRC_MSG( MMI_DA_FINAL_STATE_DRM, "*--- mmi_Da_final_state_drm, serial = [%d], returnValue = [%d] ---*")
+    TRC_MSG( MMI_DA_DISPATCH_TO_APP_INTERNAL, "*---mmi_da_dispatch_to_app_internal() ---*")
+    TRC_MSG( MMI_DA_DISPATCH_TO_APP, "*--- mmi_da_dispatch_to_app ---*")
+    TRC_MSG( MMI_DA_REPORT_TO_APP, "*--- mmi_da_report_to_app , cause = [%d], seq_num = [%d], acc_size = [%d] ---*" )
+    TRC_MSG( MMI_DA_GET_SETTING, "*--- mmi_da_get_setting, %d %d %d %d %d %d ---*")
+    TRC_MSG( MMI_DA_DRM_TIMEOUT_HDLR, "*--- mmi_da_drm_timeout_hdlr, returnValue = [%d] ---*")
+
+
+    TRC_MSG( MMI_DA_OMA_FINAL,                   "*--- mmi_da_oma_final() ---*")
+    TRC_MSG( MMI_DA_OMA_SEND_SET_CHANNEL_REQ,    "*--- mmi_da_oma_send_set_channal_req() ---*")
+    TRC_MSG( MMI_DA_OMA_RECV_SET_CHANNEL_RSP,    "*--- mmi_da_oma_recv_set_channel_rsp() ---*")
+    TRC_MSG( MMI_DA_OMA_SEND_UNSET_CHANNEL_REQ,  "*--- mmi_da_oma_send_unset_channel_req() ---*")
+    TRC_MSG( MMI_DA_OMA_RECV_UNSET_CHANNEL_RSP,  "*--- mmi_da_oma_recv_unset_channel_req() ---*")
+    TRC_MSG( MMI_DA_OMA_SEND_HTTP_REQ,           "*--- mmi_da_oma_send_http_req(), request_id = [%d] ---*")
+    TRC_MSG( MMI_DA_OMA_RECV_HTTP_RSP,           "*--- mmi_da_oma_recv_http_rsp() ---*")
+    TRC_MSG( MMI_DA_OMA_SEND_CANCEL_REQ,         "*--- mmi_da_oma_send_cancel_req() ---*")
+    TRC_MSG( MMI_DA_OMA_RECV_CANCEL_RSP,         "*--- mmi_da_recv_cancel_rsp() ---*")
+    TRC_MSG( MMI_DA_OMA_RECV_DL_PROGRESS_IND,    "*--- mmi_da_oma_recv_dl_progress_ind(), seq = [%d], size = [%d] ---*")
+    TRC_MSG( MMI_DA_OMA_SEND_REPORT,             "*--- mmi_da_oma_send_report(), error = [%d] ---*")
+    TRC_MSG( MMI_DA_OMA_ENTRY_PERCENTAGE_BAR,    "*--- mmi_da_oma_entry_percentage_bar ---*")
+    TRC_MSG( MMI_DA_DD_READ_ELEMENT, "*--- mmi_da_read_element, item = [%d] ---*")
+    TRC_MSG( MMI_DA_OMA_ERROR, "*--- mmi_da_oma_error , error place = [%d] --- *")
+
+    TRC_MSG( MMI_TRC_DA_FUNC,                   "--- [mmi_da] Func[0x%x], (J=%d,P=%d) ---")
+    TRC_MSG( MMI_TRC_DA_FUNC_EX,                "--- [mmi_da] Func[0x%x], (J=%d,P=%d), Para:%d,%d,%d ---")
+    TRC_MSG( MMI_TRC_DA_END_FUNC,               "--- [mmi_da] End func[0x%x], (J=%d,P=%d) ---")
+    TRC_MSG( MMI_TRC_DA_MIMETYPE,               "--- [mmi_da] Mime-type is [%s] ---")
+
+/* Data Account */
+    TRC_MSG(MMI_DTCNT_APP_SELECT_OK, "[DATA ACCOUNT] App Select Account Result = [%d]")   
+    TRC_MSG(MMI_DTCNT_PS_LIST_IND, "[DATA ACCOUNT] Wap Account List Ind app_id = [%d], bearer_scrope = [%d], Num_id = [%d]")    
+    TRC_MSG(MMI_DTCNT_PS_LIST_SHOW_BEARER, "[DATA ACCOUNT] Wap Account List bearer type bearer = [%d]")    
+
+    /* Data Account Provisioning */
+    TRC_MSG(MMI_DTCNT_OTA_SET_GPRS_REQ, "[DATA ACCOUNT OTA] OTA Set GPRS Account Req acct_id = [%d], MAX_ID = [%d]")    
+    TRC_MSG(MMI_DTCNT_OTA_INTALL_GPRS, "[DATA ACCOUNT OTA] OTA Install GPRS Account  acct_id = [%d], index = [%d]")    
+    TRC_MSG(MMI_DTCNT_OTA_INTALL_ABORT, "[DATA ACCOUNT OTA] OTA Install ABORT!")    
+    TRC_MSG(MMI_DTCNT_OTA_INTALL_ERROR_NAP_ID, "[DATA ACCOUNT OTA] OTA Install Error Napid!") 
+    TRC_MSG(MMI_DTCNT_OTA_INTALL_ERROR_AUTHTYPE, "[DATA ACCOUNT OTA] OTA Install Error AuthType!") 
+    TRC_MSG(MMI_DTCNT_OTA_INTALL_ERROR_CALLTYPE, "[DATA ACCOUNT OTA] OTA Install Error CallType!") 
+    TRC_MSG(MMI_DTCNT_OTA_INTALL_ERROR_ADDR, "[DATA ACCOUNT OTA] OTA Install Error Address!") 
+    TRC_MSG(MMI_DTCNT_OTA_INTALL_ERROR_BEARER, "[DATA ACCOUNT OTA] OTA Install Error Bearer!") 
+    TRC_MSG(MMI_DTCNT_OTA_INTALL_BEARER_CSD, "[DATA ACCOUNT OTA] OTA Install Bearer = CSD!") 
+    TRC_MSG(MMI_DTCNT_OTA_INTALL_BEARER_GPRS, "[DATA ACCOUNT OTA] OTA Install Bearer = GPRS!") 
+    TRC_MSG(MMI_DTCNT_OTA_INTALL_CSD, "[DATA ACCOUNT OTA] OTA Install CSD Account  acct_id = [%d], index = [%d]")    
+    TRC_MSG(MMI_DTCNT_OTA_INTALL_RSP_TO_CCA, "[DATA ACCOUNT OTA] OTA Install RSP TO CCA!")    
+    TRC_MSG(MMI_DTCNT_OTA_PROC_CCA_DOC, "[DATA ACCOUNT OTA]  mmi_dtcnt_ota_proc_cca_doc!")
+    TRC_MSG(MMI_DTCNT_OTA_INSTALL_NAME_LEN, "[DATA ACCOUNT OTA]  install name string len = [%d]")
+    
+
+    /* Data Account DM */
+    TRC_MSG(MMI_DTCNT_DM_RECEIVE_IND, "[DATA ACCOUNT OTA]  DM RECEIVE IND!")    
+    TRC_MSG(MMI_DTCNT_DM_UPDATE_IND, "[DATA ACCOUNT OTA]  DM UPDATE IND!")    
+    TRC_MSG(MMI_DTCNT_DM_BEARER_TYPE, "[DATA ACCOUNT OTA]  DM Bearer Type = [%d]")    
+    TRC_MSG(MMI_DTCNT_DM_GET_CCA_BY_CSD, "[DATA ACCOUNT OTA]  mmi_dtcnt_get_cca_by_csd_prof acct_id = [%d]")    
+    TRC_MSG(MMI_DTCNT_DM_GET_CCA_BY_GPRS, "[DATA ACCOUNT OTA]  mmi_dtcnt_get_cca_by_gprs_prof acct_id = [%d]")    
+    TRC_MSG(MMI_DTCNT_DM_GET_BEARER_BY_CCA, "[DATA ACCOUNT OTA]  mmi_dtcnt_get_prof_by_cca bearer = [%d]")    
+    TRC_MSG(MMI_DTCNT_DM_SAVE_CSD_PROF, "[DATA ACCOUNT OTA]  Save CSD Profile acct_id = [%d]")    
+    TRC_MSG(MMI_DTCNT_DM_SAVE_GPRS_PROF, "[DATA ACCOUNT OTA]  Save GPRS Profile acct_id = [%d]")    
+    TRC_MSG(MMI_DTCNT_DM_STRING_IFDCS, "[DATA ACCOUNT OTA]  DM String Ifdcs acct_id = [%d], IFdcs = [%d]")    
+    TRC_MSG(MMI_DTCNT_DM_READY_CHECK, "[DATA ACCOUNT OTA]  DM READY CHECK")    
+
+    /* Data Account WIFI */
+    TRC_MSG(MMI_DTCNT_WIFI_DO_ACTION_INIT, "[DATA ACCOUNT WIFI]  Do Action Init!")    
+    TRC_MSG(MMI_DTCNT_WIFI_DO_ACTION_DEINIT, "[DATA ACCOUNT WIFI]  Do Action Deinit!")    
+    TRC_MSG(MMI_DTCNT_WIFI_DO_ACTION_CONNECT, "[DATA ACCOUNT WIFI]  Do Action Connect!")    
+    TRC_MSG(MMI_DTCNT_WIFI_DO_ACTION_DISCONNECT, "[DATA ACCOUNT WIFI]  Do Action Disconnect!")    
+    TRC_MSG(MMI_DTCNT_WIFI_DO_ACTION_SCAN, "[DATA ACCOUNT WIFI]  Do Action Scan!")    
+
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_INIT_REQ, "[DATA ACCOUNT WIFI]  Send Init Req pre_status = [%d], status = [%d]")    
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_DEINIT_REQ, "[DATA ACCOUNT WIFI]  Send Deinit Req pre_status = [%d], status = [%d]")    
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_CONNECT_REQ, "[DATA ACCOUNT WIFI]  Send Connect Req pre_status = [%d], status = [%d]")    
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_DISCONNECT_REQ, "[DATA ACCOUNT WIFI]  Send Disconnect Req pre_status = [%d], status = [%d]")    
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_LIST_REQ, "[DATA ACCOUNT WIFI]  Send List Req pre_status = [%d], status = [%d]")    
+
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_INIT_CNF, "[DATA ACCOUNT WIFI]  Send Init Cnf pre_status = [%d], status = [%d]")    
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_DEINIT_CNF, "[DATA ACCOUNT WIFI]  Send Deinit Cnf pre_status = [%d], status = [%d]")    
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_CONNECT_CNF, "[DATA ACCOUNT WIFI]  Send Connect Cnf pre_status = [%d], status = [%d]")    
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_DISCONNECT_CNF, "[DATA ACCOUNT WIFI]  Send Disconnect Cnf pre_status = [%d], status = [%d]")    
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_CONNECT_IND, "[DATA ACCOUNT WIFI]  Send Connect Ind pre_status = [%d], status = [%d]")    
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_DISCONNECT_IND, "[DATA ACCOUNT WIFI]  Send Disconnect Ind pre_status = [%d], status = [%d]")    
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_LIST_CNF, "[DATA ACCOUNT WIFI]  Send List Cnf pre_status = [%d], status = [%d]")    
+
+
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_DEINIT_CNF_1, "[DATA ACCOUNT WIFI]  deinit delete process screen!")    
+    TRC_MSG(MMI_DTCNT_WIFI_SEND_DISCONNECT_CNF_1, "[DATA ACCOUNT WIFI]  disconnect delete process screen!")    
+    TRC_MSG(MMI_DTCNT_WIFI_ALWAYS_ASK_CONNECT_REQ, "[DATA ACCOUNT WIFI]  Always Ask Connect Conn Flag = [%d], before conn flag = [%d]")    
+    TRC_MSG(MMI_DTCNT_WIFI_ALWAYS_ASK_CONNECT_PROF, "[DATA ACCOUNT WIFI]  Always Ask Connect Prof Pre_status = [%d], before conn flag = [%d]")    
+
+    /* Data Account WIFI OTA */
+    TRC_MSG(MMI_DTCNT_WIFI_OTA_FAIL_ENCRYPT, "[DATA ACCOUNT WIFI OTA]  WIFI OTA FAIL ENCRYPT!")  
+    TRC_MSG(MMI_DTCNT_WIFI_OTA_FAIL_ENCRYPT_SWITCH, "[DATA ACCOUNT WIFI OTA]  WIFI OTA FAIL ENCRYPT_SWITCH!")  
+    TRC_MSG(MMI_DTCNT_WIFI_OTA_FAIL_AUTH, "[DATA ACCOUNT WIFI OTA]  WIFI OTA FAIL AUTH!")  
+    TRC_MSG(MMI_DTCNT_WIFI_OTA_FAIL_AUTH_SWITCH, "[DATA ACCOUNT WIFI OTA]  WIFI OTA FAIL AUTH SWITCH!")  
+    TRC_MSG(MMI_DTCNT_WIFI_OTA_FAIL_SSID, "[DATA ACCOUNT WIFI OTA]  WIFI OTA FAIL SSID!")  
+    TRC_MSG(MMI_DTCNT_WIFI_OTA_FAIL_SSID_FORMAT, "[DATA ACCOUNT WIFI OTA]  WIFI OTA FAIL SSID FORMAT!")  
+    TRC_MSG(MMI_DTCNT_WIFI_OTA_FAIL_NW_KEY, "[DATA ACCOUNT WIFI OTA]  WIFI OTA FAIL NW KEY!")  
+    TRC_MSG(MMI_DTCNT_WIFI_OTA_FAIL_NW_KEY_FORMAT, "[DATA ACCOUNT WIFI OTA]  WIFI OTA FAIL NW_KEY_FORMAT!")  
+    
+    TRC_MSG(MMI_DTCNT_WIFI_OTA_FAIL_WEP_KEY_LEN, "[DATA ACCOUNT WIFI OTA]  WIFI OTA FAIL WEP_KEY_LEN!")  
+    TRC_MSG(MMI_DTCNT_WIFI_OTA_FAIL_INDEX_INSTALL, "[DATA ACCOUNT WIFI OTA]  WIFI OTA FAIL Index of install!")  
+    
+
+#endif /* _MMI_CONN_APP_TRC_H_ */
+

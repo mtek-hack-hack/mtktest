@@ -1,0 +1,14 @@
+image_codec\sw_png_codec\libpng\png.c
+image_codec\sw_png_codec\libpng\pngget.c
+image_codec\sw_png_codec\libpng\pngset.c
+image_codec\sw_png_codec\libpng\pngmem.c
+image_codec\sw_png_codec\libpng\pngerror.c
+image_codec\sw_png_codec\libpng\pngread.c
+image_codec\sw_png_codec\libpng\pngrio.c
+image_codec\sw_png_codec\libpng\pngrtran.c
+image_codec\sw_png_codec\libpng\pngrutil.c
+image_codec\sw_png_codec\libpng\pngtrans.c
+
+image_codec\sw_png_codec\png_decoder_sw.c
+image_codec\sw_png_codec\img_resizer.c
+applib\misc\src\app_zlib.c

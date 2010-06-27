@@ -1,0 +1,349 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+###############################################################################
+Project: "MoDIS"=.\MoDIS\MoDIS.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name applib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bmt
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name comm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name conn_app
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name custom
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name drv_sim
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dt
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name fmt
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name gdi_arm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name hanwang
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name inet_app
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name l4misc
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name media
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name media_app
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mercury_master
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mmi_app
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mmi_framework
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mmiresource
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name modis_fs
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name nvram
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name sw_png_codec
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name vendorapp
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name verno
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name zi
+    End Project Dependency
+
+}}}
+###############################################################################
+Project: "applib"=.\applib\applib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "bmt"=.\bmt\bmt.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "comm"=.\comm\comm.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "conn_app"=.\conn_app\conn_app.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "custom"=.\custom\custom.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "drv_sim"=.\drv_sim\drv_sim.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "dt"=.\dt\dt.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "fmt"=.\fmt\fmt.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "gdi_arm"=.\gdi_arm\gdi_arm.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "hanwang"=.\hanwang\hanwang.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "inet_app"=.\inet_app\inet_app.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "l4misc"=.\l4misc\l4misc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "media"=.\media\media.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "media_app"=.\media_app\media_app.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "mercury_master"=.\mercury_master\mercury_master.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "mmi_app"=.\mmi_app\mmi_app.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "mmi_framework"=.\mmi_framework\mmi_framework.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "mmiresource"=.\mmiresource\mmiresource.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "modis_fs"=.\modis_fs\modis_fs.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "nvram"=.\nvram\nvram.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "sw_png_codec"=.\sw_png_codec\sw_png_codec.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "vendorapp"=.\vendorapp\vendorapp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "verno"=.\verno\verno.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}
+###############################################################################
+Project: "zi"=.\zi\zi.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+
+}}}

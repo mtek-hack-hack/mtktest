@@ -1,0 +1,230 @@
+@echo off
+set prj=
+set customer=PLUTO
+set optr_path=PPP
+set optr_spec=NONE
+set main_lcd_size=240X320
+if %customer%==MTK set customer=PLUTO
+path ..\..\tools;..\..\..\tools;..\..\..\Tools\MSYS\bin;..\..\..\..\Tools\MSYS\bin;..\..\Tools\MinGW\bin;..\..\..\Tools\MinGW\bin;..\debug;.\debug;..\..\..\Tools;%path%;
+if  not .%1==.  goto a:
+goto menu:
+
+
+:a
+
+echo MediaTek Inc. Resource Generator Script
+echo Building resource for %customer%...
+cd ResGenerator
+
+rem ************************************************************
+rem ****************** Backup Old Resource *********************
+rem ************************************************************
+echo copying old Resources...
+del /Q ..\custresource\BackupRes\*
+mkdir ..\custresource\BackUpRes
+copy ..\custresource\*.c ..\custresource\BackUpRes\.
+
+rem ************************************************************
+rem *************** Copy PLUTO Project BASE Files FIRST ********
+rem ************************************************************
+if not exist ..\Res_MMI\ md ..\Res_MMI\
+copy ..\custresource\PLUTO_MMI\Res_MMI\*.c ..\Res_MMI\.
+copy ..\custresource\PLUTO_MMI\MMI_features_camera.h ..\custresource
+copy ..\custresource\PLUTO_MMI\MMI_features_video.h ..\custresource
+copy ..\custresource\PLUTO_MMI\MMI_features_barcodereader.h ..\custresource
+copy ..\custresource\PLUTO_MMI\mmi_features_mtv_player.h ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_camera_skins.h ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_camera_skins.c ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_video_skins.h ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_video_skins.c ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_vt_skins.h ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_vt_skins.c ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_audply_skins.c ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_audply_sub_skins.c ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_fmradio_skins.c ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_fmradio_sub_skins.c ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_fmschedulerec_skins.c ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_world_clock_city.c ..\custresource > nul
+copy ..\custresource\PLUTO_MMI\resource_barcodereader_skins.c ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_barcodereader_skins.h ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_vdoedt_skins.c ..\custresource
+copy ..\custresource\PLUTO_MMI\resource_vdoedt_skins.h ..\custresource
+
+rem ****** This will do at Sherman's makefile ******************  
+rem copy ..\custresource\%prj%_MMI\*.* ..\custresource\.
+rem ************************************************************
+@echo off
+rem dir L_*.h /b > font_list_remove.txt
+dir ..\custresource\L_*.h /b > font_list_remove.txt
+echo CustMiscData%prj%.c >> font_list_remove.txt
+echo CustResDef%prj%.h >> font_list_remove.txt
+echo MMI_features_switch%prj%.h >> font_list_remove.txt
+echo FontRes.c >> font_list_remove.txt
+echo ref_list.txt >> font_list_remove.txt
+echo font_list_remove.txt >> font_list_remove.txt
+xcopy ..\custresource\%prj%_MMI\*.* ..\custresource\. /Y /EXCLUDE:font_list_remove.txt
+del font_list_remove.txt /F
+
+rem ************************************************************
+rem *************** Copy Project Related Files *****************
+rem ************************************************************
+copy ..\custresource\%prj%_MMI\Res_MMI\*.c ..\Res_MMI\.
+copy ..\custresource\%customer%_MMI\MMI_features_camera.h ..\custresource
+copy ..\custresource\%customer%_MMI\MMI_features_video.h ..\custresource
+copy ..\custresource\%customer%_MMI\MMI_features_barcodereader.h ..\custresource
+copy ..\custresource\%customer%_MMI\mmi_features_mtv_player.h ..\custresource
+copy ..\custresource\%customer%_MMI\resource_camera_skins.h ..\custresource
+copy ..\custresource\%customer%_MMI\resource_camera_skins.c ..\custresource
+copy ..\custresource\%customer%_MMI\resource_video_skins.h ..\custresource
+copy ..\custresource\%customer%_MMI\resource_video_skins.c ..\custresource
+copy ..\custresource\%customer%_MMI\resource_audply_skins.c ..\custresource
+copy ..\custresource\%customer%_MMI\resource_audply_sub_skins.c ..\custresource
+copy ..\custresource\%customer%_MMI\resource_fmradio_skins.c ..\custresource
+copy ..\custresource\%customer%_MMI\resource_fmradio_sub_skins.c ..\custresource
+copy ..\custresource\%customer%_MMI\resource_fmschedulerec_skins.c ..\custresource
+copy ..\custresource\%customer%_MMI\resource_world_clock_city.c ..\custresource > nul
+copy ..\custresource\%customer%_MMI\resource_barcodereader_skins.h ..\custresource
+copy ..\custresource\%customer%_MMI\resource_barcodereader_skins.c ..\custresource
+
+rem ****** This will do at Sherman's makefile ******************  
+rem movefile ..\custresource\MMI_features_switch%prj%.h ..\..\MMI\Inc\MMI_features_switch.h
+rem movefile ..\custresource\%prj%_MMI\CustResDef%prj%.h ..\CustomerInc\CustResDef.h
+rem ************************************************************
+
+movefile ..\custresource\MMI_features_camera.h ..\..\MMI\Inc\MMI_features_camera.h
+movefile ..\custresource\MMI_features_video.h ..\..\MMI\Inc\MMI_features_video.h
+movefile ..\custresource\MMI_features_barcodereader.h ..\..\MMI\Inc\MMI_features_barcodereader.h
+movefile ..\custresource\MMI_features_mtv_player.h ..\..\MMI\Inc\MMI_features_mtv_player.h
+movefile ..\custresource\resource_camera_skins.h ..\..\MMI\Inc\resource_camera_skins.h
+movefile ..\custresource\resource_video_skins.h ..\..\MMI\Inc\resource_video_skins.h
+movefile ..\custresource\resource_vt_skins.h ..\..\MMI\Inc\resource_vt_skins.h
+movefile ..\custresource\resource_barcodereader_skins.h ..\..\MMI\Inc\resource_barcodereader_skins.h
+movefile ..\custresource\PLUTO_MMI\resource_vdoedt_skins.h ..\..\MMI\Inc\resource_vdoedt_skins.h
+
+rem ****** This will do at Sherman's makefile *******************  
+rem movefile ..\custresource\CustMiscData%prj%.c ..\custresource\CustMiscData.c
+rem *************************************************************
+
+rem movefile ..\custresource\Gui_Setting%prj%.h ..\customerinc\Gui_Setting.h
+rem movefile ..\..\MMI\PCSimulator\%prj%_MMI\PixtelMMI.rc ..\Resources\PixtelMMI.rc
+rem copy ..\..\MMI\PCSimulator\%prj%_MMI\PixtelMMI.dsp ..\..\MMI\PixtelMMI.dsp
+rem copy ..\..\MMI\PCSimulator\%prj%_MMI\mtk.bmp ..\Resources\PICTURE\mtk.bmp
+rem copy ..\..\MMI\PCSimulator\%prj%_MMI\Buildcustsecond.mak ..\..\Tool\Files\Buildcustsecond.mak
+
+rem ************************************************************
+rem *************** Run ResGenerator_OP.bat ********************
+rem ************************************************************
+if %optr_spec%==NONE goto skip_optr
+call ..\..\..\%optr_path%\ResGenerator_OP.bat %optr_spec% %main_lcd_size%
+:skip_optr
+
+rem ************************************************************
+rem ************** Start to Generate Resource ******************
+rem ************** -Using Pixtel ResGenerator ******************
+rem ************************************************************
+del .\debug\*.obj
+del .\mtk_resgenerator.exe
+del .\plmncreate.exe
+echo Making Resources...
+del .\Res*.o
+del .\PopulateRes.o
+del ExportMMIFunc.o
+del mtk_resgenerator.o
+del FontRes.o
+del CustResDeclare.o
+COPY ..\custresource\%prj%_MMI\ref_list.txt ..\custresource\ref_list.txt
+COPY ..\custresource\PLUTO_MMI\plmnlist.txt ..\custresource\plmnlist.txt
+COPY ..\custresource\PLUTO_MMI\PlmnEnum.tmp ..\..\MMI\MiscFramework\MiscFrameworkInc\PlmnEnum.h
+COPY ..\custresource\PLUTO_MMI\PlmnName.tmp ..\..\MMI\MiscFramework\MiscFrameworkSrc\PlmnName.c
+make plmncreate.exe
+if not exist plmncreate.exe goto RESGEN_ERROR
+plmncreate.exe
+copy ..\Customize\mmicustomizer.lib .\mmicustomizer.lib
+reimp mmicustomizer.lib
+make mtk_resgenerator.exe
+if not exist mtk_resgenerator.exe goto RESGEN_ERROR
+rem ************************************************************
+rem **********  Copy obj files for vendor app  *****************
+rem ************************************************************
+COPY bmp2ems.o ..\..\VendorApp\ResGenerator\obj\
+COPY bmpLoader.o ..\..\VendorApp\ResGenerator\obj\
+COPY GifLoader.o ..\..\VendorApp\ResGenerator\obj\
+COPY ResBytestream.o ..\..\VendorApp\ResGenerator\obj\
+COPY UCS2.o ..\..\VendorApp\ResGenerator\obj\
+COPY ImageGetDimension.o ..\..\VendorApp\ResGenerator\obj\
+rem // __CUSTPACK_MULTIBIN Calvin BEGIN
+mtk_resgenerator.exe -g > mtk_resgenerator.log
+rem // __CUSTPACK_MULTIBIN Calvin END
+
+rem ************************************************************
+rem *** Menu Tree Tool gen resource to copy back if needed *****
+rem ************************************************************
+copy ..\custresource\CustMenuToolRes.c ..\custresource\CustMenuRes.c
+
+rem ************************************************************
+rem ************** Start to Generate Resource ******************
+rem ************************************************************
+COPY FontRes.o ..\..\VendorApp\ResGenerator\obj\
+COPY .\CustStrMap.c ..\custresource\CustStrMap.c
+COPY .\CustStrRes.c ..\custresource\CustStrRes.c
+echo clear intermediate files...
+
+copy ..\custresource\CustENFBImgData ..\..\..\MoDIS\MoDis\CustENFBImgData
+copy ..\custresource\CustENFBStrData ..\..\..\MoDIS\MoDis\CustENFBStrData
+
+if exist ..\Res_MMI\ rd /S/Q ..\Res_MMI\
+del .\Res*.o
+del .\PopulateRes.o
+del ExportMMIFunc.o
+del mtk_resgenerator.o
+del CustResDeclare.o
+del .\mmicustomizer.lib
+echo Resource generated successfully...
+
+rem
+rem Generate the MTE image resource header file.
+rem
+perl mte_parse_img_usage.pl
+
+echo --
+echo Complete!!
+goto done
+
+rem ************************************************************
+rem ************** Error Handling and Messages *****************
+rem ************************************************************
+:RESGEN_ERROR
+echo Error in ResGenerating Process!!
+echo Please Check again!!
+exit /B 3
+
+rem ************************************************************
+rem **************** Menu To Select Project ********************
+rem ************************************************************
+:menu
+@echo off
+rem cls
+rem echo MediaTek Resource Generator
+rem echo. 
+rem echo Please select one project to generate resource...
+rem echo.
+rem echo    SELECT MENU
+rem echo    ==========
+rem echo.
+rem echo    1 - PLUTO
+rem echo.
+rem echo    Q - Quit
+rem choice /C:1Q>nul
+
+rem if errorlevel 23 goto done
+rem if errorlevel 1 goto PLUTO:
+goto PLUTO:
+
+goto done
+
+
+:PLUTO
+set prj=PLUTO
+goto a:
+
+:done

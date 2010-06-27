@@ -1,0 +1,423 @@
+cl -E @comm.ini ..\..\tst\database\msglog_db\custom_parse_db.c > ..\..\tst\database_modis\msglog_db\custom_pri.db
+Start Parsing: 20:48:39
+Phase 1: 20:48:39
+Phase 2: 20:48:39
+Start Parsing: 20:48:39
+Phase 1: 20:48:39
+Phase 2: 20:48:39
+Reading custom_data succeeded.
+Start to parse the custom NVRAM DATA!
+NVRAM ID:NVRAM_EF_ABM_GPRS_PROFILE_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_ADC_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_ALM_ALARM_DATA_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_ALM_QUEUE_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_ALM_SPOF_DATA_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_ALS_LINE_ID_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_AUDIO_PARAM_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_AUDIO_PLAYER_BT_SETTINGS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_AUTOTEST_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_BAND_INFO_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_BARCODE_NUM_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_BTRADIO_MT6601_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_BT_INFO_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CACHE_BYTE_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CACHE_DOUBLE_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CACHE_SHORT_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CALL_TIME_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CAMERA_PARA_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CAMERA_SETTING_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CB_CH_INFO_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CB_DEFAULT_CH_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CFU_FLAG_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CHAT_ROOM_INFO_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CLASSMARK_RACAP_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CSB_SETTINGS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CSD_PROFILE_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CUST_ACOUSTIC_DATA_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_CUST_HW_LEVEL_TBL_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_EBOOK_DEFAULT_SETTINGS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_EBOOK_SETTINGS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_EM_NW_EVENT_RINGS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_EONS_INFO_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_EQ_PLMN_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_EXTBCCH_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_EXT_MELODY_INFO_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_FMGR_FILEPATH_POOL_HEAD_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_FMGR_FILEPATH_POOL_TAIL_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_FM_RADIO_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_GROUPLIST_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_IMEI_IMEISV_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_IP_NUMBER_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_AFCDATA_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_AGCPATHLOSS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_CRYSTAL_AFCDATA_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_CRYSTAL_CAPDATA_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_INTERSLOT_RAMP_DCS1800_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_INTERSLOT_RAMP_GSM850_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_INTERSLOT_RAMP_GSM900_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_INTERSLOT_RAMP_PCS1900_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_RAMPTABLE_DCS1800_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_RAMPTABLE_GSM850_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_RAMPTABLE_GSM900_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_RAMPTABLE_PCS1900_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_RFSPECIALCOEF_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_L1_TXIQ_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_MM_EQPLMN_LOCIGPRS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_MSCAP_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_MS_SECURITY_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_NITZ_NW_NAME_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHB_BIRTHDAY_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHB_CALLER_GROUPS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHB_COMPARE_DIGIT_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHB_FIELDS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHB_IDS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHB_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHB_LN_ENTRY_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHB_LN_TYPE_SEQ_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHB_SETTINGS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHB_VCARD_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHONEBOOK_SOS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PHONEBOOK_SPEEDDIAL_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PORT_SETTING_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_PROFILES_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_RAC_PREFERENCE_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SETTING_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SHORTCUTS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SIM_ASSERT_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SMSAL_COMMON_PARAM_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SMSAL_MAILBOX_ADDR_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SMSAL_MWIS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SMSAL_SMSP_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SMSAL_SMS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SMS_CB_CHNL_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SMS_CB_SMS_INFO_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SMS_CB_SMS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SMS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_STOPWATCH_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SYS_CACHE_OCTET_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SYS_EXCEPTION_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_SYS_STATISTICS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_TCM_PDP_PROFILE_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_TCM_STATISTICS_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_TODO_LIST_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_TST_FILTER_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_UEM_MANUFACTURE_DATA_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_UEM_RMI_DATA_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_VIDEO_SETTING_LID in original Database is replaced!
+NVRAM ID:NVRAM_EF_WPSS_FILENAME_LID in original Database is replaced!
+E:\SW\source\N65\N65\N65_V1\plutommi\Customer\CustomerInc\CustResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\BIDI\BIDIInc\BIDIDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\BrowserApp\Browser\BrowserInc\BrowserResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\BrowserApp\Profile\ProfileInc\ProfileHandlerResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\BrowserApp\PushInbox\PushInboxInc\PushInboxResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\CommonFiles\CommonInc\CallmanagementIdDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\CommonFiles\CommonInc\CallmanagementIdResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\CommonFiles\CommonInc\CMCommonScreenId.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\CommonFiles\CommonInc\PsCallHelperDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\IncomingCallManagement\IncomingInc\IncomingImageIdDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\IncomingCallManagement\IncomingInc\IncomingMenuIdDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\IncomingCallManagement\IncomingInc\IncomingScrIdDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\IncomingCallManagement\IncomingInc\IncomingStringIdDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\OutgoingCallManagement\OutgoingInc\OutgoingCmImgIDDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\OutgoingCallManagement\OutgoingInc\OutgoingCmMitemIDDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\OutgoingCallManagement\OutgoingInc\OutgoingCmScrIDDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\OutgoingCallManagement\OutgoingInc\OutgoingCmStrIDDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CallManagement\OutgoingCallManagement\OutgoingInc\TextPhoneDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Calls\CallsInc\CallhistoryEnum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Calls\CallsInc\CallsCostDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Calls\CallsInc\CallsDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Calls\CallsInc\CallsResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CertificateManager\CertificateManagerMMIInc\CertManMMIResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\ChatApp\ChatAppInc\ChatAppResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CommonScreens\CommonScreensInc\CommonScreensenum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CommonScreens\CommonScreensInc\CommonScreensResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\ConnectManagement\ConnectManagementInc\ConnectManageResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CPHS\CPHSInc\InfoNumResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\CustomerService\CustomerServiceInc\CustSerResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\DataAccount\DataAccountInc\DataAccountDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\DataAccount\DataAccountInc\DataAccountEnum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\DataAccount\DataAccountInc\DataAccountResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\DateTime\DateTimeInc\DateTimeDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\DebugLevels\DebugLevelInc\DebugInitDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Dictionary\DictInc\DictionaryMain.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Dictionary\DictInc\DictionaryResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\EbookReader\EbookInc\EbookDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\EbookReader\EbookInc\EbookResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\EmailApp\EmailAppInc\EmailAppGProt.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\EmailApp\EmailAppInc\EmailAppResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\bmi.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\bmiResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\Calculator.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\CalculatorResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\Calorie.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\CalorieResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\currencyconvertor.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\CurrencyConvertorE.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\CurrencyConvertorEResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\CurrencyconvertorResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\ExtraDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\ExtraResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\HealthemnstrurealResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\ShortcutsDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\ShortcutsResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\StopwatchResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\unitconvertor.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Extra\ExtraInc\UnitconvertorResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Framework\EventHandling\EventsInc\EventsDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Framework\History\HistoryInc\HistoryDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Framework\History\HistoryInc\SubLCDHistoryDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Framework\MMIUT\MMIUTInc\mmi_ut_defs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Framework\NVRAMManager\NVRAMManagerInc\NVRAMEnum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Framework\ThemeManager\ThemeManagerInc\ThemeArchiverDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\ColorBallsResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\ComposeRingToneDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\ComposeRingToneEngineDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\CopterResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\DanceResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\DollResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\DownloadDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\F1RaceResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\FruitResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\FunAndGamesDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\FunAndGamesResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\GameDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\GameResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\GameTemplateResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\JavaGameDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\MagicsushiResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\MajungResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\MotionDiceResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\MotionDJDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\MotionDJResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\PandaResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\PictureEditorDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\PictureEditorResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\PuzzleResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\RichesResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\SmashResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\SnakeResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\StairResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\TOHResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\UfoResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\FunAndGames\FunAndGamesInc\VsmjResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\GSMCallApplication\CommonFiles\CommonInc\CallmanagementIdEXResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\GUI\GUI_INC\gui_themes.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\GUI\GUI_INC\wgui_categories_defs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\GUI\GUI_INC\wgui_categories_enum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\GUI\GUI_INC\wgui_categories_inputsenum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Help\HelpInc\HelpResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\IdleScreen\IdleScreenInc\IdleAppDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\IdleScreen\IdleScreenInc\IdleAppResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\IMPS\IMPSInc\IMPSResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Inc\GlobalDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Inc\GlobalImgEnum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Inc\GlobalScrEnum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Inc\GlobalStrEnum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Inc\GUITypeDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Inc\MenuID\MTPNP_AD_Menudef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Inc\MenuID\PhoEdtMenuEnum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Inc\MMICommonWinDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Inc\MMIDataType.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Inc\Unicodedef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\JataayuApp\JBrowserMMI\JBrowserMMIInc\JBrowserResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\JataayuApp\JCommonModules\JProfileHandler\JProfileHandlerInc\JProfileHandlerResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\JataayuApp\JCommonModules\JProvisioning\JProvisioningInc\JProvisioningResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\JataayuApp\JMMSMMI\JMMSMMIInc\JMMSResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\JataayuApp\JMMSMMI\JMMSMMIInc\JMMSUCHandlingGDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\MainMenu\MainMenuInc\MainMenuDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Messages\MessagesInc\MessagesL4Def.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Messages\MessagesInc\MessagesResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Messages\MessagesInc\MessagesResourceData.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\MiscFramework\MiscFrameworkInc\BootUp.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\MiscFramework\MiscFrameworkInc\PersonalizationDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\MiscFramework\MiscFrameworkInc\PersonalizationResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\MiscFramework\MiscFrameworkInc\PlmnEnum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\MiscFramework\MiscFrameworkInc\PowerOnChargerResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\MiscFramework\MiscFrameworkInc\QuickAccessMenuItemResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\MiscFramework\MiscFrameworkInc\QuickAccessMenuItem_def.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\MiscFramework\MiscFrameworkInc\SimDetectionDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\MiscFramework\MiscFrameworkInc\SimDetectionResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\MobileService\MobileServiceInc\MobileServiceResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\NITZHandler\NITZInc\NITZResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\AlarmDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\AlarmResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\CalendarDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\CalendarResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\CalenderDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\OrganizerDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\OrganizerResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\ToDoListDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\ToDoListEnum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\ToDoListResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\worldclock.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Organizer\OrganizerInc\WorldclockResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\PhoneBook\PhoneBookInc\PhoneBookDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\PhoneBook\PhoneBookInc\PhoneBookResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\PoC\PoCInc\PoCGProt.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\PoC\PoCInc\PocResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\PROFILES\ProfilesInc\ProfilesDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\PROFILES\ProfilesInc\UserProfilesResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Resource\Inc\ImgDecoderDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\SAT\SATInc\SATDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\SAT\SATInc\SATResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\SAT\SATInc\ServiceDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\CallSetUpEnum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\CallSetUpEnumResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\NetworkSetupDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\NetworkSetupGProt.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\NetworkSetupResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\PowerOnOffDisplayDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\ScheduledPowerOnOff.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\ScheduledPowerOnOffResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\ScreenSaverDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\SettingDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\SettingGenum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\SettingResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\WallpaperDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\Setting\SettingInc\WallpaperResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\SSC\SSCInc\SSCResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\SSC\SSCInc\SSCStringHandle.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\UCM\UCMInc\UCMResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\UnifiedComposer\UnifiedComposerInc\UnifiedComposerResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\UnifiedMessage\UnifiedMessageInc\UnifiedMessageResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\UnifiedMMS\MMSApp\MMSAppInc\MMSAppResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\UnifiedMMS\MMSBGSR\MMSBGSRInc\MMSBGSRResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\UnifiedMMS\MMSCommon\MMSCommonInc\MMSXMLDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\UnifiedMMS\MMSViewer\MMSViewerInc\MMSViewerAPPDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\UnifiedMMS\MMSViewer\MMSViewerInc\MMSViewerDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\VideoCall\VideoCallInc\VTResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mmi\VoIP\VoIPInc\VoIPResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\ABRepeater\ABRepeaterInc\ABRepeaterDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\ABRepeater\ABRepeaterInc\ABRepeaterResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\AudioPlayer\AudioPlayerInc\AudioPlayerDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\AudioPlayer\AudioPlayerInc\AudioPlayerResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\Avatar\AvatarInc\AvatarResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\BarcodeReader\barcodereaderinc\BarcodeReaderResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\BGSound\BGSoundInc\BGSoundDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\BGSound\BGSoundInc\BGSoundResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\Camera\CameraInc\CameraResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\Camera\CameraInc\ImageViewerResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\CentralConfigAgent\CentralConfigAgentInc\CentralConfigAgentDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\CentralConfigAgent\CentralConfigAgentInc\CentralConfigAgentResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\Connectivity\ConnectivityInc\BtCommon\BTMMICustDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\Connectivity\ConnectivityInc\ConnectivityResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\Connectivity\ConnectivityInc\ExtDeviceDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\Connectivity\ConnectivityInc\USBDeviceDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\CSBrowser\CSBrowserInc\CatScreenBrowserDefs.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\CSBrowser\CSBrowserInc\CatScreenBrowserResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\DeviceManagement\DeviceManagementInc\DeviceManagementResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\DLAgent\DLAgentInc\DLAgentDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\DLAgent\DLAgentInc\DLAgentResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\DMUIApp\DMUIAppInc\dmuiappdef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\DMUIApp\DMUIAppInc\DMUIResdef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\EngineerMode\EngineerModeInc\EngineerModeDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\EngineerMode\EngineerModeInc\EngineerModeResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\EngineerMode\EngineerModeInc\FactoryModeDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\EngineerMode\EngineerModeInc\FactoryModeResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\FileMgr\FileMgrInc\FileManagerDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\FileMgr\FileMgrInc\FileManagerResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\FileMgr\FileMgrInc\ProfileMgrGProt.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\FMRadio\FMRadioInc\FMRadioDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\FMRadio\FMRadioInc\FMRadioResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\FMScheduleRec\FMScheduleRecInc\FMScheduleRecDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\FMScheduleRec\FMScheduleRecInc\FMScheduleRecResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\JavaAgency\JavaAgencyInc\JavaAgencyDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\MDI\MDIInc\mdi_enum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\mmiapi\include\mmiapi_res.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\MobileTVPlayer\MobileTVPlayerInc\MobileTVPlayerEnum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\MobileTVPlayer\MobileTVPlayerInc\MobileTVPlayerResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\MtkAppInc\mmiapi_enum.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\MtkAppInc\t9def.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\MtkAppInc\VoiceMemoResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\MtkAppInc\Wap.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\MtkAppInc\WapDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\MtkAppInc\WapResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\MyFavorite\MyFavoriteInc\MyFavoriteResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\PhotoEditor\PhotoEditorInc\PhoEdtResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\PhotoEditor\PhotoEditorInc\SlideShowResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\PictBridge\PictBridgeInc\PictBridgeDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\PictBridge\PictBridgeInc\PictBridgeResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\RightsMgr\RightsMgrInc\RightsMgrResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\SoundRecorder\SoundRecorderInc\SoundRecorderDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\SoundRecorder\SoundRecorderInc\SoundRecorderResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\SWFlash\SWFlashInc\SWFlashDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\SWFlash\SWFlashInc\SWFlashResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\SyncML\SyncMLInc\SyncMLDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\SyncML\SyncMLInc\SyncMLResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\Video\VideoInc\VdoPlyResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\Video\VideoInc\VdoRecResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\VideoEditor\VideoEditorInc\VdoEdtResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\vObjects\vObjectInc\vObjectsResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\VRSD\VRSDInc\VRSDResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\mtkapp\VRSI\VRSIInc\VRSIResDef.h
+E:\SW\source\N65\N65\N65_V1\plutommi\VendorApp\DevApp\devappinc\devappdef.h
+Output debug for LBSCS03.8.12.1.0T08M0718_M501CSCR.dbg
+Warning: Fail to find SCR_ID_BRW_FIRST_SCREEN_ID=BROWSER_BASE
+Warning: Fail to find SCR_ID_PROF_HDLR_PROF_LIST=BROWSER_PROVISIONING_BASE+1
+Warning: Fail to find SCR_ID_PSH_PUSH_SETTING=BROWSER_PUSH_BASE+1
+Warning: Fail to find SCR_ID_CBM_LIST=CONNECT_MANAGE_BASE+1
+Warning: Fail to find SCR_MMI_UT_UI_SUITES_LIST_ID=RESOURCE_BASE_MMI_UT+1
+Warning: Fail to find SCR_ID_MOTION_DICE_APP=MOTION_DICE_BASE
+Warning: Fail to find SCR_ID_MOTION_DJ_APP=MOTION_DJ_BASE
+Warning: Fail to find SCR_ID_MOTION_DJ_APP=MOTION_DJ_BASE
+Warning: Fail to find EXT_ID_SCR_START=HUYANWEI_BASE+1
+Warning: Fail to find SCR_ID_POC_MAIN=POC_SCREEN_BASE
+Creating file "..\..\tst\database_modis\BPGUInfoCustomApp_pc_Src".
+Create file "..\..\tst\database_modis\BPGUInfoCustomApp_pc_Src" successfully. 
+Creating file "..\..\tst\database_modis\enumFileCustomAppSrc".
+Create file "..\..\tst\database_modis\enumFileCustomAppSrc" successfully. 
+Processing plutommi\mmi\inc\mmi_common_app_trc.h
+Processing plutommi\mmi\inc\mmi_conn_app_trc.h
+Processing plutommi\mmi\inc\mmi_fw_trc.h
+Processing plutommi\mmi\inc\mmi_inet_app_trc.h
+Processing plutommi\mmi\inc\mmi_media_app_trc.h
+Processing plutommi\mmi\inc\mmi_trc.h
+Parsing file "..\..\tst\database_modis\pstrace_db\mmi_common_app_trc.ptr".
+Parsing file "..\..\tst\database_modis\pstrace_db\mmi_conn_app_trc.ptr".
+Parsing file "..\..\tst\database_modis\pstrace_db\mmi_fw_trc.ptr".
+Parsing file "..\..\tst\database_modis\pstrace_db\mmi_inet_app_trc.ptr".
+Parsing file "..\..\tst\database_modis\pstrace_db\mmi_media_app_trc.ptr".
+Parsing file "..\..\tst\database_modis\pstrace_db\mmi_trc.ptr".
+MOD_MMI trace is replaced with the new file.
+Warning: enum type GLOBALMENUITEMSID is not in database
+Warning: enum type GLOBALMENUITEMSID is not in database
+Warning: enum type GLOBALMENUITEMSID is not in database
+Warning: enum type GLOBALMENUITEMSID is not in database
+Warning: enum type GLOBALMENUITEMSID is not in database
+Warning: enum type GLOBALMENUITEMSID is not in database
+Warning: enum type mmi_frm_appmem_stop_state_enum is not in database
+Warning: enum type STRINGID_LIST_COMMON_SCREENS is not in database
+Warning: enum type mmi_mtv_player_kernel_state_enum is not in database
+Warning: enum type mmi_mtv_player_player_state_enum is not in database
+Warning: enum type mmi_mtv_player_recorder_state_enum is not in database
+Warning: enum type mmi_mtv_player_module_enum is not in database
+Warning: enum type mmi_mtv_player_kernel_state_enum is not in database
+Warning: enum type mmi_mtv_player_kernel_state_enum is not in database
+Warning: enum type mmi_mtv_player_module_enum is not in database
+Warning: enum type mmi_mtv_player_player_state_enum is not in database
+Warning: enum type mmi_mtv_player_player_state_enum is not in database
+Warning: enum type mmi_mtv_player_module_enum is not in database
+Warning: enum type mmi_mtv_player_recorder_state_enum is not in database
+Warning: enum type mmi_mtv_player_recorder_state_enum is not in database
+Warning: enum type mmi_bt_state_enum is not in database
+Warning: enum type mmi_bt_state_enum is not in database
+Warning: enum type mmi_bt_state_enum is not in database
+Warning: enum type mmi_bt_prof_enum is not in database
+Warning: enum type mma_result_enum is not in database
+Warning: enum type mmi_mms_bgsr_result_enum is not in database
+Warning: enum type mmi_mms_bgsr_action_type_enum is not in database
+Warning: enum type mmi_mms_bgsr_action_type_enum is not in database
+Warning: enum type mmi_mms_bgsr_msg_operation_notify_enum is not in database
+Warning: enum type mmi_mms_bgsr_indicator_type_enum is not in database
+Warning: enum type mmi_mms_bgsr_interrupt_reason_enum is not in database
+Warning: enum type mmi_mms_bgsr_msg_status_enum is not in database
+Warning: enum type mmi_mms_bgsr_result_enum is not in database
+Warning: enum type mmi_mms_bgsr_msg_operation_notify_enum is not in database
+MOD_MMI_COMMON_APP trace is replaced with the new file.
+MOD_MMI_CONN_APP trace is replaced with the new file.
+MOD_MMI_FW trace is replaced with the new file.
+MOD_MMI_INET_APP trace is replaced with the new file.
+MOD_MMI_MEDIA_APP trace is replaced with the new file.
+6 trace definition files parsed
+Generating definition file "..\..\tst\database_modis\pstrace_db\ps_trace.h".
+Generating "..\..\tst\database_modis\BPGUInfoCustomApp_pc_SrcP".

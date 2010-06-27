@@ -1,0 +1,30 @@
+[EINT_variables]
+SWDBG_EINT_NO
+AUX_EINT_NO
+TOUCH_PANEL_EINT_NO
+CHRDET_EINT_NO
+MOTION_SENSOR_EINT_NO
+BT_EINT_NO
+CLAMDET_EINT_NO
+USB_EINT_NO
+CHR_USB_EINT_NO
+WIFI_EINT_NO
+MELODY_EINT_NO
+OTG_IDPIN_EINT_NO
+EXTRA_A_KEY_EINT_NO
+EXTRA_B_KEY_EINT_NO
+LSD_MSDCCD_EINT_NO
+
+[eint_drv.h_HEADER]
+#ifndef _EINT_DRV_H
+#define _EINT_DRV_H
+
+[eint_drv.h_TAILER]
+#endif /* _EINT_DRV_H */
+
+[eint_var.c_HEADER]
+#ifdef __CUST_NEW__
+#include "eint.h"
+
+[eint_var.c_TAILER]
+#endif /* __CUST_NEW__ */

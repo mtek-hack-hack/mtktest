@@ -1,0 +1,9 @@
+plutommi\mmi\dataaccount\dataaccountsrc
+plutommi\mmi\ConnectManagement\ConnectManagementSrc
+plutommi\mtkapp\centralconfigagent\centralconfigagentsrc
+plutommi\mtkapp\connectivity\connectivitysrc
+plutommi\mtkapp\connectivity\connectivitysrc\btcommon
+plutommi\mtkapp\connectivity\connectivitysrc\btmtk
+plutommi\mtkapp\dlagent\dlagentsrc
+plutommi\mtkapp\dmuiapp\dmuiappsrc
+plutommi\mtkapp\syncml\syncmlsrc

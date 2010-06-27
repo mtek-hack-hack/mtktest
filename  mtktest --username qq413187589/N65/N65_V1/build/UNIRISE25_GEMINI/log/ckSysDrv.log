@@ -1,0 +1,137 @@
+                                               Byte Cluster
+===========================================================
+Allocated FAT Space                         2097152 
+Partition Sectors                            393216 
+Drive Overhead                               106496
+===========================================================
+Free Space for Folders and Applications     1589248    1552
+
+-----------------------------------------------------------
+Cluster Size                                   1024       1
+-----------------------------------------------------------
+FAT Overhead                                   6144       6
+-----------------------------------------------------------
+NVRAM_EF_SYS_LID                                 34       1
+NVRAM_EF_BRANCH_VERNO_LID                        34       1
+NVRAM_EF_CUSTPACK_VERNO_LID                      34       1
+NVRAM_EF_SYS_EXCEPTION_LID                     5120       5
+NVRAM_EF_SYS_STATISTICS_LID                     428       1
+NVRAM_EF_L1_AGCPATHLOSS_LID                     260       1
+NVRAM_EF_L1_RAMPTABLE_GSM850_LID                664       1
+NVRAM_EF_L1_RAMPTABLE_GSM900_LID                664       1
+NVRAM_EF_L1_RAMPTABLE_DCS1800_LID               664       1
+NVRAM_EF_L1_RAMPTABLE_PCS1900_LID               664       1
+NVRAM_EF_L1_AFCDATA_LID                           8       1
+NVRAM_EF_L1_TXIQ_LID                             44       1
+NVRAM_EF_L1_RFSPECIALCOEF_LID                   208       1
+NVRAM_EF_L1_INTERSLOT_RAMP_GSM850_LID            16       1
+NVRAM_EF_L1_INTERSLOT_RAMP_GSM900_LID            16       1
+NVRAM_EF_L1_INTERSLOT_RAMP_DCS1800_LID           16       1
+NVRAM_EF_L1_INTERSLOT_RAMP_PCS1900_LID           16       1
+NVRAM_EF_L1_CRYSTAL_AFCDATA_LID                  96       1
+NVRAM_EF_L1_CRYSTAL_CAPDATA_LID                   4       1
+NVRAM_EF_EXTBCCH_LID                             56       1
+NVRAM_EF_BAND_INFO_LID                            6       1
+NVRAM_EF_TST_FILTER_LID                         834       1
+NVRAM_EF_CB_CH_INFO_LID                          50       1
+NVRAM_EF_SMSAL_MWIS_LID                          12       1
+NVRAM_EF_TCM_STATISTICS_LID                      16       1
+NVRAM_EF_CFU_FLAG_LID                             2       1
+NVRAM_EF_MSCAP_LID                                4       1
+NVRAM_EF_CLASSMARK_RACAP_LID                     12       1
+NVRAM_EF_SIM_ASSERT_LID                        1280       2
+NVRAM_EF_RTC_DATA_LID                            16       1
+NVRAM_EF_CACHE_BYTE_LID                         512       1
+NVRAM_EF_CACHE_SHORT_LID                        512       1
+NVRAM_EF_CACHE_DOUBLE_LID                       512       1
+NVRAM_EF_ADC_LID                                 56       1
+NVRAM_EF_CUST_HW_LEVEL_TBL_LID                  440       1
+NVRAM_EF_UEM_MANUFACTURE_DATA_LID               210       1
+NVRAM_EF_UEM_RMI_DATA_LID                       216       1
+NVRAM_EF_CUST_ACOUSTIC_DATA_LID                 183       1
+NVRAM_EF_AUDIO_PARAM_LID                       1466       2
+NVRAM_EF_AUTOTEST_LID                           500       1
+NVRAM_EF_PORT_SETTING_LID                        28       1
+NVRAM_EF_BARCODE_NUM_LID                         64       1
+NVRAM_EF_SYS_CACHE_OCTET_LID                    400       1
+NVRAM_EF_IMEI_IMEISV_LID                         20       1
+NVRAM_EF_PHB_LID                              25800      26
+NVRAM_EF_PHB_LN_ENTRY_LID                     11088      11
+NVRAM_EF_PHONEBOOK_SOS_LID                      860       1
+NVRAM_EF_PHONEBOOK_SPEEDDIAL_LID               1200       2
+NVRAM_EF_PHB_IDS_LID                           2040       2
+NVRAM_EF_PHB_FIELDS_LID                       68700      68
+NVRAM_EF_PHB_SETTINGS_LID                        20       1
+NVRAM_EF_PHB_CALLER_GROUPS_LID                  260       1
+NVRAM_EF_PHB_VCARD_LID                          338       1
+NVRAM_EF_PHB_LN_TYPE_SEQ_LID                    120       1
+NVRAM_EF_PHB_COMPARE_DIGIT_LID                    1       1
+NVRAM_EF_PHB_BIRTHDAY_LID                      2000       2
+NVRAM_EF_SMS_LID                               2604       3
+NVRAM_EF_SMS_CB_CHNL_LID                        720       1
+NVRAM_EF_SMS_CB_SMS_LID                        2820       3
+NVRAM_EF_SMS_CB_SMS_INFO_LID                     20       1
+NVRAM_EF_SMSAL_SMS_LID                        36800      36
+NVRAM_EF_SMSAL_MAILBOX_ADDR_LID                  96       1
+NVRAM_EF_SMSAL_COMMON_PARAM_LID                  28       1
+NVRAM_EF_CB_DEFAULT_CH_LID                       40       1
+NVRAM_EF_SMSAL_SMSP_LID                         160       1
+NVRAM_EF_CHAT_ROOM_INFO_LID                     120       1
+NVRAM_EF_CALL_TIME_LID                           48       1
+NVRAM_EF_CAMERA_SETTING_LID                      84       1
+NVRAM_EF_VIDEO_SETTING_LID                       51       1
+NVRAM_EF_CAMERA_PARA_LID                       1532       2
+NVRAM_EF_IP_NUMBER_LID                           66       1
+NVRAM_EF_CSD_PROFILE_LID                       1480       2
+NVRAM_EF_ABM_GPRS_PROFILE_LID                  2260       3
+NVRAM_EF_EXT_MELODY_INFO_LID                   1748       2
+NVRAM_EF_ALM_QUEUE_LID                          610       1
+NVRAM_EF_ALM_SPOF_DATA_LID                       16       1
+NVRAM_EF_ALM_ALARM_DATA_LID                      60       1
+NVRAM_EF_TODO_LIST_LID                         8400       9
+NVRAM_EF_TCM_PDP_PROFILE_LID                   2530       3
+NVRAM_EF_SETTING_LID                             60       1
+NVRAM_EF_GROUPLIST_LID                          432       1
+NVRAM_EF_WPSS_FILENAME_LID                     3684       4
+NVRAM_EF_SHORTCUTS_LID                          500       1
+NVRAM_EF_PROFILES_LID                           812       1
+NVRAM_EF_STOPWATCH_LID                         1152       2
+NVRAM_EF_FM_RADIO_LID                           396       1
+NVRAM_EF_FMGR_FILEPATH_POOL_HEAD_LID           1020       1
+NVRAM_EF_FMGR_FILEPATH_POOL_TAIL_LID             20       1
+NVRAM_EF_BT_INFO_LID                           2000       2
+NVRAM_EF_BTRADIO_MT6601_LID                     141       1
+NVRAM_EF_EONS_INFO_LID                          400       1
+NVRAM_EF_EBOOK_SETTINGS_LID                       8       1
+NVRAM_EF_SML_LID                               1944       2
+NVRAM_EF_AUDIO_PLAYER_BT_SETTINGS_LID           160       1
+NVRAM_EF_EM_NW_EVENT_RINGS_LID                  228       1
+NVRAM_EF_NITZ_NW_NAME_LID                       110       1
+NVRAM_EF_MS_SECURITY_LID                        332       1
+NVRAM_EF_RAC_PREFERENCE_LID                       4       1
+NVRAM_EF_CSB_SETTINGS_LID                        60       1
+NVRAM_EF_CARD2_CB_CHNL_LID                      720       1
+NVRAM_EF_CARD2_CB_SMS_LID                      2820       3
+NVRAM_EF_CARD2_CB_SMS_INFO_LID                   20       1
+NVRAM_ANALOG_TV_CHANNEL_LID                      15       1
+NVRAM_ANALOG_TV_CHANNEL_NAME_LID                330       1
+NVRAM_G_SENSOR_LID                                2       1
+NVRAM_G_SENSOR_CALIBRANTION_LID                   6       1
+
+TOTAL                                        208493     279
+-----------------------------------------------------------
+Z:\@FACTORY\                                      0       0
+Z:\@wap\                                     163840     160
+Z:\@wcache\                                   51200      50
+Z:\@mms\                                          0       0
+Z:\@USER\                                         0       0
+Z:\@ftp\                                      61440      60
+Z:\@bpp\                                      10240      10
+Z:\@Video\                                     1024       1
+
+TOTAL                                        287744     281
+===========================================================
+
+
+Free Space 1552 clusters are enough for Folders and Applications 566 clusters.
+986 clusters are left.

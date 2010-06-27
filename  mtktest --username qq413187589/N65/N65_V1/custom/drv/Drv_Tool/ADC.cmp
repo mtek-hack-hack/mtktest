@@ -1,0 +1,18 @@
+[ADC_variables]
+ADC_VBAT
+ADC_VISENSE
+ADC_VBATTMP
+ADC_VCHARGER
+ADC_ACCESSORYID
+ADC_PCBTMP
+ADC_CHR_USB
+ADC_OTG_VBUS
+ADC_RFTMP
+
+[adc_var.c_HEADER]
+#ifdef __CUST_NEW__
+#include "kal_release.h"
+#include "adc.h"
+
+[adc_var.c_TAILER]
+#endif /* __CUST_NEW__ */

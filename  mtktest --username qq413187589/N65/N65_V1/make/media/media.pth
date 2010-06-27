@@ -1,0 +1,11 @@
+media\common\src
+media\audio\src
+media\video\src
+media\camera\src
+media\image\src
+media\webcam\src
+media\tvout\src
+media\rtp\src\
+media\stream\src\
+media\mtv\src\
+media\vcall\src

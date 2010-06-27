@@ -1,0 +1,76 @@
+[Chip Type]
+Chip = MT6223
+
+[GPIO]
+GPIO0 =  Mode0(GPIO0)  Mode1(LCD_D8)   Mode2()   Mode3() PD
+GPIO1 =  Mode0(GPIO1)  Mode1(LCD_D7)   Mode2()   Mode3() PD
+GPIO2 =  Mode0(GPIO2)  Mode1(LCD_D6)   Mode2()   Mode3() PD
+GPIO3 =  Mode0(GPIO3)  Mode1(LCD_D5)   Mode2()   Mode3() PD
+GPIO4 =  Mode0(GPIO4)  Mode1(LCD_D4)   Mode2()   Mode3() PD
+GPIO5 =  Mode0(GPIO5)  Mode1(LCD_D3)   Mode2()   Mode3() PD
+GPIO6 =  Mode0(GPIO6)  Mode1(LCD_D2)   Mode2()   Mode3() PD
+GPIO7 =  Mode0(GPIO7)  Mode1(LCD_D1)   Mode2()   Mode3() PD
+GPIO8 =  Mode0(GPIO8)  Mode1(LCD_RSTB) Mode2()   Mode3() PU
+GPIO9 =  Mode0(GPIO9)  Mode1(LCD_WR_B) Mode2()   Mode3() PU
+GPIO10 = Mode0(GPIO10) Mode1(LCD_RD_B) Mode2(LCD_SCLK) Mode3() PU
+
+GPIO11 = Mode0(GPIO11) Mode1(LCD_D0)      Mode2(LCD_SDA)    Mode3() PD
+GPIO12 = Mode0(GPIO12) Mode1(LCD_A0)      Mode2(LCD_SA0)		Mode3() PU
+GPIO13 = Mode0(GPIO13) Mode1(LCD_CS0_B)   Mode2(LCD_SCE0_B)	Mode3() PU
+GPIO14 = Mode0(GPIO14) Mode1(LCD_CS1_B)   Mode2(LCD_SCE1_B) Mode3(EINT7) PU
+GPIO15 = Mode0(GPIO15) Mode1(DAICLK)      Mode2(EDICK)      Mode3() PU
+GPIO16 = Mode0(GPIO16) Mode1(DAIPCMOUT)   Mode2(EDIDAT)	   Mode3() PD
+GPIO17 = Mode0(GPIO17) Mode1(DAIPCMIN)    Mode2()           Mode3() PU
+GPIO18 = Mode0(GPIO18) Mode1(DAIRST)      Mode2()           Mode3() PU
+GPIO19 = Mode0(GPIO19) Mode1(DAISYNC)     Mode2(EDIWS)      Mode3() PU
+GPIO20 = Mode0(GPIO20) Mode1(BPI_BUS6)    Mode2(XADMUX)     Mode3() Z
+
+GPIO21 = Mode0(GPIO21) Mode1(BPI_BUS7)    Mode2(BSI_RFIN)   Mode3(clk_out0) PD
+GPIO22 = Mode0(GPIO22) Mode1(BPI_BUS8)    Mode2(KCOL5)      Mode3(clk_out1) PU
+GPIO23 = Mode0(GPIO23) Mode1(BPI_BUS9)    Mode2(BSI_CS1)    Mode3(clk_out2) PD
+GPIO24 = Mode0(GPIO24) Mode1(ALERTER)     Mode2()           Mode3() PD
+GPIO25 = Mode0(GPIO25) Mode1(PWM)         Mode2()           Mode3() PD
+GPIO26 = Mode0(GPIO26) Mode1(JTRST_B)     Mode2(EINT4)      Mode3() PD
+GPIO27 = Mode0(GPIO27) Mode1(JTDI)        Mode2(EINT5)      Mode3() PU
+GPIO28 = Mode0(GPIO28) Mode1(JTMS)        Mode2(EINT6)      Mode3() PU
+GPIO29 = Mode0(GPIO29) Mode1(WATCHDOG)    Mode2()           Mode3() PD
+GPIO30 = Mode0(GPIO30) Mode1(EA0)         Mode2(EA25)       Mode3() PD
+
+GPIO31 = Mode0(GPIO31) Mode1(SRCLKENAI)   Mode2()  Mode3() PD
+GPIO32 = Mode0(GPIO32) Mode1(KCOL4)       Mode2()  Mode3() PU
+GPIO33 = Mode0(GPIO33) Mode1(KCOL3)       Mode2()  Mode3() PU
+GPIO34 = Mode0(GPIO34) Mode1(KCOL2)       Mode2()  Mode3() PU
+GPIO35 = Mode0(GPIO35) Mode1(KCOL1)       Mode2()  Mode3() PU
+GPIO36 = Mode0(GPIO36) Mode1(KCOL0)       Mode2()  Mode3() PU
+GPIO37 = Mode0(GPIO37) Mode1(KROW4)       Mode2()  Mode3() Z
+GPIO38 = Mode0(GPIO38) Mode1(KROW3)       Mode2()  Mode3() Z
+GPIO39 = Mode0(GPIO39) Mode1(KROW2)       Mode2()  Mode3() Z
+GPIO40 = Mode0(GPIO40) Mode1(KROW1)       Mode2()  Mode3() Z
+
+GPIO41 = Mode0(GPIO41) Mode1(KROW0)    Mode2()           Mode3() Z
+GPIO42 = Mode0(GPIO42) Mode1(EINT2)    Mode2()           Mode3(BT) PU
+GPIO43 = Mode0(GPIO43) Mode1(EINT3)    Mode2(MIRQ)       Mode3(BE) PU
+GPIO44 = Mode0(UTXD1)  Mode1(GPIO44)   Mode2()           Mode3() PU
+GPIO45 = Mode0(GPIO45) Mode1(UCTS1_B)  Mode2()           Mode3(SCL) PU
+GPIO46 = Mode0(GPIO46) Mode1(URTS1_B)  Mode2()           Mode3(SDA) PU
+GPIO47 = Mode0(GPIO47) Mode1(UTXD3)    Mode2(UCTS2_B)    Mode3(clk_out3) PU
+GPIO48 = Mode0(GPIO48) Mode1(URXD3)    Mode2(URTS2_B)    Mode3(clk_out4) PU
+GPIO49 = Mode0(GPIO49) Mode1(URXD2)    Mode2(clk_out5)   Mode3() PU
+GPIO50 = Mode0(URXD1)  Mode1(GPIO50)   Mode2()           Mode3() PU
+
+GPIO51 = Mode0(GPIO51) Mode1(UTXD2)    Mode2()           Mode3() PU
+GPIO52 = Mode0(GPIO52) Mode1(MFIQ)     Mode2(ECS3_B)       Mode3() PU
+
+
+[GPO]
+
+[EINT]
+EINT_COUNT = 8
+EINT_DEBOUNCE_TIME_COUNT = 4
+
+[ADC]
+ADC_COUNT = 7
+
+[Keypad]
+KEY_ROW = 5
+KEY_COLUMN = 7

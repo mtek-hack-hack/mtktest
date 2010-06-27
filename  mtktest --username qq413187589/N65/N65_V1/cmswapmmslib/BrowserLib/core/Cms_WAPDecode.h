@@ -1,0 +1,66 @@
+/******************************************************************************
+
+ C   H E A D E R   F I L E
+
+ (c) Copyright MobileSoft Technology (NanJing) Co.,LTD. 2001-2002
+ ALL RIGHTS RESERVED
+
+*******************************************************************************
+
+ Project Name: WAP STACK Ver 1.20
+ 
+ File Name   : Cms_WBDE.h
+
+ Description : To Implement Browser application
+
+ Last Modify : 07-AUG-2003
+ 
+ Written By  : Mobilesoft Technology
+
+******************************************************************************/
+#ifndef _CMS_WBMLDECODE_H
+#define _CMS_WBMLDECODE_H
+
+/*********************************************************/
+
+#include "CmsBrowserCfg.h"
+
+/*********************************************************/
+
+CMS_BROWSER_U32 CmsWBXMLGetIntFromMB(P_CMS_BROWSER_U8 szbit, CMS_BROWSER_U32 nlen);
+P_CMS_BROWSER_U8 CmsWBXMLDecodeUnicode(P_CMS_BROWSER_U8 BinaryUni);
+CMS_BROWSER_VOID CmsWBXMLGetTextElement(CMS_BROWSER_VOID);
+
+CMS_BROWSER_VOID CmsWBXMLExt_IE(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLExt_IU(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLExt_IN(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLExt_TE(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLExt_TU(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLExt_TN(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLStr_T(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLOPAQUE(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLENTITY(CMS_BROWSER_VOID);
+
+CMS_BROWSER_VOID CmsWBXMLEleEnd(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLGetDocument(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLEleMapCheck(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLBack(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLDoNothing(CMS_BROWSER_VOID);
+CMS_BROWSER_BOOL CmsWBXMLMapAttr(CMS_BROWSER_U8 binary);
+CMS_BROWSER_VOID CmsWBXMLReadAttr(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLWriteEle(CMS_BROWSER_U32 TagState);
+CMS_BROWSER_VOID  CmsWBXMLMapEle(CMS_BROWSER_U8 etemp);
+CMS_BROWSER_VOID CmsWBXMLReadEle(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLAttrEnd(CMS_BROWSER_VOID);
+
+CMS_BROWSER_BOOL CmsWMLPrologue(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLReset(CMS_BROWSER_VOID);
+CMS_BROWSER_BOOL  CmsWBXMLInitAutomaton(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWBXMLBinToWML(CMS_BROWSER_VOID);
+
+CMS_BROWSER_BOOL CmsWAPLoadWBXMLDecord(CMS_BROWSER_VOID);
+CMS_BROWSER_VOID CmsWAPFreeWBXMLDecode(CMS_BROWSER_VOID);
+
+CMS_BROWSER_BOOL CmsWAPWBXMLToWML(P_CMS_BROWSER_U8 data, CMS_BROWSER_U32 len, P_CMS_BROWSER_U8 result, CMS_BROWSER_U32 resultlen);
+
+#endif/* _CMS_WBMLDECODE_H */

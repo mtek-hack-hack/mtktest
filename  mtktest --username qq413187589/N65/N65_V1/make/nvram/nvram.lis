@@ -1,0 +1,17 @@
+nvram\src\nvram_context.c
+nvram\src\nvram_data_items.c
+nvram\src\nvram_drv_int.c
+nvram\src\nvram_handler_read.c
+nvram\src\nvram_handler_reset.c
+nvram\src\nvram_handler_startup.c
+nvram\src\nvram_handler_write.c
+nvram\src\nvram_handler_tst.c
+nvram\src\nvram_drval_fat.c
+nvram\src\nvram_ilm.c
+nvram\src\nvram_io.c
+nvram\src\nvram_ltable.c
+nvram\src\nvram_main.c
+nvram\src\nvram_interface.c
+nvram\src\nvram_l1def.c
+nvram\src\nvram_ul1def.c
+

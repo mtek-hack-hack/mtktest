@@ -1,0 +1,37 @@
+make[1]: Entering directory `E:/SW/source/N65/N65/N65_V1'
+Compiling bmt/adcmeasure.c ...
+Compiling bmt/bmt.c ...
+Compiling bmt/bmt_create.c ...
+Compiling bmt/bmt_main.c ...
+"bmt\bmt_main.c", line 544: Warning: C2207W: inventing 'extern int USB_PowerControl();'
+"bmt\bmt_main.c", line 864: Warning: C2207W: inventing 'extern int Drv_query_boot_mode();'
+bmt\bmt_main.c: 2 warnings, 0 errors, 0 serious errors
+Compiling bmt/bmtutil.c ...
+Compiling bmt/adcsche.c ...
+  0% 已复制  87% 已复制 100% 已复制 已复制         1 个文件。
+./build/UNIRISE25_GEMINI/gprs/MT6225o/lib/bmt.lib is updated
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\bmt_dep\adcmeasure.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\bmt_dep\adcsche.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\bmt_dep\bmt.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\bmt_dep\bmtutil.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\bmt_dep\bmt_create.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\bmt_dep\bmt_main.det
+
+
+make[1]: Leaving directory `E:/SW/source/N65/N65/N65_V1'

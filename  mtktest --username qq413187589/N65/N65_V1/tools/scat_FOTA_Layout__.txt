@@ -1,0 +1,128 @@
+;/*****************************************************************************
+;*  Copyright Statement:
+;*  --------------------
+;*  This software is protected by Copyright and the information contained
+;*  herein is confidential. The software may not be copied and the information
+;*  contained herein may not be used or disclosed except with the written
+;*  permission of MediaTek Inc. (C) 2007
+;*
+;*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+;*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+;*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+;*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+;*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+;*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+;*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+;*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+;*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+;*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+;*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+;*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+;*
+;*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+;*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+;*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+;*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+;*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+;*
+;*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+;*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+;*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+;*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+;*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+;*
+;*****************************************************************************/
+;
+;/*****************************************************************************
+; *
+; * Filename:
+; * ---------
+; *   scat_FOTA_Layout__.txt
+; *
+; * Project:
+; * --------
+; *   Maui_Software
+; *
+; * Description:
+; * ------------
+; *   Example for FOTA scatter file 
+; *
+; * Author:
+; * -------
+; *   Produced by system service team
+; *
+; ****************************************************************************/
+; *============================================================================
+; *             HISTORY
+; * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+; *----------------------------------------------------------------------------
+; * $Revision:$
+; * $Modtime:$
+; * $Log:$
+; *
+; * Sep 12 2007 mtk01077
+; * [MAUI_00546461] [Custom] update scatter file template
+; * 
+; *----------------------------------------------------------------------------
+; * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+;*=============================================================================
+;*****************************************************************************/
+;--------------------
+; SCHEME   : external 28MB flash memory and 8MB SRAM
+; PLATFORM : MT6229
+;--------------------
+
+;this region let flash tool know to download firmware update engine image
+;
+FOTA 0x08000000 [0x40000]
+{
+}
+
+ROM [0x08040000] [0xFC0000]
+{
+    ROM [0x08040000] 0x00400000
+    {
+    }
+    ROM2 +0x0 0x00400000
+    {
+    }
+    ROM3 +0x0 
+    {
+    }
+    EXTSRAM_LARGEPOOL_NORMAL 0x0140
+    {
+    }
+    EXTSRAM +0x00 
+    {
+    }
+    EXTSRAM_DSP_TX 0x007c0000 0x20000
+    {
+    }
+    EXTSRAM_DSP_RX 0x007e0000 0x20000
+    {
+    }
+    INTSRAM_CODE 0xA0000000 0x00010400
+    {
+    }
+    INTSRAM_DATA 0xA0010400 0x00008400
+    {
+    }
+    DYNAMIC_CODE2 0xa0018800 OVERLAY 0x2800
+    {
+    }
+    DYNAMIC_CODE1 0xa001b000 OVERLAY 0x5000
+    {
+    }
+    DYNAMIC_CODE3 0xa001b000 OVERLAY 0x5000
+    {
+    }
+    DYNAMIC_CODE4 0xa001b000 OVERLAY 0x5000
+    {
+    }
+    DYNAMIC_CODE5 0xa001b000 OVERLAY 0x5000
+    {
+    }
+    INTSRAM_MULTIMEDIA 0x40000000 0x00020000
+    {
+    }
+}
