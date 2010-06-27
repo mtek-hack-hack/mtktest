@@ -1,0 +1,5 @@
+APP_name	Res_base	ID	ID_name	size	data	res_filename
+GLOBAL	16031	16031	ADO_GLOBAL_EMPTYAUDIO	8	..\\..\\Customer\\Audio\\EmptyAudio.mp3	../../MMI/Resource/PopulateRes.c
+GLOBAL	16031	16032	ADO_GLOBAL_EMPTYAUDIO_EXT	8	..\\..\\Customer\\Audio\\EmptyAudio.mp3	../../MMI/Resource/PopulateRes.c
+GLOBAL	16031	16033	ADO_GLOBAL_NOAUDIO	8	..\\..\\Customer\\Audio\\NoAudio.mp3	../../MMI/Resource/PopulateRes.c
+GLOBAL	16031	16034	ADO_GLOBAL_DEFAULT	8	..\\..\\Customer\\Audio\\Default.mp3	../../MMI/Resource/PopulateRes.c

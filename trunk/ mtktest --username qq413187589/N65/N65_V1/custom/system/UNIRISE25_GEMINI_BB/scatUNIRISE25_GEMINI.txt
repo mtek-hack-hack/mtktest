@@ -1,0 +1,275 @@
+;/*****************************************************************************
+;*  Copyright Statement:
+;*  --------------------
+;*  This software is protected by Copyright and the information contained
+;*  herein is confidential. The software may not be copied and the information
+;*  contained herein may not be used or disclosed except with the written
+;*  permission of MediaTek Inc. (C) 2007
+;*
+;*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+;*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+;*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+;*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+;*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+;*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+;*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+;*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+;*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+;*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+;*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+;*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+;*
+;*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+;*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+;*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+;*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+;*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+;*
+;*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+;*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+;*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+;*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+;*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+;*
+;*****************************************************************************/
+;
+;/*****************************************************************************
+; *
+; * Filename:
+; * ---------
+; *   scatUNIRISE25_GEMINI.txt
+; *
+; * Project:
+; * --------
+; *   Maui_Software
+; *
+; * Description:
+; * ------------
+; *   defines the memory map for the validation board
+; *
+; * Author:
+; * -------
+; *   system auto generator v0.96
+; *
+; * Auto Generated Date:
+; * -------
+; *   2010/6/19
+; *
+; * Revision History:
+; * -------
+; * $Log: scatUNIRISE25_GEMINI.txt system auto generator v0.96 $
+; * 
+; ****************************************************************************/
+;
+;--------------------
+; SCHEME   : external 14MB flash memory and 4MB SRAM
+; PLATFORM : MT6225
+; FEATURES : 
+;--------------------
+
+ROM 0x00000000 0x00e00000
+{
+    ROM 0x00000000 0x00400000
+    {
+         bootarm.obj (C$$code,+First)
+         *.obj (LEADING_PART,+First)
+         *l1_classb.lib (+RO-CODE)
+         *l4_classb.lib (+RO-CODE)
+         *l4misc.lib (+RO-CODE)
+         *email.lib (+RO-CODE)
+         *lcmmi.lib (+RO-CODE)
+         *mmi_framework.lib (+RO-CODE)
+         *mmi_app.lib (+RO-CODE)
+         *conn_app.lib (+RO-CODE)
+         *media_app.lib (+RO-CODE)
+         *inet_app.lib (+RO-CODE)
+         
+         cpp_initialise.o(+RO)
+         cpp_finalise.o(+RO)
+         * (C$$pi_ctorvec)
+         * (C$$pi_dtorvec)
+         * (C$$ddtorvec)
+    }
+    ROM2 +0x0 0x00400000
+    {
+; WAP family
+         *wapadp.lib (+RO-CODE)
+         *wap.lib (+RO-CODE)
+         *wae.lib (+RO-CODE)
+         *jataayu.lib (+RO-CODE)
+         *jataayuapp.lib (+RO-CODE)
+         *wapapp.lib (+RO-CODE)
+         *obigo05aadp.lib (+RO-CODE)
+         *obigo05alib.lib (+RO-CODE)
+; J2ME family
+         *j2me_11.lib (+RO-CODE)
+         *j2me_hi.lib (+RO-CODE)
+         *jal.lib (+RO-CODE)
+         *ijet_adp.lib (+RO-CODE)
+         *jblendia.lib (+RO-CODE)
+         j2me_custom_*.obj (+RO-CODE)
+    }
+    ROM3 +0x0 0x00400000
+    {
+         .ANY (+RO-CODE)
+    }
+    ROM4 +0x0 0x00400000
+    {
+         .ANY (+RO-CODE)
+    }
+    ROM5 +0x0 
+    {
+         .ANY (+RO-DATA)
+    }
+    EXTSRAM_LARGEPOOL_NORMAL 0x08000000
+    {
+; For MT6228, MT6229 projects, app-based ASM always at first due to Java FBBR
+         app_mem.obj (LARGEPOOL_FIRST_ZI)
+         ScrMemMgr.obj (LARGEPOOL_ZI)
+         j2me_custom_resource.obj (LARGEPOOL_ZI)
+         med_main.obj (LARGEPOOL_ZI)
+    }
+    EXTSRAM +0x00 
+    {
+         * (+RW, +ZI)
+    }
+    DUMMY_END 0x08400000 0x04
+    {
+         bootarm.obj (DUMMY_POOL)
+    }
+    INTSRAM_CODE 0xA0000000 0x7600
+    {
+; system-realted CODE , SMALL set
+         bootarm.obj (INTERNCODE)
+         init.obj (SNORCODE)
+         custom_emi.obj (INTERNCODE)
+         isrentry.obj (INTERNCODE)
+         data_buff_pool.obj (INTERNCODE)
+         ctrl_buff_pool.obj (INTERNCODE)
+         stack_buff_pool.obj (INTERNCODE)
+         stack_ltlcom.obj (INTERNCODE)
+         stack_timer.obj (INTERNCODE)
+         SST_intrCtrl.obj (INTERNCODE, INTERNCONST)
+         custom_switchclock.obj (INTERNCODE)
+         idle_task.obj (INTERNCODE)
+         cache.obj (INTERNCODE)
+; Nucleus-related CODE , SMALL set
+         tct.obj (+RO)
+         tcc.obj (INTERNCODE)
+         csc.obj (INTERNCODE)
+         tmt.obj (+RO)
+         smc.obj (INTERNCODE)
+         evc.obj (INTERNCODE)
+         pmc.obj (INTERNCODE)
+         quc.obj (INTERNCODE)
+         kal_nucleus_buff_mgr.obj (INTERNCODE)
+         kal_nucleus_evshed_buff_mgr.obj (INTERNCODE)
+         kal_nucleus_itc.obj (INTERNCODE)
+         kal_nucleus_timer.obj (INTERNCODE)
+; THREADX-related CODE , SMALL set
+         ; UNDER CONSTRUCTION
+         tx_thread_interrupt_disable.obj (+RO)
+         tx_thread_interrupt_restore.obj (+RO)
+         tx_thread_context_save.obj (+RO)
+         tx_thread_context_restore.obj (+RO)
+         tx_thread_irq_nesting_start.obj (+RO)
+         tx_thread_irq_nesting_end.obj (+RO)
+         tx_thread_system_return.obj (+RO)
+         tx_thread_schedule.obj (+RO)
+         tx_thread_resume.obj (+RO)
+         tx_thread_system_resume.obj (+RO)
+         tx_timer_interrupt.obj (+RO)
+         tx_timer_thread_entry.obj (+RO)
+         tx_block_allocate.obj (+RO)
+         tx_block_release.obj (+RO)
+         tx_event_flags_get.obj (+RO)
+         tx_event_flags_set.obj (+RO)
+         tx_mutex_get.obj (+RO)
+         tx_mutex_put.obj (+RO)
+         kal_threadx_tasks.obj (INTERNCODE)
+         kal_threadx_buff_mgr.obj (INTERNCODE)
+         kal_threadx_itc.obj (INTERNCODE)
+         kal_threadx_timer.obj (INTERNCODE)
+; common used C library
+         memset.o (+RO)
+         rt_memclr.o (+RO)
+         callvia.o (+RO)
+         _sprintf.o (+RO)
+         rt_memcpy.o (+RO)
+         lludiv10.o (+RO)
+         rt_udiv.o (+RO)
+         uread4.o (+RO)
+         uwrite4.o (+RO)
+; INTSRAM_CODE_OBJ_others_6225
+         mpal_gprs_common_func.obj (INTERNCODE)
+         mpal_gprs_dl_msg_hdlr.obj (INTERNCODE)
+         m12160.obj (INTERNCODE)
+         m12170.obj (INTERNCODE)
+         cam_module.obj (INTERNCODE)
+         uart.obj (INTERNCODE)
+         gdi_image_gif.obj (INTERNCODE)
+         gdi_image_direct_gif.obj (INTERNCODE)
+         gdi_mutex.obj (INTERNCODE)
+         gpt.obj (INTERNCODE)
+         *l1dsm.obj (SNORCODE)
+    }
+    INTSRAM_DATA 0xA0007600 0x5A00
+    {
+; system-realted data
+         bootarm.obj (STACK_POOL_INTSRAM)
+         isrentry.obj (INTERNCONST, INTERNRW, INTERNZI)
+         stack_init.obj (INTERNCONST, INTERNRW, INTERNZI)
+         ctrl_buff_pool.obj (INTERNCONST, INTERNRW, INTERNZI)
+         stack_ltlcom.obj (INTERNCONST, INTERNRW, INTERNZI)
+         custom_switchclock.obj (INTERNCONST, INTERNRW, INTERNZI)
+         idle_task.obj (INTERNCONST, INTERNRW, INTERNZI)
+; Nucleus-related data ; Standard set
+         tst*.obj (INTERNCONST, INTERNRW, INTERNZI)
+         tct.obj (+RW, +ZI)
+         tcd.obj (INTERNCONST, INTERNRW, INTERNZI)
+         tmd.obj (+RW, +ZI)
+         evd.obj (+RW, +ZI)
+         pmd.obj (+RW, +ZI)
+         qud.obj (+RW, +ZI)
+         smd.obj (+RW, +ZI)
+; THREADX-related data ; Standard set
+         tx_thread_initialize.obj (+RW, +ZI)
+         tx_timer_initialize.obj (+RW, +ZI)
+; INTSRAM_DATA_OBJ_others_6225
+         mpal_gprs_common_func.obj (INTERNCONST, INTERNRW, INTERNZI)
+         mpal_gprs_dl_msg_hdlr.obj (INTERNCONST, INTERNRW, INTERNZI)
+         m12160.obj (INTERNCONST, INTERNRW, INTERNZI)
+         m12170.obj (INTERNCONST, INTERNRW, INTERNZI)
+         gdi_image.obj (INTERNCONST, INTERNRW, INTERNZI)
+         gdi.obj (INTERNZI)
+         interpret.obj (INTERNZI)
+         sw_jpeg_decoder.obj (INTERNRW1, INTERNZI1)
+         jpeg_encoder.obj (+RW, +ZI)
+         med_main.obj (INTERNRW2, INTERNZI2)
+    }   
+    DYNAMIC_CODE1 0xa000d000 OVERLAY 0x5000
+    {
+         * (AMR515_DYNAMIC_CODE, AMR515_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE2 0xa000d000 OVERLAY 0x5000
+    {
+         * (G3D_DYNAMIC_CODE, G3D_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE3 0xa000d000 OVERLAY 0x5000
+    {
+         * (CTM_DYNAMIC_CODE, CTM_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE4 0xa000d000 OVERLAY 0x5000
+    {
+         * (G729_DYNAMIC_CODE, G729_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE5 0xa000d000 OVERLAY 0x5000
+    {
+         * (SBC_DYNAMIC_CODE, SBC_DYNAMIC_ZI)
+    }
+    INTSRAM_MULTIMEDIA 0x40000000  0xC000
+    {
+         med_main.obj (INTERNRW1, INTERNZI1)
+         isp_comm.obj (INTERNRW1, INTERNZI1)
+    }
+}

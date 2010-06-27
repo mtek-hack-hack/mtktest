@@ -1,0 +1,93 @@
+#----------------------------------------------------
+# This is a setting file for objcheck.pl
+#
+# Usage:
+#
+# <objcheck>
+# 	<info filename="xxx"/>			(target file name, e.g. ScrMemMgr.h)
+# 	<info path="aaa\bbb\ccc"/>	(target file path, e.g. plutommi\mmi\inc)
+#		<info parsingInc="0"/>			(parse all included files or not)
+#		<info type="macro"/>				("obj" for union/struct type, "macro" for #define type, default to "obj")
+#
+# 	<addModuleInc>
+# 	add *.inc here for module include path
+# 	</addModuleInc>
+#
+# 	<addIncPath> 
+# 	add additional include path here
+# 	</addIncPath>
+# 
+# 	<addIncFiles>
+# 	add additional include files here
+#	 	</addIncFiles>
+#
+# 	<addLines> 
+# 	add additional lines here (will be added to the beginning of checking file)
+#		</addLines>
+#
+#		<addPostLines>
+#		add post additional lines (will be added at the end)
+#		</addPostLines>
+#
+# 	<addFeaturesToWatch> 
+# 	add additional features to watch
+#		</addFeaturesToWatch>
+# </objcheck>
+#
+#----------------------------------------------------
+
+# global setting info (do not edit this unless necessary)
+<info removeTmpFile="1"/>
+<info alsoProcessDisabledFeatures="1"/>
+
+#----------------------------------------------------
+# app_mem_config.h
+#----------------------------------------------------
+<objcheck>
+		<info filename="app_mem_config.h"/>
+		<info path="applib\mem\include"/>
+		<info parsingInc="0"/>
+		<info type="macro"/>
+
+		<addModuleInc>
+		plutommi
+		kal
+		</addModuleInc>
+			
+		<addIncFiles>
+		MMI_features.h
+		kal_release.h
+		MMIDataType.h
+		app_mem.h
+		</addIncFiles>
+		
+		<addLines>
+		#define APP_MEM_C			// define this since app_mem_config.h can only used in app_mem.c
+		</addLines>
+</objcheck>
+
+#----------------------------------------------------
+# ScrMemMgr.h
+#----------------------------------------------------
+<objcheck>
+		<info filename="ScrMemMgr.h"/>
+		<info path="plutommi\MMI\Inc"/>
+		<info parsingInc="0"/>
+		<info type="obj"/>
+
+		<addModuleInc>
+		plutommi
+		kal
+		</addModuleInc>
+
+		<addIncFiles>
+		MMI_features.h
+		kal_release.h
+		MMIDataType.h
+		</addIncFiles>
+			
+		<addPostLines>
+		#undef assert		// some files define 'assert' to 'ASSERT', will cause error
+		</addPostLines>			
+</objcheck>
+

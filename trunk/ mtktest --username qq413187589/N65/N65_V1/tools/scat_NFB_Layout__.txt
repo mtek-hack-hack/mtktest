@@ -1,0 +1,361 @@
+;/*****************************************************************************
+;*  Copyright Statement:
+;*  --------------------
+;*  This software is protected by Copyright and the information contained
+;*  herein is confidential. The software may not be copied and the information
+;*  contained herein may not be used or disclosed except with the written
+;*  permission of MediaTek Inc. (C) 2007
+;*
+;*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+;*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+;*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+;*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+;*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+;*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+;*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+;*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+;*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+;*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+;*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+;*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+;*
+;*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+;*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+;*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+;*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+;*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+;*
+;*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+;*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+;*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+;*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+;*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+;*
+;*****************************************************************************/
+;
+;/*****************************************************************************
+; *
+; * Filename:
+; * ---------
+; *   scat_NFB_Layout__.txt
+; *
+; * Project:
+; * --------
+; *   Maui_Software
+; *
+; * Description:
+; * ------------
+; *   Example for NFB scatter file 
+; *
+; * Author:
+; * -------
+; *   Produced by system service team
+; *
+; ****************************************************************************/
+; *============================================================================
+; *             HISTORY
+; * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+; *----------------------------------------------------------------------------
+; * $Revision:$
+; * $Modtime:$
+; * $Log:$
+; *
+; * Sep 27 2007 mtk01077
+; * [MAUI_00551041] [Custom] ScatGen revise for plutommi , mtkapp split into mmi_app , inet_app , conn_a
+; * 
+; *
+; * Sep 21 2007 mtk01077
+; * [MAUI_00551041] [Custom] ScatGen revise for plutommi , mtkapp split into mmi_app , inet_app , conn_a
+; * 
+; *
+; * Sep 12 2007 mtk01077
+; * [MAUI_00546461] [Custom] update scatter file template
+; * 
+; *
+; * Sep 7 2007 mtk01077
+; * [MAUI_00544479] [Custom] ScatGen put more C++ related section on PRIMARY_ROM
+; * 
+; *----------------------------------------------------------------------------
+; * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+;*=============================================================================
+;*****************************************************************************/
+;
+;--------------------
+; SCHEME   : external NAND flash and 32MB LPSDRAM
+; PLATFORM : MT6228
+;--------------------
+
+ROM 0x00 0x800000
+{
+    ROM 0x00 FIXED [0x3E8000]
+    {
+         bootarm.obj                   (C$$code,+First)
+         *.obj                         (LEADING_PART,+First)
+         *.l                           (+RO)
+
+         *adaptation.lib               (+RO)
+         *bmt.lib                      (+RO)
+         *config.lib                   (+RO)
+         *drv.lib                      (+RO)
+         *fdm.lib                      (+RO)
+         *init.lib                     (+RO)
+         *kal.lib                      (+RO)
+         *l1_classb.lib                (+RO)
+         *nucleus.lib                  (+RO)
+         *nucleus_int.lib              (+RO)
+         *nucleus_debug.lib            (+RO)
+         *threadx.lib                  (+RO)
+         *threadx_ctrl_data.lib        (+RO)
+         *threadx_debug.lib            (+RO)
+         *stacklib.lib                 (+RO)
+         *sst.lib                      (+RO)
+         *tst.lib                      (+RO)
+         *fs.lib                       (+RO)
+         *verno.lib                    (+RO)
+
+; C++ related input sections
+         cpp_initialise.o              (+RO)
+         cpp_finalise.o                (+RO)
+         *                             (C$$pi_ctorvec)
+         *                             (C$$pi_dtorvec)
+         *                             (C$$ddtorvec)
+         *                             (C$$ctor)
+         *                             (C$$dtor)
+
+; libs must be in primary ROM
+         *mmi_framework.lib            (+RO)
+         *sw_png_codec.lib             (+RO)
+         *media.lib                    (+RO)
+         *media_sec.lib                (+RO)
+         *j2me_hi.lib                  (+RO)
+
+; libs to balance primary & secondary ROM
+         *dsp_ram.lib                  (+RO)
+         *rr_classb.lib                (+RO)
+         *mm_classb.lib                (+RO)
+         *usb.lib                      (+RO)
+         *nvram.lib                    (+RO)
+         *nvram_sec.lib                (+RO)
+
+; specific objects in custom.lib
+; directory mcu\custom\system
+         custom_emi.obj                (+RO)
+         custom_config.obj             (+RO)
+         custom_switchclock.obj        (+RO)
+         custom_scatstruct.obj         (+RO)
+; directory mcu\custom\drv\common
+         gpio_setting.obj              (+RO)
+; directory mcu\custom\drv\misc_drv
+         adc_channel.obj               (+RO)
+         alerter_tone.obj              (+RO)
+         alerterdrv.obj                (+RO)
+         auxmain.obj                   (+RO)
+         chr_parameter.obj             (+RO)
+         custom_drv_init.obj           (+RO)
+         custom_equipment.obj          (+RO)
+         custom_hw_default.obj         (+RO)
+         eint_def.obj                  (+RO)
+         exif_custom.obj               (+RO)
+         gpio_drv.obj                  (+RO)
+         irda_custom.obj               (+RO)
+         kbdmain_joystick.obj          (+RO)
+         keypad_def.obj                (+RO)
+         msdc_custom.obj               (+RO)
+         pmic_custom.obj               (+RO)
+         pwmdrv.obj                    (+RO)
+         touch_panel_custom.obj        (+RO)
+         touch_panel_spi.obj           (+RO)
+         touchpad.obj                  (+RO)
+         touchpad_keydef.obj           (+RO)
+         tv_custom.obj                 (+RO)
+         uart_def.obj                  (+RO)
+         uem_gpio.obj                  (+RO)
+         usb_custom.obj                (+RO)
+         usb_host_ms_custom.obj        (+RO)
+; directory mcu\custom\drv\misc_drv\BB_folder\codegen
+         adc_var.obj                   (+RO)
+         eint_var.obj                  (+RO)
+         gpio_var.obj                  (+RO)
+         uem_drv.obj                   (+RO)
+; directory mcu\custom\drv\LCD
+         lcd.obj                       (+RO)
+
+; specific objects in mmiresource.lib
+         custNFBProgressImg.obj        (+RO)
+         gui_wrapper.obj               (+RO)
+
+; specific objects in media_app.lib
+         mdi_tv.obj                    (+RO)
+    }
+    DYNAMIC_CODE2 0xa0018800 OVERLAY 0x2800
+    {
+    }
+    DYNAMIC_CODE1 0xa001b000 OVERLAY 0x5000
+    {
+    }
+    DYNAMIC_CODE3 0xa001b000 OVERLAY 0x5000
+    {
+    }
+    DYNAMIC_CODE4 0xa001b000 OVERLAY 0x5000
+    {
+    }
+    DYNAMIC_CODE5 0xa001b000 OVERLAY 0x5000
+    {
+    }
+    PRIMARY_EXTSRAM 0x00400000 FIXED 0x00400000
+    {
+         *.l                           (+RW)
+
+         *adaptation.lib               (+RW)
+         *bmt.lib                      (+RW)
+         *config.lib                   (+RW)
+         *drv.lib                      (+RW)
+         *fdm.lib                      (+RW)
+         *init.lib                     (+RW)
+         *kal.lib                      (+RW)
+         *l1_classb.lib                (+RW)
+         *nucleus.lib                  (+RW)
+         *nucleus_int.lib              (+RW)
+         *nucleus_debug.lib            (+RW)
+         *threadx.lib                  (+RW)
+         *threadx_ctrl_data.lib        (+RW)
+         *threadx_debug.lib            (+RW)
+         *stacklib.lib                 (+RW)
+         *sst.lib                      (+RW)
+         *tst.lib                      (+RW)
+
+; libs must be in primary ROM
+         *mmi_framework.lib            (+RW)
+         *sw_png_codec.lib             (+RW)
+         *media.lib                    (+RW)
+         *media_sec.lib                (+RW)
+         *fs.lib                       (+RW)
+         *verno.lib                    (+RW)
+         *j2me_hi.lib                  (+RW)
+
+; libs to balance primary & secondary ROM
+         *dsp_ram.lib                  (+RW)
+         *rr_classb.lib                (+RW)
+         *mm_classb.lib                (+RW)
+         *usb.lib                      (+RW)
+         *nvram.lib                    (+RW)
+         *nvram_sec.lib                (+RW)
+
+; specific objects in custom.lib
+; directory mcu\custom\system
+         custom_emi.obj                (+RW)
+         custom_config.obj             (+RW)
+         custom_switchclock.obj        (+RW)
+         custom_scatstruct.obj         (+RW)
+; directory mcu\custom\drv\common
+         gpio_setting.obj              (+RW)
+; directory mcu\custom\drv\misc_drv
+         adc_channel.obj               (+RW)
+         alerter_tone.obj              (+RW)
+         alerterdrv.obj                (+RW)
+         auxmain.obj                   (+RW)
+         chr_parameter.obj             (+RW)
+         custom_drv_init.obj           (+RW)
+         custom_equipment.obj          (+RW)
+         custom_hw_default.obj         (+RW)
+         eint_def.obj                  (+RW)
+         exif_custom.obj               (+RW)
+         gpio_drv.obj                  (+RW)
+         irda_custom.obj               (+RW)
+         kbdmain_joystick.obj          (+RW)
+         keypad_def.obj                (+RW)
+         msdc_custom.obj               (+RW)
+         pmic_custom.obj               (+RW)
+         pwmdrv.obj                    (+RW)
+         touch_panel_custom.obj        (+RW)
+         touch_panel_spi.obj           (+RW)
+         touchpad.obj                  (+RW)
+         touchpad_keydef.obj           (+RW)
+         tv_custom.obj                 (+RW)
+         uart_def.obj                  (+RW)
+         uem_gpio.obj                  (+RW)
+         usb_custom.obj                (+RW)
+         usb_host_ms_custom.obj        (+RW)
+; directory mcu\custom\drv\misc_drv\BB_folder\codegen
+         adc_var.obj                   (+RW)
+         eint_var.obj                  (+RW)
+         gpio_var.obj                  (+RW)
+         uem_drv.obj                   (+RW)
+; directory mcu\custom\drv\LCD
+         lcd.obj                       (+RW)
+
+; specific objects in mmiresource.lib
+         custNFBProgressImg.obj        (+RW)
+         gui_wrapper.obj               (+RW)
+
+; specific objects in media_app.lib
+         mdi_tv.obj                    (+RW)
+
+; ZI chunk
+         *                             (+ZI)
+    }
+    INTSRAM_CODE 0xA0000000 0x00010400
+    {
+    }
+    INTSRAM_DATA 0xA0010400 0x00008400
+    {
+    }
+}
+
+SECONDARY_ROM 0x800000 [0x1200000]
+{
+    SECONDARY_ROM 0x00800000 0x400000
+    {
+         .ANY (+RO-CODE)
+    }
+    ROM2 +0x0 0x400000
+    {
+         .ANY (+RO-CODE)
+    }
+    ROM3 +0x0 0x400000
+    {
+         .ANY (+RO-DATA)
+    }
+    ROM4 +0x0 0x400000
+    {
+         .ANY (+RO-DATA)
+    }
+    ROM5 +0x0 0x400000
+    {
+         .ANY (+RO-DATA)
+    }
+    ROM6 +0x0 0x400000
+    {
+         .ANY (+RO-DATA)
+    }
+    SECONDARY_EXTSRAM_LARGEPOOL_NORMAL [0x01700000]
+    {
+; For MT6228, MT6229 projects, app-based ASM always at first due to Java FBBR
+         app_mem.obj (LARGEPOOL_FIRST_ZI)
+         j2me_custom_resource.obj (LARGEPOOL_ZI)
+         med_main.obj (LARGEPOOL_ZI)
+         ScrMemMgr.obj (LARGEPOOL_ZI)
+         ResMemMgr.obj (LARGEPOOL_ZI)
+    }
+    SECONDARY_EXTSRAM +0x00 
+    {
+         *            (+RW)
+         *media.lib   (+ZI)
+         *custom.lib  (+ZI)
+    }
+    DUMMY_END [0x02000000] 0x04
+    {
+         bootarm.obj (DUMMY_POOL)
+    }
+    INTSRAM_MULTIMEDIA 0x40000000 0x00020000
+    {
+    }
+}
+
+THIRD_ROM +0x0
+{
+    THIRD_ROM [0x02000004]
+    {
+         * (NFB3RDROM_HEADER_HINT)
+    }
+}

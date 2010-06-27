@@ -1,0 +1,10 @@
+bootloader\src\bl_BOOTARM.S
+bootloader\src\bl_DBGPRINT.C
+bootloader\src\bl_ImageLoader.c
+bootloader\src\bl_Init.c
+bootloader\src\bl_Main.c
+bootloader\src\bl_NFI.c
+bootloader\src\bl_regioninit.s
+bootloader\src\bl_UART.C
+bootloader\src\bl_verno.c
+custom\system\MT6228_EVB\custom_emi.c

@@ -1,0 +1,3 @@
+#UPDATE#
+aud_common.obj:	custom\common\audcoeff_default.h
+#ENDUPDATE#

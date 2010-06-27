@@ -1,0 +1,341 @@
+;/*****************************************************************************
+;*  Copyright Statement:
+;*  --------------------
+;*  This software is protected by Copyright and the information contained
+;*  herein is confidential. The software may not be copied and the information
+;*  contained herein may not be used or disclosed except with the written
+;*  permission of MediaTek Inc. (C) 2007
+;*
+;*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+;*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+;*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+;*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+;*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+;*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+;*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+;*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+;*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+;*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+;*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+;*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+;*
+;*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+;*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+;*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+;*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+;*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+;*
+;*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+;*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+;*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+;*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+;*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+;*
+;*****************************************************************************/
+;
+;/*****************************************************************************
+; *
+; * Filename:
+; * ---------
+; *   Rules Of Scatter File Auto-gen
+; *
+; * Project:
+; * --------
+; *   Maui_Software
+; *
+; * Description:
+; * ------------
+; *   Collect the conventions and rules of scatter file auto-gen
+; *
+; * Author:
+; * -------
+; *   Produced by system service team
+; *
+; ****************************************************************************/
+; *============================================================================
+; *             HISTORY
+; * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+; *----------------------------------------------------------------------------
+; * $Revision: $
+; * $Modtime: $
+; * $Log: $
+; *
+; * Jan 3 2008 MTK01876
+; * [MAUI_00600128] [SystemService][GEMINI] Modify the configuration to limit the code/FAT size within 1
+; * Modify the configuration to limit the code/FAT size within 128+32 MCP.
+; *
+; * Oct 7 2007 mtk01077
+; * [MAUI_00556300] [Custom] ScatGen add MiscUtils.obj for C++ initialise data referenced
+; * 
+; *
+; * Oct 2 2007 mtk01077
+; * [MAUI_00555137] [Custom] ScatGen Revise for SBNOR affected input sections
+; * 
+; *
+; * Sep 27 2007 mtk01077
+; * [MAUI_00553152] [Custom] ScatGen revise for MT6223 SINGLE BANK CODE
+; * 
+; *
+; * Sep 27 2007 mtk01077
+; * [MAUI_00551041] [Custom] ScatGen revise for plutommi , mtkapp split into mmi_app , inet_app , conn_a
+; * 
+; *
+; * Sep 10 2007 mtk01077
+; * [MAUI_00545331] Move FCS/divider to L1 folder
+; * 
+; *
+; * Sep 7 2007 mtk01077
+; * [MAUI_00544479] [Custom] ScatGen put more C++ related section on PRIMARY_ROM
+; * 
+; *
+; * Sep 7 2007 mtk01077
+; * [MAUI_00544478] [Custom] ScatGen revise for MT6229 Enhaanced Single Bank Support
+; * 
+; *
+; * Sep 6 2007 mtk01077
+; * [MAUI_00543936] [Custom] ScatGen revise for MT6223 Enhanced Single Bank Support
+; * 
+; *
+; * Sep 5 2007 mtk01077
+; * [MAUI_00541100] [Custom] ScatGen revise to prevent link error
+; * 
+; *
+; * Sep 1 2007 mtk01077
+; * [MAUI_00541104] [DYNAMIC_CODE] REVERB, RESAMPLE, WAV merge to SBC
+; * 
+; *
+; * Sep 1 2007 mtk01077
+; * [MAUI_00541100] [Custom] ScatGen revise to prevent link error
+; * 
+; *
+; * Aug 30 2007 mtk01077
+; * [MAUI_00539858] [Custom] Scatter file AutoGen 64MB layout fine tune
+; * 
+; *
+; * Aug 23 2007 mtk01077
+; * [MAUI_00537290] [Custom] scatGen NFB Layout re-define for 32MB/64MB memory density
+; * ''
+; *
+; * Aug 10 2007 mtk01077
+; * [MAUI_00532746] [INIT] MT6223 CTM support via INTSRAM Dynamic Code
+; * 
+; *
+; * Aug 3 2007 mtk01077
+; * [MAUI_00529459] [INTSRAM Config] add gpt.obj on MT6225 platform
+; * ''
+; *
+; * Aug 2 2007 mtk01077
+; * [MAUI_00528923] [Custom] scatGen work around for LCD HW 32MB limit
+; * 
+; *
+; * Jul 23 2007 mtk01077
+; * [MAUI_00419914] [Custom] scatGen revise for limit ROM length on 24MB on MT6228/29 platform
+; * 
+; *
+; * Jul 20 2007 mtk01077
+; * [MAUI_00419217] [Config] Optimize DSP TX RX region size usage
+; * 
+; *
+; * Jul 17 2007 mtk01077
+; * [MAUI_00417973] [Custom] scatGen revise for MT6223 support Enhanced Single Bank
+; * 
+; *
+; * Jul 9 2007 mtk01077
+; * [MAUI_00414438] [Custom] scatter file AutoGen update aes_engine.obj for drm_util.obj
+; * 
+; *
+; * Jun 26 2007 mtk01077
+; * [MAUI_00409287] [Custom] scatter file AutoGen MT6227D add pmic6318 into INTSRAM
+; * 
+; *
+; * Jun 21 2007 mtk01077
+; * [MAUI_00407821] [Custom] scatter AutoGen add secure platforms
+; * 
+; *
+; * Jun 13 2007 mtk01077
+; * [MAUI_00404579] [Config] take out gpt.obj lpwr.obj (INTERDATA) on MT6227 platform
+; * 
+; *----------------------------------------------------------------------------
+; * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+; *============================================================================
+;*****************************************************************************/
+
+
+ (A) Version Description
+ =======================
+
+ 1. Version conventions
+ ======================
+     For each revision on scatter file auto-gen, one unique version number was
+     assigned. The output scatter file carries this version number in the header
+     of scatter file. For example:
+
+; * Author:
+; * -------
+; *   system auto generator v0.42
+; *
+
+     The version number is simply an incremental digit [d.dd] with the prefix 'v'. 
+     The larger number means the scatter file generated by the newer auto-gen
+     tool.
+
+
+ 2. MP branch patch
+ ==================
+     Indicate the time stamp that a MP branch was created from ABC active branch. 
+     The version number was frozen. However, in case of scatter file patch applied 
+     on the MP branch, the latest patched version number will be appended after 
+     frozen version. For example:
+
+; * Author:
+; * -------
+; *   system auto generator v0.42 -> p0.55
+; *
+
+     Where v0.42 is the last revised version number and p0.55 means the last
+     updated patch applied from v0.55 revision on active branch.
+
+     
+ 3. Active branches
+ ==================
+     The version number for scatter file is unique and independent from active
+     branches such as 06B, 07A branch and main-trunk. Sometimes, a scatter
+     file revise is aim for new feature/platform on main-trunk thus the version
+     number on ABC branch will not increment. Then the version number on ABC
+     branch will hop to the same version number of main-trunk when next revision
+     applied on both main-trunk and ABC branch. Such version hopping will help
+     to maintain and track history of scatter file revision.
+
+     Year-Month    Version Number (main-trunk)     Version Number (ABC branch)
+     2007-04       v0.42                           v0.42
+     2007-05       v0.45                           v0.42
+     2007-06       v0.48                           v0.48
+
+
+ 4. Latest version
+ =================
+     Here is the latest version number in scatter file header.
+
+; * Author:
+; * -------
+; *   system auto generator v0.96
+; *
+ 
+ 
+ (B) Auto-gen Rule
+ =================
+
+ 1. Template Naming Convention
+ ====================
+     Regions that put load binary named with ROM, for example ROM0 ROM1 ROM2 ...
+     Regions that put misc run-time data named with SRAM, 
+     for example EXTSRAM EXTSRAM_LARGEPOOL_NORMAL ...
+     all comment line begin with ';'
+     The customizable value is quoted by '[' and ']'
+
+
+ 2. Generate Rules
+ =================
+     The scatter file auto-gen base on the Makefile and custom_EMI.h setting.
+     Where Makefile determine the scatter file layout and input sections.
+     custom_EMI.h affect the address and length.
+
+     Except the platform related options, input sections always contain the 
+     features' superset that customer could change freely.
+
+     Here is the Makfile option list that scatter file auto-gen referenced.
+
+     PLATFORM                                  : define BB-chips
+     FOTA_ENABLE                               : manual config required
+     NAND_FLASH_BOOTING                        : affect layout
+     SECURE_SUPPORT                            : affect layout
+     MULTIPLE_BINARY_FILES                     : affect layout
+     ENHANCED_SINGLE_BANK_NOR_FLASH_SUPPORT    : affect layout, input sections
+     SINGLE_BANK_NOR_FLASH_SUPPORT             : affect input sections
+     J2ME_SUPPORT                              : If JBLENDA, add execution view
+     OPENGL                                    : If not NONE, add execution view
+
+     All of the above Makefile options are not switchable.
+     Customer have to request new SW release if the global option changed.
+  
+ 
+ (C) Layout of Scatter File
+ ==========================
+ There are a few factors which greatly impact the layout of scatter file, each of
+ them will be illustrated in the following sections.
+ 
+
+ 1. BB-chips
+ ===========
+ Each BB-chip might associate with different size of internal SRAM (system RAM)
+ or TCM (if any), their physical starting address and length must be set
+ accordingly.
+ 
+ Internal SRAM is an elementary component for all MTK BB-chip, while TCM is existed
+ on MT6228, MT6229, MT6230 and MT6225.
+ 
+ To fit into the size, the following items are also varied for each BB-chip.
+ a. Input sections of the two execution regions, internal SRAM and TCM
+    Only the most timing critical or regularly executed .obj files will be 
+    placed in these regions. 
+    Strongly suggest not to modify the input sections willingly.
+    Please refer to scat_INTSRAM_Layout__.txt
+
+ b. Overlay regions
+    These regions are associated with feature of Dynamic Code Download (DCM),
+    aims at sharing a common execution or data pool among different function
+    modules, which are mutually exclusive.
+    The overlay regions might locate at TCM, for BB-chip has no TCM, it is 
+    located at internal SRAM instead. The size is 20KB typically, major for
+    audio CODEC.
+    Please refer to scat_INTSRAM_Layout__.txt
+    
+ Of course, the number of EMI chip selects, their relative starting address 
+ could also affect the start address of load regions, even execution regions. To
+ keep consistency, except MT6205B, start address of MTK BB-chip EMI chip select
+ is listed below,
+ a. Chip Select 0: 0x00000000
+ b. Chip Select 1: 0x08000000
+ c. Chip Select 2: 0x10000000
+ d. Chip Select 3: 0x18000000
+ e. Chip Select 4: 0x20000000 (For BB-chip which has more than 4 EMI chip select)
+ f. Chip Select 5: 0x28000000 (For BB-chip which has more than 4 EMI chip select)
+ g. Chip Select 6: 0x30000000 (For BB-chip which has more than 4 EMI chip select)
+ h. Chip Select 7: 0x38000000 (For BB-chip which has more than 4 EMI chip select)
+
+
+ 2. Memory Devices
+ =================
+ The major impact of memory devices is the length of both load region and
+ execution regions, also the start address of load region other than the root 
+ load region.
+ 
+ Besides, different boot mode brings in different layout as well, they are 
+ depicted in the attached template
+ a. NFB: 
+    Please refer to scat_NFB_Layout__.txt, it is shared among MT6228, MT6229, 
+    MT6230 and MT6225.
+ b. NOR-flash multi-bank:
+    Please refer to scat_NOR_Layout__.txt, it is shared among all BB-chip
+ c. NOR-flash enhanced single-bank (MT6226/7 series, MT6225):
+    Please refer to scat_ESBNOR_Layout__.txt
+ 
+ 
+ 3. Software Features Deployment
+ ===============================
+ Software features which are memory layout related will result in the change
+ of scatter file while deployment. For example,
+ a. Multi-bin (NFB not support multi-bin)
+    Please refer to scat_MULTIPLEBINARY_Layout__.txt
+ b. Secure platform (Multi-bin and secure platform must be exclusive)
+    Please refer to scat_SECURE_Layout__.txt
+ c. Firmware Update Over The Air (FOTA, exclusive with secure platform)
+    Please refer to scat_FOTA_Layout__.txt
+ 
+ 
+ 4. Workaround to Avoid the Bug of ADS Linker
+ ============================================
+ Execution region of RO-CODE cannot exceed 4MB. So there are more than 1 ROM
+ execution regions.
+
+ 

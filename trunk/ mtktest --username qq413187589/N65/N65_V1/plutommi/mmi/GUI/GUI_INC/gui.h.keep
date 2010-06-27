@@ -1,0 +1,589 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MediaTek Inc. (C) 2002
+*
+*****************************************************************************/
+
+/*****************************************************************************
+ *
+ * Filename:
+ * ---------
+ *   gui.h
+ *
+ * Project:
+ * --------
+ *   MAUI
+ *
+ * Description:
+ * ------------
+ *   Primitive UI variables & wrappers
+ *
+ * Author:
+ * -------
+ *   JL Lee (mtk00463)
+ *   Leo Hu (mtk00563)
+ *   Justin Chuang (mtk00658)
+ *
+ *==============================================================================
+ * 				HISTORY
+ * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!! 
+ *------------------------------------------------------------------------------
+ * $Revision:   1.45  $ 
+ * $Modtime:   Feb 25 2005 23:08:16  $
+ * $Log:   //mtkvs01/vmdata/Maui_sw/archives/mcu/plutommi/MMI/GUI/GUI_INC/gui.h-arc  $
+ * 
+ *    Rev 1.45   Feb 25 2005 23:09:12   mtk00658
+ * Add file header
+ * Resolution for 8475: [GUI][Revise] Revise code of basic UI components
+ *
+ *------------------------------------------------------------------------------
+ * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!! 
+ *==============================================================================
+ *******************************************************************************/
+
+/**
+ *	Copyright Notice
+ *	?2002 - 2003, Pixtel Communications, Inc., 1489 43rd Ave. W.,
+ *	Vancouver, B.C. V6M 4K8 Canada. All Rights Reserved.
+ *  (It is illegal to remove this copyright notice from this software or any
+ *  portion of it)
+ */
+
+/**********************************************************************************
+	Filename:		gui.h
+	Author:			manju
+	Date Created:	August-13-2002
+	Contains:		PixTel UI routines header
+					Contains several parts and has been split to multiple
+					code files. See other files named gui_*.c and gui_*.h
+					This file contains common functions and data (prototypes only).
+**********************************************************************************/
+
+#ifndef __GUI_H__
+#define __GUI_H__
+
+#include "stdC.h"
+#include "CustDataRes.h"
+#include "gui_config.h"
+#include "CustThemesRes.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+/*	global device screen size							*/
+extern s32	UI_device_width;
+extern s32	UI_device_height;
+
+/*	UI globals											*/
+extern s32 UI_clip_x1;
+extern s32 UI_clip_y1;
+extern s32 UI_clip_x2;
+extern s32 UI_clip_y2;
+extern s32 UI_old_clip_x1;
+extern s32 UI_old_clip_y1;
+extern s32 UI_old_clip_x2;
+extern s32 UI_old_clip_y2;
+extern s32 UI_text_x;
+extern s32 UI_text_y;
+extern s32 UI_text_height;
+extern s32 UI_pointer_x;
+extern s32 UI_pointer_y;
+extern color UI_text_color;
+extern color UI_text_border_color;
+extern byte UI_printf_buffer[];
+
+/*	MACRO:	calculates the percentage					*/
+#define pixtel_percent(x,p)	((x)*(p)/(100))
+
+/*	MACRO:	toggles a value								*/
+#define pixtel_toggle(x)	x=(byte)((x)?0:1)
+
+/*	MACRO:	divides, adds 1 if there is a remainder		*/
+#define pixtel_highdivide(x,y)	((((x)%(y))>0)?(((x)/(y))+1):((x)/(y)))
+
+/*	Base functions required by the UI system:		*/
+/*	All UI components will use these functions		*/
+/*	And will not directly use any other OS/system	*/
+/*	related functions.								*/
+
+extern void		(*pixtel_UI_putpixel)(s32 x,s32 y,color c);
+extern void		(*pixtel_UI_draw_vertical_line)(s32 y1,s32 y2,s32 x,color c);
+//MTK ISSUE 30
+extern void		(*pixtel_UI_draw_vert_line_type)(s32 y1,s32 y2,s32 x,color c,S32 type_line);
+extern void		(*pixtel_UI_draw_hori_line_type)(s32 x1,s32 x2,s32 y,color c,S32 type_line);
+extern void		(*pixtel_UI_draw_rectangle_type)(s32 x1,s32 y1,s32 x2,s32 y2,color c,S32 type_line);
+//MTK ISSUE 30 END
+extern void		(*pixtel_UI_draw_horizontal_line)(s32 x1,s32 x2,s32 y,color c);
+extern void		(*pixtel_UI_line)(s32 x1,s32 y1,s32 x2,s32 y2,color c);
+extern void		(*pixtel_UI_wline)(s32 x1,s32 y1,s32 x2,s32 y2,color c,s32 w);
+extern void		(*pixtel_UI_draw_rectangle)(s32 x1,s32 y1,s32 x2,s32 y2,color c);
+extern void		(*pixtel_UI_fill_rectangle)(s32 x1,s32 y1,s32 x2,s32 y2,color c);
+extern void		(*pixtel_UI_cross_hatch_fill_rectangle)(s32 x1,s32 y1,s32 x2,s32 y2,color c);
+extern void		(*pixtel_UI_hatch_fill_rectangle)(s32 x1,s32 y1,s32 x2,s32 y2,color c);
+extern void		(*pixtel_UI_alternate_cross_hatch_fill_rectangle)(s32 x1,s32 y1,s32 x2,s32 y2,color c1,color c2);
+extern void		(*pixtel_UI_alternate_hatch_fill_rectangle)(s32 x1,s32 y1,s32 x2,s32 y2,color c1,color c2);
+
+extern void		(*pixtel_UI_set_text_clip)(s32 x1,s32 y1,s32 x2,s32 y2);
+extern void		(*pixtel_UI_get_text_clip)(s32 *x1,s32 *y1,s32 *x2,s32 *y2);
+extern void		(*pixtel_UI_set_text_clip_preset)(s32 x1,s32 y1,s32 x2,s32 y2);
+extern void		(*pixtel_UI_set_clip)(s32 x1,s32 y1,s32 x2,s32 y2);
+extern void		(*pixtel_UI_get_clip)(s32 *x1,s32 *y1,s32 *x2,s32 *y2);
+extern void		(*pixtel_UI_set_clip_preset)(s32 x1,s32 y1,s32 x2,s32 y2);
+extern void		(*pixtel_UI_reset_clip)(void);
+extern void		(*pixtel_UI_push_text_clip)(void);
+extern void		(*pixtel_UI_pop_text_clip)(void);
+extern void		(*pixtel_UI_push_clip)(void);
+extern void		(*pixtel_UI_pop_clip)(void);
+extern void		(*pixtel_UI_reset_text_clip)(void);
+
+extern void		(*pixtel_UI_set_line_height)(s32 height);
+extern void		(*pixtel_UI_move_text_cursor)(s32 x,s32 y);
+extern void		(*pixtel_UI_set_text_color)(color c);
+extern void		(*pixtel_UI_set_text_border_color)(color c);
+extern s32		(*pixtel_UI_printf)(const s8* format,...);
+extern s32		(*pixtel_UI_sprintf)(UI_string_type _text,const s8* format,...);
+extern void		(*pixtel_UI_print_text)(UI_string_type _text);
+/*MTK add to support print n characters*/
+extern void		(*pixtel_UI_print_text_n)(UI_string_type _text,int _n);
+extern void		(*pixtel_UI_print_bordered_text_n)(UI_string_type _text,int _n);
+/*MTK end*/
+extern void		(*pixtel_UI_print_bordered_text)(UI_string_type _text);
+extern void		(*pixtel_UI_print_character)(UI_character_type _c);
+//MTK Elvis for Thai
+//MTK Elvis for stacked character
+extern void		(*pixtel_UI_print_stacked_character)(UI_character_type _curCh, UI_character_type _pre2Ch, UI_character_type _preCh);
+extern void		(*pixtel_UI_print_bordered_stacked_character)(UI_character_type _curCh, UI_character_type _pre2Ch, UI_character_type _preCh);
+//MTK end
+
+//MTK Leo add
+extern void		(*pixtel_UI_print_bordered_character)(UI_character_type _c);
+//MTK Leo end
+
+extern byte		pixtel_UI_print_truncated_text2(s32 x,s32 y,s32 xwidth,UI_string_type *s);
+extern byte		pixtel_UI_print_truncated_bordered_text2(s32 x,s32 y,s32 xwidth,UI_string_type *s);
+
+extern void*	(*pixtel_UI_malloc)(size_t size);
+extern void		(*pixtel_UI_free)(void *ptr);
+
+extern s32		(*pixtel_UI_get_character_width)(UI_character_type c);
+extern void		(*pixtel_UI_measure_character)(UI_character_type c,s32 *width,s32 *height);
+extern s32		(*pixtel_UI_get_character_height)(void);
+extern s32		(*pixtel_UI_get_string_width)(UI_string_type text);
+extern s32		(*pixtel_UI_get_string_width_n)(UI_string_type text,s32 n);
+extern s32		(*pixtel_UI_get_string_width_w)(UI_string_type text,s32 w);
+extern s32		(*pixtel_UI_get_string_width_wn)(UI_string_type text,s32 w,s32 n);
+extern s32		(*pixtel_UI_get_string_height)(UI_string_type text);
+extern void		(*pixtel_UI_measure_string)(UI_string_type text,s32 *width,s32 *height);
+extern void		(*pixtel_UI_measure_string_n)(UI_string_type text,s32 n,s32 *width,s32 *height);
+extern void		(*pixtel_UI_measure_string_w)(UI_string_type text,s32 w,s32 *width,s32 *height);
+extern void		(*pixtel_UI_measure_string_wn)(UI_string_type text,s32 w,s32 n,s32 *width,s32 *height);
+
+extern void		(*pixtel_UI_set_font)(UI_font_type f);
+extern void		(*pixtel_UI_show_image)(s32 x,s32 y,UI_image_type i);
+extern void		(*pixtel_UI_show_transparent_image)(s32 x,s32 y,UI_image_type i,UI_transparent_color_type t);
+extern void		(*pixtel_UI_measure_image)(UI_image_type i,s32 *width,s32 *height);
+extern s32		(*pixtel_UI_image_n_frames)(UI_image_type i);
+extern void		(*pixtel_UI_start_timer)(s32 count,void (*callback)(void));
+extern void		(*pixtel_UI_cancel_timer)(void (*callback)(void));
+extern void		(*pixtel_UI_hide_animated_image)(s32 x,s32 y,UI_animated_image_handle i);
+extern void		(*pixtel_UI_register_hide_animation_frame)(UI_animated_image_handle i,void (*f)(s32 x1,s32 y1,s32 x2,s32 y2));
+extern byte		(*pixtel_UI_show_transparent_animated_image_frame)(s32 x,s32 y,UI_image_type i,UI_transparent_color_type t,s16 frame_number);
+extern byte		(*pixtel_UI_show_animated_image_frame)(s32 x,s32 y,UI_image_type i,s16 frame_number);
+extern void		(*pixtel_UI_hide_animations)(void);
+
+//extern UI_animated_image_handle		(*pixtel_UI_show_transparent_animated_image)(s32 x,s32 y,UI_image_type i,UI_transparent_color_type t);
+extern UI_animated_image_handle		(*pixtel_UI_show_transparent_animated_image_frames)(s32 x,s32 y,UI_image_type i,UI_transparent_color_type t,s16 start_frame,s16 end_frame);
+//extern UI_animated_image_handle		(*pixtel_UI_show_animated_image)(s32 x,s32 y,UI_image_type i);
+extern UI_transparent_color_type	(*pixtel_UI_transparent_color)(byte r,byte g,byte b);
+extern color						(*pixtel_UI_color)(byte r,byte g,byte b);
+extern color						(*pixtel_UI_color32)(byte r,byte g,byte b,byte alpha);
+extern void							(*pixtel_UI_color_RGB)(color c,byte *r,byte *g,byte *b);
+extern UI_string_type				(*pixtel_UI_strcpy)(UI_string_type text1,UI_string_type text2);
+extern UI_string_type				(*pixtel_UI_strncpy)(UI_string_type text1,UI_string_type text2,s32 n);
+extern s32							(*pixtel_UI_strcmp)(UI_string_type text1,UI_string_type text2);
+extern s32							(*pixtel_UI_strlen)(UI_string_type text);
+extern s32							(*pixtel_UI_strncmp)(UI_string_type text1,UI_string_type text2,s32 n);
+extern UI_string_type				(*pixtel_UI_strcat)(UI_string_type text1,UI_string_type text2);
+extern UI_string_type				(*pixtel_UI_itoa)(s32 value, UI_string_type s, s32 radix );
+extern s32							(*pixtel_UI_atoi)(UI_string_type s);
+extern void*						(*pixtel_UI_memcpy)(void *d,const void *s,s32 n);
+extern UI_character_type			(*pixtel_UI_get_next_character)(UI_string_type *s);
+extern UI_character_type			(*pixtel_UI_get_previous_character)(UI_string_type *s);
+
+/* MTK00612 Bear */
+#ifdef MMI_ON_HARDWARE_P
+extern void mtk_animation_cyclic(void);
+extern void mtk_show_animation(s32 x,s32 y,byte *image);
+extern void mtk_show_animation_frames(s32 x,s32 y,byte *image,s32 start_frame);
+#endif
+/* MTK00612 Bear End */
+
+
+#if(UI_DOUBLE_BUFFER_SUPPORT)
+
+extern void		(*pixtel_UI_BLT_double_buffer)(s32 x1,s32 y1,s32 x2,s32 y2);
+extern void		(*pixtel_UI_lock_double_buffer)(void);
+extern void		(*pixtel_UI_unlock_double_buffer)(void);
+
+#endif
+
+/* Supported image type */
+#define IMAGE_TYPE_INVALID						0
+#define IMAGE_TYPE_BMP							1
+#define IMAGE_TYPE_BMP_SEQUENCE				2
+#define IMAGE_TYPE_GIF							3
+#define IMAGE_TYPE_DEVICE_BITMAP				4
+#define IMAGE_TYPE_DEVICE_BITMAP_SEQUENCE	5
+#define IMAGE_TYPE_BMP_FILE					6
+#define IMAGE_TYPE_GIF_FILE					7
+#define IMAGE_TYPE_WBMP_FILE					8
+#define IMAGE_TYPE_JPG							9
+#define IMAGE_TYPE_JPG_FILE					10
+#define IMAGE_TYPE_WBMP							11
+/* 120304 Calvin added */
+#define IMAGE_TYPE_AVI							12
+#define IMAGE_TYPE_AVI_FILE					13
+#define IMAGE_TYPE_3GP							14
+#define IMAGE_TYPE_3GP_FILE					15
+#define IMAGE_TYPE_MP4							16
+#define IMAGE_TYPE_MP4_FILE					17
+/* Calvin end */
+#define IMAGE_TYPE_JPG_SEQUENCE				18//021705 Calvin added
+
+/*	Some standard functions: Need to be implemented through wrappers.		*/
+/*	See the character set support functions, pixtel_UI_get_next_character	*/
+/*	and pixtel_UI_get_previous_character									*/
+
+byte pixtel_UI_linebreak_character(UI_character_type c);
+byte pixtel_UI_endofstring_character(UI_character_type c);
+
+#define	UI_GRADIENT_COLOR_VERTICAL				0x00000100
+#define	UI_GRADIENT_COLOR_HORIZONTAL			0x00000000
+#define UI_GRADIENT_COLOR_FLIP					0x00000200
+
+void pixtel_UI_initialize_gradient_color(gradient_color *gc,color *c,byte *p,byte n);
+void pixtel_UI_gradient_fill_rectangle(s32 x1,s32 y1,s32 x2,s32 y2,gradient_color *gc,dword flags);
+
+/*	Filled Area border theme						*/
+typedef struct _UI_filled_area_border_theme
+{	color	filled_area_outer_light_border;
+	color	filled_area_inner_light_border;
+	color	filled_area_outer_dark_border;
+	color	filled_area_inner_dark_border;
+} UI_filled_area_border_theme;
+
+extern UI_filled_area_border_theme	*current_filled_area_border_theme;
+
+/*	UI filled area structure
+	-------------------
+	bits 0-7:			filler type
+	bit	 8:				1=vertical filler, 0=horizontal filler (used for gradients and textures)
+	bit  9:				flip filler
+	bit	 10:
+	bit  11:
+	bit	 12:			border yes/no
+	bit  13:			border size 0=single line, 1=double line
+	bit  14:			3D border
+	bit  15:			rounded border
+	bit	 16:			1=elevated border, 0=depressed border
+	bit	 17:			1=filled area with shadow
+	bit  18:            1=filled area with double line shadow, 0=single line shadow
+*/
+
+#define	UI_FILLED_AREA_TYPE_COLOR							0x00000000
+#define UI_FILLED_AREA_TYPE_GRADIENT_COLOR					0x00000001
+#define UI_FILLED_AREA_TYPE_TEXTURE							0x00000002
+#define UI_FILLED_AREA_TYPE_BITMAP							0x00000003
+#define	UI_FILLED_AREA_TYPE_HATCH_COLOR						0x00000004
+#define UI_FILLED_AREA_TYPE_ALTERNATE_HATCH_COLOR			0x00000005
+#define UI_FILLED_AREA_TYPE_CROSS_HATCH_COLOR				0x00000006
+#define UI_FILLED_AREA_TYPE_ALTERNATE_CROSS_HATCH_COLOR		0x00000007
+#define UI_FILLED_AREA_TYPE_NO_BACKGROUND					0x00000008
+#define UI_FILLED_AREA_TYPE_CUSTOM_FILL_TYPE1				0x00000009
+#define UI_FILLED_AREA_HORIZONTAL_FILL						0x00000000
+#define UI_FILLED_AREA_VERTICAL_FILL						0x00000100
+#define	UI_FILLED_AREA_FLIP_FILL							0x00000200
+#define UI_FILLED_AREA_TYPE_NO_BORDER						0x00000000
+#define UI_FILLED_AREA_BORDER								0x00001000
+#define UI_FILLED_AREA_SINGLE_BORDER						0x00001000
+#define UI_FILLED_AREA_DOUBLE_BORDER						0x00003000
+#define UI_FILLED_AREA_3D_BORDER							0x00004000
+#define UI_FILLED_AREA_ROUNDED_BORDER						0x00008000
+#define UI_FILLED_AREA_ELEVATED_BORDER						0x00010000
+#define UI_FILLED_AREA_DEPRESSED_BORDER						0x00000000
+#define UI_FILLED_AREA_3D_ELEVATED_BORDER					0x00014000
+#define UI_FILLED_AREA_3D_DEPRESSED_BORDER					0x00004000
+#define UI_FILLED_AREA_SHADOW								0x00020000
+#define UI_FILLED_AREA_SHADOW_DOUBLE_LINE					0x00040000
+
+extern UI_filled_area *current_UI_filler;
+
+void pixtel_UI_shadow_filled_area(s32 x1,s32 y1,s32 x2,s32 y2,UI_filled_area *f);
+void pixtel_UI_draw_filled_area(s32 x1,s32 y1,s32 x2,s32 y2,UI_filled_area *f);
+
+void pixtel_UI_greyscale_rectangle(s32 x1,s32 y1,s32 x2,s32 y2, s32 white_value);
+
+typedef struct _UI_HLS_color
+{ 
+	/* Hue */
+	U16		h;		/* 0-360 */
+	/* Lightness */
+	U8			l; 	/* 0-255 */
+	/* Saturation */
+	U8			s;		/* 0-255 */
+} UI_HLS_color;
+void pixtel_UI_RGB_to_HLS(color rgb, UI_HLS_color *hls);
+void pixtel_UI_HLS_to_RGB(UI_HLS_color hls, color *rgb);
+
+/*	UI object co-ordinates structure			*/
+
+typedef struct _UI_object_coordinates
+{	s32	x;
+	s32	y;
+	s32	width;
+	s32	height;
+} UI_object_coordinates;
+
+/*	Dummy functions called by UI elements by default, during events
+	Do not remove any of these functions.	*/
+
+void UI_dummy_function(void);
+void UI_dummy_function_byte(byte a);
+void UI_dummy_function_s32(s32 a);
+void UI_dummy_function_character(UI_character_type c);
+
+/*	Functions for switching graphics context	*/
+
+void UI_set_main_LCD_graphics_context(void);
+void UI_set_sub_LCD_graphics_context(void);
+byte UI_test_sub_LCD_graphics_context(void);
+
+/*	Function to print truncated text	*/
+void pixtel_UI_print_truncated_text(s32 x,s32 y,s32 xwidth,UI_string_type s);
+//MTK Leo add
+void pixtel_UI_print_truncated_borderd_text(s32 x,s32 y,s32 xwidth,UI_string_type s);
+//MTK Leo end
+
+/*	Common string macros	*/
+
+#ifdef __ASCII
+
+#define UI_STRING_GET_NEXT_CHARACTER(p,c)																	\
+		{																									\
+			(c)=*((byte*)(p))++;																			\
+		}
+
+#define UI_STRING_GET_PREVIOUS_CHARACTER(p,c)																\
+		{																									\
+			(c)=*(--((byte*)(p)));																			\
+		}
+
+#define UI_STRING_INSERT_CHARACTER(p,c)																		\
+		{																									\
+			*((byte*)(p))++=(c);																			\
+		}
+
+#endif
+
+#ifdef __UCS2_ENCODING
+
+/*	Warning: Currently, these macros assume Little endian format only	*/
+
+#define UI_STRING_GET_NEXT_CHARACTER(p,c)																	\
+		{																									\
+			c=(UI_character_type)((*((p)+0))|((*((p)+1))<<8));												\
+			(p)+=2;																							\
+		}
+
+#define UI_STRING_GET_PREVIOUS_CHARACTER(p,c)																\
+		{																									\
+			p-=2;																							\
+			c=(UI_character_type)((*((p)+0))|((*((p)+1))<<8));												\
+		}
+
+#define UI_STRING_INSERT_CHARACTER(p,c)																		\
+		{																									\
+			(*((p))++)=(byte)(((c)&0xff));																	\
+			(*((p))++)=(byte)(((c)>>8));																	\
+		}
+//Pixtel - 2/6/04 - Gurinder - General purpose macro funtion added to delete last character from the string.
+#if defined(__MMI_PLUTO_GPRS__)
+#define UI_STRING_DELETE_LAST_CHARACTER(p,l) {	p=p+l-4;	(*((p))++)=(*(p+2));	(*((p))++)=(*(p+2));	l=l-2;	}
+#endif
+//Pixtel End
+#endif
+
+#define UI_TEST_CR_CHARACTER(c)					(((UI_character_type)(c)==(UI_character_type)0x0D)?(1):(0))
+
+#define UI_TEST_LF_CHARACTER(c)					(((UI_character_type)(c)==(UI_character_type)0x0A)?(1):(0))
+
+#define UI_TEST_ESC_CHARACTER(c)				(((UI_character_type)(c)==(UI_character_type)0x1B)?(1):(0))
+
+#define UI_STRING_LINE_BREAK_CHARACTER(c)		(((UI_character_type)(c)==(UI_character_type)'\n')?(1):(0))
+
+#define UI_STRING_END_OF_STRING_CHARACTER(c)	(((UI_character_type)(c)==(UI_character_type)'\0')?(1):(0))
+
+#define UI_STRING_SPACE_CHARACTER(c)			(((UI_character_type)(c)==(UI_character_type)' ')?(1):(0))
+
+#define UI_TEST_8895_1_CHAR_IN_GSM_DEF_CHAR(c)	(((c)==163 ||(c)==165 || (c)==232 ||(c)==233 ||(c)==249 ||(c)==236 ||(c)==242 ||(c)==199 ||(c)==216 ||(c)==248 ||(c)==197 ||(c)==229 ||(c)==198 ||(c)==230 ||(c)==223 ||(c)==200 ||(c)==164 ||(c)==161 ||(c)==196 ||(c)==214 ||(c)==209 ||(c)==220 ||(c)==167 ||(c)==191 ||(c)==228 ||(c)==246 ||(c)==241 ||(c)==252 ||(c)==224)?(1):(0))
+													   
+
+#define UI_TEST_UCS2_CHARACTER(c)				(((c)&0xff80) && ( !UI_TEST_8895_1_CHAR_IN_GSM_DEF_CHAR(c)))?(1):(0)
+
+#define UI_TEST_UCS2_INCREMENT_COUNT(c,count)	if(UI_TEST_UCS2_CHARACTER(c)) ((count)++)
+
+#define UI_TEST_UCS2_DECREMENT_COUNT(c,count)	if(UI_TEST_UCS2_CHARACTER(c) && ((count)>0)) ((count)--)
+
+#define UI_UCS2_STRING_HALF_LENGTH(x)			(((x)&3)?(((x)>>1)+1):((x)>>1))
+
+#define UI_UCS2_STRING_HALF_LENGTH_MINUS_ONE(x)	(((x)&3)?(((x)>>1)-1):(((x)>>1)-2))
+
+#define UI_UCS2_STRING_HALF_LENGTH_MINUS_FORTYFOUR(x)	(((x)&3)?(((x)>>1)-87):(((x)>>1)-88))
+
+#define UI_HINDI_CHARACTER_UCS2_RANGE(x)		( (((U16)(x) > 0x900)&&((U16)(x) < 0x971) || ((U16)(x)>59647 && (U16)(x)<59828))?(1) : (0) )
+
+#define UI_TEST_UCS2_INCREMENT_COUNT_SET_LENGTH(c,count,allocated_length,length)							\
+		{	if(UI_TEST_UCS2_CHARACTER(c))																	\
+			{	if((count)==0) (length)=UI_UCS2_STRING_HALF_LENGTH(allocated_length);						\
+				(count)++;																					\
+			}																								\
+		}
+
+/*	Added for n/2-1 Chinese characters input mode	*/
+#define UI_TEST_UCS2_INCREMENT_COUNT_SET_LENGTH_TYPE2(c,count,allocated_length,length)						\
+		{	if(UI_TEST_UCS2_CHARACTER(c))																	\
+			{	if((count)==0) (length)=UI_UCS2_STRING_HALF_LENGTH_MINUS_ONE(allocated_length);				\
+				(count)++;																					\
+			}																								\
+		}
+/*	Added for n/2-44 Chinese characters input mode	*/
+#define UI_TEST_UCS2_INCREMENT_COUNT_SET_LENGTH_TYPE3(c,count,allocated_length,length)						\
+		{	if(UI_TEST_UCS2_CHARACTER(c))																	\
+			{	if((count)==0) (length)=UI_UCS2_STRING_HALF_LENGTH_MINUS_FORTYFOUR(allocated_length);				\
+				(count)++;																					\
+			}																								\
+		}
+
+#define UI_TEST_UCS2_DECREMENT_COUNT_SET_LENGTH(c,count,allocated_length,length)							\
+		{	if(UI_TEST_UCS2_CHARACTER(c) && ((count)>0))													\
+			{	((count)--);																				\
+				if((count)==0) (length)=(allocated_length);													\
+			}																								\
+		}
+
+#define UI_TEST_UCS2_CHANGE_COUNT_SET_LENGTH(old_c,c,count,allocated_length,length)							\
+		{	UI_TEST_UCS2_DECREMENT_COUNT_SET_LENGTH(old_c,count,allocated_length,length);					\
+			UI_TEST_UCS2_INCREMENT_COUNT_SET_LENGTH(c,count,allocated_length,length);						\
+		}
+
+/*	Added for n/2-1 Chinese characters input mode	*/
+#define UI_TEST_UCS2_CHANGE_COUNT_SET_LENGTH_TYPE2(old_c,c,count,allocated_length,length)					\
+		{	UI_TEST_UCS2_DECREMENT_COUNT_SET_LENGTH(old_c,count,allocated_length,length);					\
+			UI_TEST_UCS2_INCREMENT_COUNT_SET_LENGTH_TYPE2(c,count,allocated_length,length);					\
+		}
+
+/*	Added for n/2-44 Chinese characters input mode	*/
+#define UI_TEST_UCS2_CHANGE_COUNT_SET_LENGTH_TYPE3(old_c,c,count,allocated_length,length)					\
+		{	UI_TEST_UCS2_DECREMENT_COUNT_SET_LENGTH(old_c,count,allocated_length,length);					\
+			UI_TEST_UCS2_INCREMENT_COUNT_SET_LENGTH_TYPE3(c,count,allocated_length,length);					\
+		}
+
+#define UI_TEST_UCS2_COUNT_SET_LENGTH(count,allocated_length,length)										\
+		{	if((count)>0) (length)=UI_UCS2_STRING_HALF_LENGTH(allocated_length);							\
+		}
+
+/*	Added for n/2-1 Chinese characters input mode	*/
+#define UI_TEST_UCS2_COUNT_SET_LENGTH_TYPE2(count,allocated_length,length)									\
+		{	if((count)>0) (length)=UI_UCS2_STRING_HALF_LENGTH_MINUS_ONE(allocated_length);					\
+		}
+
+/*	Added for n/2-44 Chinese characters input mode	*/
+#define UI_TEST_UCS2_COUNT_SET_LENGTH_TYPE3(count,allocated_length,length)									\
+		{	if((count)>0) (length)=UI_UCS2_STRING_HALF_LENGTH_MINUS_FORTYFOUR(allocated_length);					\
+		}
+
+void UI_disable_alignment_timers(void);
+void UI_enable_alignment_timers(void);
+
+/*	Page break character equivalent needs to be added	*/
+/*	Euro character equivalent = 0xA2					*/
+
+#define UI_TEST_GSM_EXTENDED(c)		\
+(		(c==0xA2)					\
+	||	(c=='^')					\
+	||	(c=='{')					\
+	||	(c=='}')					\
+	||	(c=='\\')					\
+	||	(c=='[')					\
+	||	(c=='~')					\
+	||	(c==']')					\
+	||	(c=='|')					\
+)									\
+
+typedef enum 
+{
+	GUI_PEN_EVENT_PARAM_VOID,
+	GUI_PEN_EVENT_PARAM_INTEGER,
+	GUI_PEN_EVENT_PARAM_INTEGER2,
+	GUI_PEN_EVENT_PARAM_INTEGER3,
+	GUI_PEN_EVENT_PARAM_POINTER,
+	GUI_PEN_EVENT_PARAM_POINTER_INTEGER,
+	GUI_PEN_EVENT_PARAM_POINTER_INTEGER2
+} mmi_gui_pen_event_param_enum;
+
+typedef struct _mmi_gui_pen_event_param_struct
+{
+	mmi_gui_pen_event_param_enum type;
+	union {
+		int i;
+		void *p;
+	} _u;
+	int i2;
+	int i3;
+} mmi_gui_pen_event_param_struct;
+
+#define GUI_PEN_EVENT_PARAM_SET_VOID(_s) do {_s->type = GUI_PEN_EVENT_PARAM_VOID;} while (0)
+
+#define GUI_PEN_EVENT_PARAM_SET_INTEGER(_s, _i) do {_s->type = GUI_PEN_EVENT_PARAM_INTEGER;	\
+																	_s->_u.i = _i; \
+																	} while (0)
+
+#define GUI_PEN_EVENT_PARAM_SET_INTEGER2(_s, _i, _i2) do {_s->type = GUI_PEN_EVENT_PARAM_INTEGER2;	\
+																	_s->_u.i = _i; \
+																	_s->i2 = _i2; \
+																	} while (0)
+
+#define GUI_PEN_EVENT_PARAM_SET_INTEGER3(_s, _i, _i2, _i3) do {_s->type = GUI_PEN_EVENT_PARAM_INTEGER3;	\
+																	_s->_u.i = _i; \
+																	_s->i2 = _i2; \
+																	_s->i3 = _i3; \
+																	} while (0)
+
+#define GUI_PEN_EVENT_PARAM_SET_POINTER(_s, _p) do {_s->type = GUI_PEN_EVENT_PARAM_POINTER;	\
+																	_s->_u.p = _p; \
+																	} while (0)
+
+#define GUI_PEN_EVENT_PARAM_SET_POINTER_INTEGER(_s, _p, _i2) do {_s->type = GUI_PEN_EVENT_PARAM_POINTER_INTEGER;	\
+																	_s->_u.p = _p; \
+																	_s->i2 = _i2; \
+																	} while (0)
+
+#define GUI_PEN_EVENT_PARAM_SET_POINTER_INTEGER2(_s, _p, _i2, _i3) do {_s->type = GUI_PEN_EVENT_PARAM_POINTER_INTEGER2;	\
+																	_s->_u.p = _p; \
+																	_s->i2 = _i2; \
+																	_s->i3 = _i3; \
+																	} while (0)
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+

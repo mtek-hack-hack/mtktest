@@ -1,0 +1,523 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MediaTek Inc. (C) 2005
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE. 
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*****************************************************************************/
+
+/*******************************************************************************
+ * Filename:
+ * ---------
+ *  MMI_common_app_trc.h
+ *
+ * Project:
+ * --------
+ *  MAUI
+ *
+ * Description:
+ * ------------
+ *  
+ *
+ * Author:
+ * -------
+ * -------
+ *
+ *==============================================================================
+ *             HISTORY
+ * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!! 
+ *------------------------------------------------------------------------------
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ * removed!
+ *------------------------------------------------------------------------------
+ * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!! 
+ *==============================================================================
+ *******************************************************************************/
+#ifndef _MMI_COMMON_APP_TRC_H_
+#define _MMI_COMMON_APP_TRC_H_
+
+    /* BEGIN OF IPERF */
+	TRC_MSG(MMI_IPERF_PRE_ENTRY_IPERF,"*----[IPERF] PreEntry_Iperf ----*")
+	TRC_MSG(MMI_IPERF_PRE_ENTRY_IPERF_TCP,"*----[IPERF] PreEntry_Iperf_TCP ----*")
+	TRC_MSG(MMI_IPERF_PRE_ENTRY_IPERF_UDP,"*----[IPERF] PreEntry_Iperf_UDP ----*")
+	TRC_MSG(MMI_IPERF_ENTRY_IPERF,"*----[IPERF] Entry_Iperf ----*")
+	TRC_MSG(MMI_IPERF_ENTRY_IPERF_REPORT,"*----[IPERF] Entry_Iperf_Report ----*")
+	TRC_MSG(MMI_IPERF_ENTRY_IPERF_SETTING,"*----[IPERF] Entry_Iperf_Setting ----*")
+	TRC_MSG(MMI_IPERF_ENTRY_PROGRESSING_SCREEN,"*----[IPERF] Entry_Progressing_Screen ----*")
+	TRC_MSG(MMI_IPERF_EXIT_IPERF,"*----[IPERF] Exit_Iperf ----*")
+	TRC_MSG(MMI_IPERF_EXIT_IPERF_TCP,"*----[IPERF] Exit_Iperf_TCP ----*")
+	TRC_MSG(MMI_IPERF_EXIT_IPERF_UDP,"*----[IPERF] Exit_Iperf_TCP ----*")
+	TRC_MSG(MMI_IPERF_DEL_CB,"*----[IPERF] Iperf_Del_CB ----*")
+	TRC_MSG(MMI_IPERF_SETTING_FILL_INLINE,"*----[IPERF] Iperf_Setting_Fill_Inline ----*")
+	TRC_MSG(MMI_IPERF_DT_CB,"*----[IPERF] Iperf_DT_CB ----*")
+	TRC_MSG(MMI_IPERF_NOT_RUN,"*----[IPERF] Iperf_NOT_RUN ----*")
+	TRC_MSG(MMI_IPERF_CHECK_SETTINGS,"*----[IPERF] Iperf_Check_Settings ----*")
+	TRC_MSG(MMI_IPERF_PROGRESS_ABORT,"*----[IPERF] Iperf_Progres_Abort ----*")
+	TRC_MSG(MMI_IPERF_REPORT_BACK,"*----[IPERF] Iperf_Report_Back ----*")
+	TRC_MSG(MMI_IPERF_SAVE,"*----[IPERF] Iperf_Save_Settings ----*")
+	TRC_MSG(MMI_IPERF_SAVE_OPEN_FAILED,"*----[IPERF] Iperf_Save_Settings_Open_Failed ----*")
+	TRC_MSG(MMI_IPERF_SAVE_SEEK_FAILED,"*----[IPERF] Iperf_Save_Settings_Seek_Failed ----*")
+	TRC_MSG(MMI_IPERF_WRITE_UDP_FAILED,"*----[IPERF] Iperf_Save_Settings_Write_UDP_Failed ----*")
+	TRC_MSG(MMI_IPERF_WRITE_TCP_FAILED,"*----[IPERF] Iperf_Save_Settings_Write_TCP_Failed ----*")
+	TRC_MSG(MMI_IPERF_READ,"*----[IPERF] Iperf_Read_Settings ----*")
+	TRC_MSG(MMI_IPERF_READ_OPEN_FAILED,"*----[IPERF] Iperf_Read_Settings_Open_Failed ----*")
+	TRC_MSG(MMI_IPERF_READ_UDP_FAILED,"*----[IPERF] Iperf_Read_Settings_Read_UDP_Failed ----*")
+	TRC_MSG(MMI_IPERF_READ_TCP_FAILED,"*----[IPERF] Iperf_Read_Settings_Read_TCP_Failed ----*")
+	TRC_MSG(MMI_IPERF_LOAD_DEFAULT,"*----[IPERF] Iperf_Load_Default_Settings ----*")
+	TRC_MSG(MMI_IPERF_SEND_REQ,"*----[IPERF] Iperf_Send_Req Function----*")
+	TRC_MSG(MMI_IPERF_SEND_REQ_ILM,"*----[IPERF] Iperf_Send_Req ILM----*")
+	TRC_MSG(MMI_IPERF_SEND_REQ_TOS,"*----[IPERF] Iperf_Send_Req_ToS_Default(should never happens) ----*")
+	TRC_MSG(MMI_IPERF_RUN_CNF_HF,"*----[IPERF] Iperf_Run_Cnf_Hf ----*")
+	TRC_MSG(MMI_IPERF_RUN_CNF_HF_FALSE,"*----[IPERF] Iperf_Run_Cnf_Hf_False ----*")
+	TRC_MSG(MMI_IPERF_REPORT_IND_HF,"*----[IPERF] Iperf_Report_Ind_Hf ----*")
+	TRC_MSG(MMI_IPERF_REPORT_IND_HF_FALSE,"*----[IPERF] Iperf_Report_Ind_Hf_False ----*")
+	TRC_MSG(MMI_IPERF_ENTRY_REPORT_SCREEN,"*----[IPERF] Entry_Iperf_Report_Screen ----*")
+    /* END OF IPERF */
+    
+    /* RTC */
+    TRC_MSG(MMI_RTC_ALARM_EMPTY_QUEUE,"*---[AlarmFramework.c] Empty Queue---*")
+    TRC_MSG(MMI_RTC_ALARM_EXPIRY_STATE,"*---[AlarmFramework.c] AlmIsExpireAllowed => call:[%d], pwron:[%d], disabled:[%d] ---*")
+    TRC_MSG(MMI_RTC_ALARM_EXPIRY_TYPE,"*---[AlarmFramework.c] Expiry => type:[%d] ---*")
+    TRC_MSG(MMI_RTC_ALARM_PENDING_TIMEOUT,"*---[AlarmFramework.c] AlmHandlePendingTimeout---*")
+    TRC_MSG(MMI_RTC_ALARM_DISABLE_SPOF,"*---[AlarmFramework.c]  AlmDisableSPOF---*")
+    TRC_MSG(MMI_RTC_ALARM_ENABLE_SPOF,"*---[AlarmFramework.c] AlmEnableSPOF---*")
+    TRC_MSG(MMI_RTC_ALARM_DISABLE_ALARM,"*---[AlarmFramework.c] AlmDisableExpiryHandler---*")
+    TRC_MSG(MMI_RTC_ALARM_ENABLE_ALARM,"*---[AlarmFramework.c] AlmEnableExpiryHandler---*")
+
+    /* Shortcut */
+    TRC_MSG(MMI_SHORTCUTS_NOT_FOUND,"*---[Shortcut.c] Shortcut not Found: [%d]---*")
+
+    /* Power on*/
+    TRC_MSG(MMI_POWER_ON_START_ANIMATION,	"*---[Power on] start mmi_pwron_entry_animation_screen---*")
+    TRC_MSG(MMI_POWER_ON_BACK2_ANIMATION,	"*---[Power on] go back mmi_pwron_entry_animation_screen---*")
+    TRC_MSG(MMI_POWER_ON_LEAVE_ANIMATION,	"*---[Power on] start mmi_pwron_exit_animation_screen---*")
+    TRC_MSG(MMI_POWER_ON_ANIMATION_TIMEOUT,	"*---[Power on] start mmi_pwron_froce_terminate_display---*")
+    TRC_MSG(MMI_POWER_ON_ANIMATION_FINISH,	"*---[Power on] start mmi_pwron_play_video_callback---*")
+    TRC_MSG(MMI_POWER_ON_IMAGE_FINISH,		"*---[Power on] start mmi_pwron_show_image_callback---*")
+    TRC_MSG(MMI_POWER_ON_RECV_SIM_PSWD,		"*---[Power on] receive SimPasswdReqResponse---*")
+    TRC_MSG(MMI_POWER_ON_PROC_SIM_PSWD,		"*---[Power on] process SimPasswdReqResponse---*")
+    TRC_MSG(MMI_POWER_ON_RECV_SIM_FAIL,		"*---[Power on] receive SimQueryFailureRsp---*")
+    TRC_MSG(MMI_POWER_ON_PROC_SIM_FAIL,		"*---[Power on] process SimQueryFailureRsp---*")
+    TRC_MSG(MMI_POWER_ON_SEND_MSG_2_MMI,	"*---[Power on] start mmi_ready_to_idle_screen_ind---*")
+    TRC_MSG(MMI_POWER_ON_CALL_BEFORE_IDLE,	"*---[Power on] a call in mmi_ready_to_idle_screen_ind_hdlr---*")
+    TRC_MSG(MMI_POWER_ON_READY_TO_IDLE,		"*---[Power on] start mmi_ready_to_idle_screen_ind_hdlr---*")
+    TRC_MSG(MMI_POWER_ON_START_WELCOME,		"*---[Power on] start ShowWelcomeScr---*")
+    TRC_MSG(MMI_POWER_ON_STOP_WELCOME,		"*---[Power on] start ExitWelcomeScreen---*")
+    TRC_MSG(MMI_POWER_ON_REMOVE_ICONS,		"*---[Power on] start RemoveStatusIconsForSimRemoved---*")
+
+   /* Network Setup */
+   TRC_MSG(MMI_NETSET_GET_PLMN_LIST_REQ, "[NetworkSetup.c] NETSETGetPLMNListReq")
+   TRC_MSG(MMI_NETSET_GET_PLMN_LIST_RSP, "[NetworkSetup.c] NETSETGetPLMNListRsp")
+   TRC_MSG(MMI_NETSET_ABORT_PLMN_LIST_REQ, "[NetworkSetup.c] NETSETAbortPLMNListReq")
+   TRC_MSG(MMI_NETSET_ABORT_PLMN_LIST_TO_IDLE, "[NetworkSetup.c] AbortGetPLMNListToIdle")
+   TRC_MSG(MMI_NETSET_SHOW_PLMN_LIST, "[NetworkSetup.c] EntryNETSETShowPlmnList")
+   TRC_MSG(MMI_NETSET_SET_BAND_REQ, "[NetworkSetup.c] NETSETSetBandSelectionReq")
+   TRC_MSG(MMI_NETSET_SET_BAND_RSP, "[NetworkSetup.c] NETSETSetBandSelectionRsp")
+   TRC_MSG(MMI_NETSET_GET_BAND_REQ, "[NetworkSetup.c] NETSETGetBandSelectionReq")
+   TRC_MSG(MMI_NETSET_GET_BAND_RSP, "[NetworkSetup.c] NETSETGetBandSelectionRsp")
+   TRC_MSG(MMI_NETSET_MSG_Q_IDX_ADD_ONE, "[NetworkSetup.c] NETSETMsgQueueIndexAddOne, Index:%d, Top:%d")
+   TRC_MSG(MMI_NETSET_MSG_Q_TOP_ADD_ONE, "[NetworkSetup.c] NETSETMsgQueueTopAddOne, Index:%d, Top:%d")
+   TRC_MSG(MMI_NETSET_MSG_Q_TOP_MINUS_ONE, "[NetworkSetup.c] NETSETMsgQueueTopMinusOne, Index:%d, Top:%d")
+   TRC_MSG(MMI_NETSET_MSG_Q_PROT_HDLR, "[NetworkSetup.c] NETSETMsgQueueProtocolHandler, Index:%d, Top:%d")
+   TRC_MSG(MMI_NETSET_MSG_Q_PUSH_EXEC, "[NetworkSetup.c] NETSETMsgQueuePush, Type:%d, Index=Top, Exec")
+   TRC_MSG(MMI_NETSET_MSG_Q_PUSH_ONLY_ONE_ADD, "[NetworkSetup.c] NETSETMsgQueuePush, Type:%d, Only One, Add")
+   TRC_MSG(MMI_NETSET_MSG_Q_PUSH_ADD_RESTORE, "[NetworkSetup.c] NETSETMsgQueuePush, Type:%d, Add Restore")
+   TRC_MSG(MMI_NETSET_MSG_Q_PUSH_REPLACE_LAST, "[NetworkSetup.c] NETSETMsgQueuePush, Type:%d, Replace Last")
+
+
+    /* Start for TraceRT */
+    TRC_MSG( MMI_EM_ICMP_PROCESS_DONE,           "*--- ICMP: Tracert Process Done! ---*")
+    TRC_MSG( MMI_EM_ICMP_PACKET_CONTNET,         "*--- ICMP: ICMP Packet Data: type:%d, code:%d, identifier:%d,%d, sequence number:%d,%d ---*")
+    TRC_MSG( MMI_EM_ICMP_SENT_SOC,               "*--- ICMP: Sent %d Bytes to %d.%d.%d.%d. ---*")
+    TRC_MSG( MMI_EM_ICMP_REC_SOC,                "*--- ICMP: Recieved Packet Type: %d ---*")
+    TRC_MSG( MMI_EM_ICMP_WRONG_IDENTIFIER,       "*--- ICMP: Wrong Echo Indentifier! ---*")
+    TRC_MSG( MMI_EM_ICMP_WRONG_SEQ_NUM,          "*--- ICMP: Wrong Echo Sequence Number! ---*")
+    TRC_MSG( MMI_EM_ICMP_WRONG_DATA,             "*--- ICMP: Wrong Data Content! ---*")
+    TRC_MSG( MMI_EM_ICMP_RCV_RLY,                "*--- ICMP: Rsp from %d.%d.%d.%d: Time= %d ms ---*")
+    TRC_MSG( MMI_EM_ICMP_NEXT_NODE,              "*--- ICMP: Send ICMP to Next Node. ---*")
+    TRC_MSG( MMI_EM_ICMP_DES_UNREACH,            "*--- ICMP: Destination Unreachable! ---*")
+    TRC_MSG( MMI_EM_ICMP_OVERLOADED,             "*--- ICMP: Router Overloaded! ---*")
+    TRC_MSG( MMI_EM_ICMP_IDLE_STATE,             "IDLE")
+    TRC_MSG( MMI_EM_ICMP_DNS_WAIT,               "DNS_WAIT")
+    TRC_MSG( MMI_EM_ICMP_ICMP_WAIT,              "ICMP_WAIT")
+    /* End for TraceRT */
+
+
+   /* --------------------------------------------------------------- */
+   /* ----------------------- MODULE NAME:CM   ---------------------- */
+   /* --------------------------------------------------------------- */
+   //CM common use
+   //OutgoingCallManagement.c
+   TRC_MSG(MMI_CM_FUNC_EntryScrShowUserTimeToRedial, "*** EntryScrShowUserTimeToRedial ***")
+   TRC_MSG(MMI_CM_FUNC_IsRedialNeeded, "*** IsRedialNeeded ***")
+   TRC_MSG(MMI_CM_FUNC_CheckRedialOrShowError, "*** CheckRedialOrShowError ***")
+   TRC_MSG(MMI_CM_FUNC_CalculateSetBackOff, "*** CalculateSetBackOff ***")
+   TRC_MSG(MMI_CM_FUNC_UpdateStateMachine, "*** UpdateStateMachine ***")
+   TRC_MSG(MMI_CM_FUNC_MakeHold, "*** MakeHold ***")
+   TRC_MSG(MMI_CM_FUNC_MakeRetrieve, "*** MakeRetrieve ***")
+   TRC_MSG(MMI_CM_FUNC_MakeSwap, "*** MakeSwap ***")
+   TRC_MSG(MMI_CM_FUNC_MakeConf, "*** MakeConf ***")
+   TRC_MSG(MMI_CM_FUNC_StopRecord, "*** CM stop record!! ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessIncomingFailureEvents, "*** ProcessIncomingFailureEvents ***")
+   TRC_MSG(MMI_CM_FUNC_OutgoingProcessCMFailureEvent, "*** OutgoingProcessCMFailureEvent ***")
+   TRC_MSG(MMI_CM_FUNC_ShowCallManagementErrorMessage, "*** ShowCallManagementErrorMessage ***")
+   TRC_MSG(MMI_CM_FUNC_ExitScrCMErrMsg, "*** ExitScrCMErrMsg ***")
+   TRC_MSG(MMI_CM_FUNC_GetOutOfCMApplication, "*** GetOutOfCMApplication ***")
+   TRC_MSG(MMI_CM_FUNC_GetOutOfCMforAdjustHistory, "*** GetOutOfCMforAdjustHistory ***")
+   TRC_MSG(MMI_CM_FUNC_GoBackfromNotifyScr, "*** GoBackfromNotifyScr ***")
+   TRC_MSG(MMI_CM_FUNC_AdjustHistoryForCM, "*** AdjustHistoryForCM ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsSendUDUB, "*** MakePsSendUDUB: CHLD CSMCC_REL_HELD_OR_UDUB ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsHangupallActiveAcceptOtherRequest, "*** MakePsHangupallActiveAcceptOtherRequest: CHLD CSMCC_REL_ACTIVE_AND_ACCEPT ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsEndSelectiveCall, "*** MakePsEndSelectiveCall: CHLD CSMCC_REL_SPECIFIC_CALL call id %d ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsActiveHold, "*** MakePsActiveHold: CHLD CSMCC_HOLD_ACTIVE_AND_ACCEPT Retrieve ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsSplitRequest, "*** MakePsSplitRequest: CHLD CSMCC_HOLD_ACTIVE_EXCEPT_SPECIFIC_CALL call_id %d ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsConfCallRequest, "*** MakePsConfCallRequest: CHLD CSMCC_ADD_HELD_CALL ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsEctRequest, "*** MakePsEctRequest: CHLD CSMCC_EXPLICIT_CALL_TRANSFER ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsActivateCCBS, "*** MakePsActivateCCBS: CHLD CSMCC_ACTIVATE_CCBS_CALL ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsHangupallRequest, "*** MakePsHangupallRequest: CHLD CSMCC_REL_ALL_EXCEPT_WAITING_CALL ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsSwapCallRequest, "*** MakePsSwapCallRequest: CHLD CSMCC_SWAP_CALL Swap ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsSendRelHeld, "*** MakePsSendRelHeld: CHLD CSMCC_REL_HELD ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsHangupallActiveRequest, "*** MakePsHangupallActiveRequest: CHLD CSMCC_REL_ACTIVE ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsHangupallCallsRequest, "*** MakePsHangupallCallsRequest: CHLD CSMCC_REL_ALL ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsCallDeflect, "*** MakePsCallDeflect ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsDropUSSDReq, "*** MakePsDropUSSDReq ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsSendDTMFTone, "*** MakePsSendDTMFTone ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsStopDTMFTone, "*** MakePsStopDTMFTone ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsSendDTMFString, "*** MakePsSendDTMFString ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsStartVoiceRecord, "*** MakePsStartVoiceRecord ***")
+   TRC_MSG(MMI_CM_FUNC_MakePsStopVoiceRecord, "*** MakePsStopVoiceRecord ***")
+   TRC_MSG(MMI_CM_FUNC_StartVoiceRecordReqSucess, "*** StartVoiceRecordReqSucess ***")
+   TRC_MSG(MMI_CM_FUNC_HiliteMenuIncomingCallDeflection, "*** HiliteMenuIncomingCallDeflection ***")
+   TRC_MSG(MMI_CM_FUNC_HiliteMenuCCBSDial, "*** HiliteMenuCCBSDial ***")
+   TRC_MSG(MMI_CM_FUNC_HiliteMenuEndAllCalls, "*** HiliteMenuEndAllCalls ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackCallIncoming, "*** PsCBackCallIncoming ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackCallWait, "*** PsCBackCallWait ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackNetworkCallDropped, "*** PsCBackNetworkCallDropped ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackCcbsActivate, "*** PsCBackCcbsActivate ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackCCBSInvoked, "*** PsCBackCCBSInvoked ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackNotifySSInd, "*** PsCBackNotifySSInd ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackSpeechIndication, "*** PsCBackSpeechIndication ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackAocIndication, "*** PsCBackAocIndication ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackConfirmDTMFString, "*** PsCBackConfirmDTMFString ***")
+   TRC_MSG(MMI_CM_FUNC_HangupAllCalls, "*** HangupAllCalls ***")
+   TRC_MSG(MMI_CM_FUNC_IgnoreCCBS, "*** IgnoreCCBS ***")
+   TRC_MSG(MMI_CM_FUNC_ActivateCCBS, "*** ActivateCCBS ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessIncomingEvents, "*** ProcessIncomingEvents ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessIncomingCallEvent, "*** ProcessIncomingCallEvent ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessCallWait, "*** ProcessCallWait ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessInvokedCcbs, "*** ProcessInvokedCcbs ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessIncomingCallRejected, "*** ProcessIncomingCallRejected ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessEndCallIdAndGoBack, "*** ProcessEndCallIdAndGoBack ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessAocIndication, "*** ProcessAocIndication ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessStateCheckIncomingCall, "*** ProcessStateCheckIncomingCall ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackActiveCallsHeld, "*** PsCBackActiveCallsHeld ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessCallsHeld, "*** ProcessCallsHeld ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackIncomingCallRejected, "*** PsCBackIncomingCallRejected ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessAcceptIncomingCall, "*** ProcessAcceptIncomingCall ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackselectedCallEnded, "*** PsCBackselectedCallEnded call id %d ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackActiveCallEndedHeldRetrieved, "*** PsCBackActiveCallEndedHeldRetrieved ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessEndAllActiveCall, "*** ProcessEndAllActiveCall ***")
+   TRC_MSG(MMI_CM_FUNC_CBackHangupAllActive, "*** CBackHangupAllActive held calls %d ***")
+   TRC_MSG(MMI_CM_FUNC_CBackHangupAllActiveAcceptOther, "*** CBackHangupAllActiveAcceptOther held calls %d ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessHold2Active, "*** ProcessHold2Active ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessCCBSDialRequest, "*** ProcessCCBSDialRequest ***")
+   TRC_MSG(MMI_CM_FUNC_CCBSDialResponse, "*** CCBSDialResponse ***")
+   TRC_MSG(MMI_CM_FUNC_ProcessCCBSRejectRequest, "*** ProcessCCBSRejectRequest ***")
+   TRC_MSG(MMI_CM_FUNC_PsCBackCCBSRejectResponse, "*** PsCBackCCBSRejectResponse ***")
+   TRC_MSG(MMI_CM_FUNC_EntryScrIncomingCallEvent, "*** EntryScrIncomingCallEvent ***")
+   TRC_MSG(MMI_CM_FUNC_EntryScrIncomingMultipleOptions, "*** EntryScrIncomingMultipleOptions ***")
+   TRC_MSG(MMI_CM_FUNC_EntryScrIncomingOptions, "*** EntryScrIncomingOptions ***")
+   TRC_MSG(MMI_CM_FUNC_EntryScrCCBSInvokeEvent, "*** EntryScrCCBSInvokeEvent ***")
+   TRC_MSG(MMI_CM_FUNC_EntryScrCCBSInvokeMultipleOptions, "*** EntryScrCCBSInvokeMultipleOptions ***")
+   TRC_MSG(MMI_CM_FUNC_EntryScrShowSSEvent, "*** EntryScrShowSSEvent ***")
+   TRC_MSG(MMI_CM_FUNC_ExitScrShowSSEvent, "*** ExitScrShowSSEvent: Stopping  Notify Timer ***")
+   TRC_MSG(MMI_CM_FUNC_EntryCallDeflectDigitHandler, "*** EntryCallDeflectDigitHandler ***")
+   TRC_MSG(MMI_CM_FUNC_AbortUSSDResultRequest, "*** AbortUSSDResultRequest ***")
+   TRC_MSG(MMI_CM_FUNC_AbortUSSDResultRequestEND, "*** AbortUSSDResultRequestEND ***")
+      
+   TRC_MSG(MMI_CM_WARN_TEST, "warning message")
+
+	 TRC_MSG(MMI_CM_ERROR_CallList, "PsCbackSyncStateMachine:Corrupted State Machine")
+   TRC_MSG(MMI_CM_ERROR_CallListFail, "PsCbackSyncStateMachine: Stack returned error")
+   TRC_MSG(MMI_CM_ERROR_CallEnd, "GetDateTimeAndNotifyEndCallDurationCBack:Corrupt Time structure")
+
+   TRC_MSG(MMI_CM_INFO_SetCallState, "SetCallState: Setting call state to %d, call_id %d")
+   TRC_MSG(MMI_CM_INFO_CallListActive, "PsCbackSyncStateMachine:Active call found")
+   TRC_MSG(MMI_CM_INFO_CallListHeld, "PsCbackSyncStateMachine:Held call found")
+   TRC_MSG(MMI_CM_INFO_CallListOutgoing, "PsCbackSyncStateMachine:MO call found")
+   TRC_MSG(MMI_CM_INFO_CallListIncoming, "PsCbackSyncStateMachine:MT call found")
+   TRC_MSG(MMI_CM_INFO_CallListEmpty, "PsCbackSyncStateMachine:No calls found, purging all calls")
+   TRC_MSG(MMI_CM_INFO_MakeHoldSet, "MakeHold : Setting state to HOLD")
+   TRC_MSG(MMI_CM_INFO_MakeRetrieveSet, "MakeRetrieve : Setting state to ACTIVE")
+   TRC_MSG(MMI_CM_INFO_MakeSwapSetHeld, "MakeSwap : Setting state to HOLD")
+   TRC_MSG(MMI_CM_INFO_MakeSwapSetActive, "MakeSwap : Setting state to ACTIVE")
+   TRC_MSG(MMI_CM_INFO_AllowMoreCalls1, "AllowMoreCalls : Not Allowing more calls")
+   TRC_MSG(MMI_CM_INFO_AllowMoreCalls2, "AllowMoreCalls : ECC call")
+   TRC_MSG(MMI_CM_INFO_AllowMoreCalls3, "AllowMoreCalls : Dropping calls")
+   TRC_MSG(MMI_CM_INFO_SetCurrentState, "Setting Current state %d")
+   TRC_MSG(MMI_CM_INFO_SetPreviousState, "Setting Previous state %d")
+   TRC_MSG(MMI_CM_INFO_UpdateActiveCallScrnIfPresent, "UpdateActiveCallScrnIfPresent: Refreshing Active call screen")
+   TRC_MSG(MMI_CM_INFO_StopRing1, "StopIncomingCallIndication: Stopping Call Wait tone")
+   TRC_MSG(MMI_CM_INFO_StopRing2, "StopIncomingCallIndication: Stopping Ring tone")
+   TRC_MSG(MMI_CM_INFO_PlayInternalTone, "PsCBackPlayInternalTone")
+   TRC_MSG(MMI_CM_INFO_ShowErrorAfterNotifySS, "ShowCallManagementErrorMessage: Notify Flag Set")
+   TRC_MSG(MMI_CM_INFO_ExitScrCMErrMsgRedial, "Exit CM error pop up, add redial screen to history")
+   TRC_MSG(MMI_CM_INFO_GetOutOfCMApplication1, "In GetOutOfCMApplication: not in cm screen, delete to marker")
+   TRC_MSG(MMI_CM_INFO_GetOutOfCMApplication2, "In GetOutOfCMApplication: in cm screen, delete to marker")
+   TRC_MSG(MMI_CM_INFO_GetOutOfCMforAdjustHistory1, "In GetOutOfCMforAdjustHistory: not in cm screen, delete to marker")
+   TRC_MSG(MMI_CM_INFO_GetOutOfCMforAdjustHistory2, "In GetOutOfCMforAdjustHistory: in cm screen, delete to marker")
+   TRC_MSG(MMI_CM_INFO_GoBackfromNotifyScr1, "GoBackfromNotifyScr: NotifySSFlag set.. so returning")
+   TRC_MSG(MMI_CM_INFO_GoBackfromNotifyScr2, "GoBackfromNotifyScr:0 Calls,Getting out of GetOutOfCMApplication")
+   TRC_MSG(MMI_CM_INFO_GoBackfromNotifyScr3, "GoBackfromNotifyScr:    OutgoingState")
+   TRC_MSG(MMI_CM_INFO_GoBackfromNotifyScr4, "GoBackfromNotifyScr:    IncomingState")
+   TRC_MSG(MMI_CM_INFO_GoBackfromNotifyScr5, "GoBackfromNotifyScr:    Dialpad Scr present")
+   TRC_MSG(MMI_CM_INFO_GoBackfromNotifyScr6, "GoBackfromNotifyScr:    Active/Hold State")
+   TRC_MSG(MMI_CM_INFO_GoBackfromNotifyScr7, "GoBackfromNotifyScr: Non CM Screen .. so just going back history")
+   TRC_MSG(MMI_CM_INFO_GoBackfromNotifyScr8, "GoBackfromNotifyScr: WAP screen .. so just going back history")
+   TRC_MSG(MMI_CM_INFO_GoBackfromNotifyScr9, "GoBackfromNotifyScr: active present .. go back to active")
+   TRC_MSG(MMI_CM_INFO_GoBackfromNotifyScr10, "GoBackfromNotifyScr: in active screen .. just return")
+   TRC_MSG(MMI_CM_INFO_GoBackfromNotifyScr11, "GoBackfromNotifyScr: entry active screen")
+   TRC_MSG(MMI_CM_INFO_AdjustHistoryForCM1, "AdjustHistoryForCM: NotifySSFlag set.. so returning")
+   TRC_MSG(MMI_CM_INFO_AdjustHistoryForCM2, "AdjustHistoryForCM:0 Calls,Getting out of CM")
+   TRC_MSG(MMI_CM_INFO_AdjustHistoryForCM3, "AdjustHistoryForCM:    OutgoingState")
+   TRC_MSG(MMI_CM_INFO_AdjustHistoryForCM4, "AdjustHistoryForCM:    IncomingState")
+   TRC_MSG(MMI_CM_INFO_AdjustHistoryForCM5, "AdjustHistoryForCM:    Dialpad Scr present")
+   TRC_MSG(MMI_CM_INFO_AdjustHistoryForCM6, "AdjustHistoryForCM:    Active/Hold State")
+   TRC_MSG(MMI_CM_INFO_AdjustHistoryForCM7, "AdjustHistoryForCM: Non CM Screen .. so just going back history")
+   TRC_MSG(MMI_CM_INFO_AdjustHistoryForCM8, "AdjustHistoryForCM: in active screen .. just return")
+   TRC_MSG(MMI_CM_INFO_MakePsSendDTMFTone, "DTMF Sent digit %c")
+   TRC_MSG(MMI_CM_INFO_DeriveAndSetCallFeatures, "Valid CC or SS Operation %d")
+   TRC_MSG(MMI_CM_INFO_DeriveOutgoingCallIdRsp1, "Call ID of outgoing call is %d")
+   TRC_MSG(MMI_CM_INFO_DeriveOutgoingCallIdRsp2, "In DeriveOutgoingCallIdRsp This is a bad call")
+   TRC_MSG(MMI_CM_INFO_DeriveCallInfo, "Call ID of Incoming call is %d")
+   TRC_MSG(MMI_CM_INFO_DeriveCallInfoFromWait, "Call ID of Waiting call is %d")
+   TRC_MSG(MMI_CM_INFO_DeriveCcmValue, "CCM Value is %d")
+   TRC_MSG(MMI_CM_INFO_DeriveCcmWarning, "AOC CCM value about to exceed")
+   TRC_MSG(MMI_CM_INFO_CheckChldRequestSuccess, "ERROR IN CHLD RESPONSE")
+   TRC_MSG(MMI_CM_INFO_CheckFailureChld, "Failed Chld %d")
+   TRC_MSG(MMI_CM_INFO_PsCBackActivatedCCBS1, "PsCBackActivatedCCBS OK")
+   TRC_MSG(MMI_CM_INFO_PsCBackActivatedCCBS2, "PsCBackActivatedCCBS FAIL")
+   TRC_MSG(MMI_CM_INFO_KbCBackCallIncomingAccepted, "dropping call, don't answer")
+   TRC_MSG(MMI_CM_INFO_ProcessIncomingCallEvent1, "ProcessIncomingCallEvent in Idle State")
+   TRC_MSG(MMI_CM_INFO_ProcessIncomingCallEvent2, "ProcessIncomingCallEvent in Outgoing State")
+   TRC_MSG(MMI_CM_INFO_ProcessInvokedCcbs, "ProcessCCBSInvokedEvent non incoming state")
+   TRC_MSG(MMI_CM_INFO_ProcessEndCallIdAndGoBack1, "ProcessEndCallIdAndGoBack :IncomingState")
+   TRC_MSG(MMI_CM_INFO_ProcessEndCallIdAndGoBack2, "ProcessEndCallIdAndGoBack :OutgoingState")
+   TRC_MSG(MMI_CM_INFO_ProcessEndCallIdAndGoBack3, "ProcessEndCallIdAndGoBack: Redial Is Set")
+   TRC_MSG(MMI_CM_INFO_ProcessEndCallIdAndGoBack4, "ProcessEndCallIdAndGoBack: HoldState")
+   TRC_MSG(MMI_CM_INFO_ProcessEndCallIdAndGoBack5, "ProcessEndCallIdAndGoBack: ActiveState")
+   TRC_MSG(MMI_CM_INFO_PsCBackIncomingCallAccepted1, "PsCBackIncomingCallAccepted OK")
+   TRC_MSG(MMI_CM_INFO_PsCBackIncomingCallAccepted2, "PsCBackIncomingCallAccepted FAIL")
+   TRC_MSG(MMI_CM_INFO_PsCBackCheckChldIncomingCallAccepted1, "PsCBackCheckChldIncomingCallAccepted OK")
+   TRC_MSG(MMI_CM_INFO_PsCBackCheckChldIncomingCallAccepted2, "PsCBackCheckChldIncomingCallAccepted FAIL")
+   TRC_MSG(MMI_CM_INFO_PsCBackActiveCallsHeld1, "PsCBackActiveCallsHeld OK")
+   TRC_MSG(MMI_CM_INFO_PsCBackActiveCallsHeld2, "PsCBackActiveCallsHeld FAIL cause %d")
+   TRC_MSG(MMI_CM_INFO_ProcessCallsHeld, "ProcessCallsHeld incoming state")
+   TRC_MSG(MMI_CM_INFO_CCBSDialResponse1, "CCBSDialResponse OK")
+   TRC_MSG(MMI_CM_INFO_CCBSDialResponse2, "CCBSDialResponse FAIL")
+   TRC_MSG(MMI_CM_INFO_EntryScrIncomingCallEvent, "Converting waiting call to ringing call")
+   TRC_MSG(MMI_CM_INFO_ExitScrShowSSEvent1, "ExitScrShowSSEvent: Cback Function called")
+   TRC_MSG(MMI_CM_INFO_ExitScrShowSSEvent2, "ExitScrShowSSEvent: Going to Incomingcallscrn")
+   TRC_MSG(MMI_CM_INFO_ExitScrShowSSEvent3, "ExitScrShowSSEvent: Going to Activecallscrn")
+   TRC_MSG(MMI_CM_INFO_ExitScrShowSSEvent4, "ExitScrShowSSEvent: Executing waiting Function")
+
+   TRC_MSG(MMI_CM_G1_TEST, "group 1 message message")
+
+   /* --------------------------------------------------------------- */
+   /* ----------------------- MODULE NAME:PHB  ---------------------- */
+   /* --------------------------------------------------------------- */
+   //Example	
+   TRC_MSG(MMI_PHB_FUNC_TEST, "func name log %d")
+   TRC_MSG(MMI_PHB_WARN_TEST, "warning message")
+   TRC_MSG(MMI_PHB_ERROR_TEST, "error message")
+   TRC_MSG(MMI_PHB_INFO_TEST, "info message")
+   TRC_MSG(MMI_PHB_G4_TEST, "group 4 message message")
+
+   //PHB common use
+   //Phonebook.c
+   TRC_MSG(MMI_PHB_FUNC_PopulateLookUpTable_BEGIN, "---[Phonebook.c] mmi_phb_lookup_table_populate() --> Begin Populate Entry = [%d] ---")
+   TRC_MSG(MMI_PHB_FUNC_PopulateLookUpTable_END, "---[Phonebook.c] mmi_phb_lookup_table_populate() --> End Populate Entry = [%d] ---")
+
+   //PhonebookInlineEdit.c
+   TRC_MSG(MMI_PHB_IMAGE_UPDATE_BY_INDEX, "---[PhonebookInlineEdit.c] mmi_phb_image_update_by_index() --> Image Index = [%d] ---")
+   TRC_MSG(MMI_PHB_IMAGE_DELETE_BY_INDEX, "---[PhonebookInlineEdit.c] mmi_phb_image_delete_by_index() --> Image Index = [%d] ---")
+   TRC_MSG(MMI_PHB_IMAGE_DUPLICATE_BY_INDEX, "---[PhonebookInlineEdit.c] mmi_phb_image_duplicate_by_index() --> Dst Index = [%d] Src Index = [%d]---")
+   TRC_MSG(MMI_PHB_IMAGE_COPY, "---[PhonebookInlineEdit.c] mmi_phb_image_copy() ---")
+   TRC_MSG(MMI_PHB_IMAGE_COPY_1, "---[PhonebookInlineEdit.c] mmi_phb_image_copy() --> Source and Destination are the same path.---")
+   TRC_MSG(MMI_PHB_IMAGE_COPY_2, "---[PhonebookInlineEdit.c] mmi_phb_image_copy() --> Open Source File Fail---")
+   TRC_MSG(MMI_PHB_IMAGE_COPY_3, "---[PhonebookInlineEdit.c] mmi_phb_image_copy() --> Open Destination File Fail---")   
+   TRC_MSG(MMI_PHB_IMAGE_COPY_4, "---[PhonebookInlineEdit.c] mmi_phb_image_copy() --> Copy Fail  Read Result = [%d]  Write Result = [%d]---")   
+
+   //PhonebookStubsToOthers.c	
+   TRC_MSG(MMI_PHB_FUNC_lookUpNumber, "---[PhonebookStubsToOthers.c] lookUpNumber() ---")
+   //TRC_MSG(MMI_PHB_FUNC_GetPHBDataForCM, "---[PhonebookStubsToOthers.c] mmi_phb_call_get_data_for_call_mgnt() ---")   
+   TRC_MSG(MMI_PHB_FUNC_SendDataForCallerGrp, "---[PhonebookStubsToOthers.c] mmi_phb_sms_send_data_for_group() --> Caller Group Member Count = [%d]---")   
+   TRC_MSG(MMI_PHB_IMAGE_GET_PATH_FROM_ID_1, "---[PhonebookStubsToOthers.c] mmi_phb_image_get_path_from_id() --> Record Index = [%d]---")
+   TRC_MSG(MMI_PHB_IMAGE_GET_PATH_FROM_ID_2, "---[PhonebookStubsToOthers.c] mmi_phb_image_get_path_from_id() --> Open File Result = [%d]---")
+   TRC_MSG(MMI_PHB_IMAGE_GET_PATH_FROM_ID_3, "---[PhonebookStubsToOthers.c] mmi_phb_image_get_path_from_id() --> Get Image Success ---")
+
+
+   /* --------------------------------------------------------------- */
+   /* ----------------------- MODULE NAME:vObject-------------------- */
+   /* --------------------------------------------------------------- */
+  /* TRACE_FUNC trace class */
+
+   /* TRACE_INFO trace class */
+
+   //vObject common use
+   //vObjects.c
+   TRC_MSG(MMI_VOBJ_INIT, "--- [vObjects.c] mmi_vobj_init() ---")
+   TRC_MSG(MMI_VOBJ_DEINIT, "--- [vObjects.c] mmi_vobj_deinit() ---")
+   TRC_MSG(MMI_VOBJ_IRDA_RECEIVE_IND, "--- [vObjects.c] mmi_vobj_irda_receive_ind() ---")   
+   TRC_MSG(MMI_VOBJ_ENTRY_IRDA_PROCESSING_SCREEN, "--- [vObjects.c] mmi_vobj_entry_irda_processing_screen() ---")   
+   TRC_MSG(MMI_VOBJ_REGISTER_SMS_REQ, "--- [vObjects.c] mmi_vobj_register_sms_req() ===> port=[%d] ---")   
+   TRC_MSG(MMI_VOBJ_REGISTER_VCARD_SMS_RSP, "--- [vObjects.c] mmi_vobj_register_vcard_sms_rsp() ===> result=[%d] cause=[%d]---")   
+   TRC_MSG(MMI_VOBJ_REGISTER_VCLNDR_SMS_RSP, "--- [vObjects.c] mmi_vobj_register_vclndr_sms_rsp() ---")   
+   TRC_MSG(MMI_VOBJ_SMS_RECEIVE_IND, "--- [vObjects.c] mmi_vobj_sms_receive_ind() ===> port=[%d]---")   
+   TRC_MSG(MMI_VOBJ_SMS_GET_INCOMING_MSG_REQ, "--- [vObjects.c] mmi_vobj_sms_get_incoming_msg_req() ---")   
+   TRC_MSG(MMI_VOBJ_SMS_GET_INCOMING_MSG_RSP, "--- [vObjects.c] mmi_vobj_sms_get_incoming_msg_rsp() ---")      
+   TRC_MSG(MMI_VOBJ_IS_PENDING_OBJECT, "--- [vObjects.c] mmi_vobj_is_pending_object() ---")      
+   TRC_MSG(MMI_VOBJ_ENTRY_RECV_OBJECT, "--- [vObjects.c] mmi_vobj_entry_recv_object() ===> type=[%d]---")      
+   TRC_MSG(MMI_VOBJ_CLEAR_ONE_FILE_BUFFER, "--- [vObjects.c] mmi_vobj_clear_one_file_buffer() ---")      
+   TRC_MSG(MMI_VOBJ_GET_FILE_BUFFER_SIZE, "--- [vObjects.c] mmi_vobj_get_file_buffer_size() ===> begin=[%d] end=[%d]---")      
+
+
+  //vCard.c
+
+  //vCalendar.c
+
+
+   	/* --------------------------------------------------------------- */
+   	/* ----------------------- MODULE NAME:SMS/CB ------------------ */
+   	/* --------------------------------------------------------------- */
+   	//CellBroadcast.c
+   	/* CB MMI trace functions */
+	TRC_MSG(TRC_MMI_CB_DELETE_CB_MESSAGE,	"[CB][File]CellBroadcast.c [Function]DeleteCBMessage()[0] [Value]delete_index = %d")
+	TRC_MSG(TRC_MMI_CB_DELETE_CB_MESSAGE_1,	"[CB][File]CellBroadcast.c [Function]DeleteCBMessage()[1] [Value]error1 = %d")
+	TRC_MSG(TRC_MMI_CB_DELETE_CB_MESSAGE_2,	"[CB][File]CellBroadcast.c [Function]DeleteCBMessage()[2] [Value]error2 = %d")
+	TRC_MSG(TRC_MMI_CB_DELETE_CB_MESSAGE_3,	"[CB][File]CellBroadcast.c [Function]DeleteCBMessage()[3] [Value]error3 = %d")
+	TRC_MSG(TRC_MMI_CB_ADD_CB_MESSAGE,	"[CB][File]CellBroadcast.c [Function]AddCBMessage()[0] [Value]currCBTotal = %d")
+	TRC_MSG(TRC_MMI_CB_ADD_CB_MESSAGE_1,	"[CB][File]CellBroadcast.c [Function]AddCBMessage()[1] [Value]error = %d")
+	TRC_MSG(TRC_MMI_CB_READ_CHNL_INFO_FROM_NVRAM,	"[CB][File]CellBroadcast.c [Function]ReadCbChnlInfoFromNvram() [Value]error = %d")
+	TRC_MSG(TRC_MMI_CB_WRITE_CHNL_INFO_FROM_NVRAM,	"[CB][File]CellBroadcast.c [Function]WriteCbChnlInfoToNvram() [Value]error = %d")
+	TRC_MSG(TRC_MMI_CB_READ_MESSAGE_INFO_FROM_NVRAM,	"[CB][File]CellBroadcast.c [Function]ReadCBMessageInfoFromNvram() [Value]error = %d")
+	TRC_MSG(TRC_MMI_CB_WRITE_MESSAGE_INFO_FROM_NVRAM,	"[CB][File]CellBroadcast.c [Function]WriteCBMessageInfoFromNvram() [Value]error = %d")
+	TRC_MSG(TRC_MMI_CB_READ_CB_MESSAGE_CONTENT_FROM_NVRAM,	"[CB][File]CellBroadcast.c [Function]ReadCBMessageContent()[0]")
+	TRC_MSG(TRC_MMI_CB_READ_CB_MESSAGE_CONTENT_FROM_NVRAM_1,	"[CB][File]CellBroadcast.c [Function]ReadCBMessageContent()[1] [Value]alphabetType = %d")
+	TRC_MSG(TRC_MMI_CB_GET_CB_MODE_RSP_ACTIVE,	"[CB][File]CellBroadcast.c [Function]mmi_msg_get_cb_mode_rsp_active()")
+	TRC_MSG(TRC_MMI_CB_GET_CB_MODE_RSP_DISPLAY, "[CB][File]CellBroadcast.c [Function]mmi_msg_get_cb_mode_rsp_display()[0]")
+	TRC_MSG(TRC_MMI_CB_GET_CB_MODE_RSP_DISPLAY_1,	"[CB][File]CellBroadcast.c [Function]mmi_msg_get_cb_mode_rsp_display()[1] [Event] cb_info is filled up")
+	TRC_MSG(TRC_MMI_CB_GET_CB_MODE_RSP_LANGUAGE,	"[CB][File]CellBroadcast.c [Function]mmi_msg_get_cb_mode_rsp_language()")
+	TRC_MSG(TRC_MMI_CB_SET_CB_MODE_RSP,	"[CB][File]CellBroadcast.c [Function]mmi_msg_set_cb_mode_rsp() [Value]result = %d")
+	TRC_MSG(TRC_MMI_CB_SUBSCRIBE_CB_REQ,	"[CB][File]CellBroadcast.c [Function]mmi_msg_subscribe_cb_req()")
+	TRC_MSG(TRC_MMI_CB_SUBSCRIBE_CB_RSP,	"[CB][File]CellBroadcast.c [Function]mmi_msg_subscribe_cb_req() [Value]result = %d")
+	TRC_MSG(TRC_MMI_CB_DEINIT_CELL_BROADCAST_APP,	"[CB][File]CellBroadcast.c [Function]DeInitCellBroadcastApp()")
+	TRC_MSG(TRC_MMI_CB_RESET_CB_INFO_STRUCTS,	"[CB][File]CellBroadcast.c [Function]ResetCBInfoStructs()")
+	TRC_MSG(TRC_MMI_CB_INIT_CELL_BROADCAST_APP,	"[CB][File]CellBroadcast.c [Function]InitCellBroadcastApp()")
+	TRC_MSG(TRC_MMI_CB_MMI_MSG_DELETE_CB_MESSAGE,	"[CB][File]CellBroadcast.c [Function]mmi_msg_delete_cb_message()[0] [Value]currindex = %d")
+	TRC_MSG(TRC_MMI_CB_MMI_MSG_DELETE_CB_MESSAGE_1,	"[CB][File]CellBroadcast.c [Function]mmi_msg_delete_cb_message()[1] [Event]Msgpage > 0")
+	TRC_MSG(TRC_MMI_CB_ENTRY_NEW_CB_IND_SINGLE_MODE,	"[CB][File]CellBroadcast.c [Function]mmi_msg_entry_new_cb_ind() [Event]Single Mode")
+	TRC_MSG(TRC_MMI_CB_ENTRY_NEW_CB_IND_TWO_MODE,	"[CB][File]CellBroadcast.c [Function]mmi_msg_entry_new_cb_ind() [Value]Display Mode = %d")
+	TRC_MSG(TRC_MMI_CB_CONVERT_CB_FOR_DISPLAY,	"[CB][File]CellBroadcast.c [Function]ConvertCBForDisplay() [Value]len = %d, format = %d")
+	TRC_MSG(TRC_MMI_CB_READ_CONTENT_FOR_DISPLAY,	"[CB][File]CellBroadcast.c [Function]mmi_msg_cb_read_content_for_display() [Value]index = %d, content_state = %d")
+	TRC_MSG(TRC_MMI_CB_READ_CONTENT_FROM_NVRAM,	"[CB][File]CellBroadcast.c [Function]mmi_msg_cb_read_content_from_nvram()[0] [Value]start_page = %d, page_num = %d")
+	TRC_MSG(TRC_MMI_CB_READ_CONTENT_FROM_NVRAM_1,	"[CB][File]CellBroadcast.c [Function]mmi_msg_cb_read_content_from_nvram()[1] [Value]error = %d")
+	TRC_MSG(TRC_MMI_CB_MMI_MSG_NEW_CB_IND,	"[CB][File]CellBroadcast.c [Function]mmi_msg_new_cb_ind()[0] [Event]Begin")
+	TRC_MSG(TRC_MMI_CB_MMI_MSG_NEW_CB_IND_1,	"[CB][File]CellBroadcast.c [Function]mmi_msg_new_cb_ind()[1] [Event]Display In Idle Feature")
+	TRC_MSG(TRC_MMI_CB_MMI_MSG_NEW_CB_IND_2,	"[CB][File]CellBroadcast.c [Function]mmi_msg_new_cb_ind()[2] [Event]Two Display Mode")
+	TRC_MSG(TRC_MMI_CB_MMI_MSG_NEW_CB_IND_3,	"[CB][File]CellBroadcast.c [Function]mmi_msg_new_cb_ind()[3] [Event]Single Display Mode")
+	TRC_MSG(TRC_MMI_CB_NEED_NEW_CB_IND,	"[CB][File]CellBroadcast.c [Function]mmi_msg_need_new_cb_ind()[0] [Value]currCBTotal = %d")
+	TRC_MSG(TRC_MMI_CB_NEED_NEW_CB_IND_1,	"[CB][File]CellBroadcast.c [Function]mmi_msg_need_new_cb_ind()[1] [Value]i = %d")
+
+	TRC_MSG(TRC_MMI_CB_HANDLE_NEW_CB_IND,	"[CB][File]CellBroadcast.c [Function]mmi_msg_handle_new_cb_ind()[0] [Event]Begin")
+	TRC_MSG(TRC_MMI_CB_HANDLE_NEW_CB_IND_1,	"[CB][File]CellBroadcast.c [Function]mmi_msg_handle_new_cb_ind()[1] [Value]Page = %d")
+	TRC_MSG(TRC_MMI_CB_HANDLE_NEW_CB_IND_2,	"[CB][File]CellBroadcast.c [Function]mmi_msg_handle_new_cb_ind()[2] [Value]CurrTotalPage = %d")
+	TRC_MSG(TRC_MMI_CB_HANDLE_NEW_CB_IND_3,	"[CB][File]CellBroadcast.c [Function]mmi_msg_handle_new_cb_ind()[3] [Value]is_immediate_mode = %d")
+	TRC_MSG(TRC_MMI_CB_HANDLE_NEW_CB_IND_4,	"[CB][File]CellBroadcast.c [Function]mmi_msg_handle_new_cb_ind()[4] [Value]currCBTotal = %d")
+	TRC_MSG(TRC_MMI_CB_HANDLE_NEW_CB_IND_5,	"[CB][File]CellBroadcast.c [Function]mmi_msg_handle_new_cb_ind()[5] [Value]currindex = %d")
+	TRC_MSG(TRC_MMI_CB_HANDLE_NEW_CB_IND_6,	"[CB][File]CellBroadcast.c [Function]mmi_msg_handle_new_cb_ind()[6] [Value]immediate_index = %d")   
+	TRC_MSG(TRC_MMI_CB_HANDLE_NEW_CB_IND_7,	"[CB][File]CellBroadcast.c [Function]mmi_msg_handle_new_cb_ind()[7] [Value]deleteIndex = %d")
+	TRC_MSG(TRC_MMI_CB_HANDLE_NEW_CB_IND_8,	"[CB][File]CellBroadcast.c [Function]mmi_msg_handle_new_cb_ind()[8] [Value]deleteIndex = %d")
+	TRC_MSG(TRC_MMI_CB_HANDLE_NEW_CB_IND_9,	"[CB][File]CellBroadcast.c [Function]mmi_msg_handle_new_cb_ind()[9] [Event]i == curr_total_message")
+   
+	TRC_MSG(TRC_MMI_CB_SET_DISPLAY_IN_IDLE_FLAG,	"[CB][File]CellBroadcast.c [Function]mmi_msg_cb_set_display_in_idle_flag() [Value]flag = %d")
+	TRC_MSG(TRC_MMI_CB_GET_DISPLAY_IN_IDLE_FLAG,	"[CB][File]CellBroadcast.c [Function]mmi_msg_cb_get_display_in_idle_flag() [Value]display_in_idle_flag = %d")
+	TRC_MSG(TRC_MMI_CB_GET_CB_CONTENT,	"[CB][File]CellBroadcast.c [Function]mmi_msg_get_cb_content()")
+	TRC_MSG(TRC_MMI_CB_HANDLE_CB_GS_CHANGE_IND,	"[CB][File]CellBroadcast.c [Function]mmi_msg_handle_cb_gs_change_ind() [Value]geography_type = %d")
+	TRC_MSG(TRC_MMI_CB_DISPLAY_CONTENT_IN_IDLE,	"[CB][File]CellBroadcast.c [Function]mmi_msg_cb_display_content_in_idle() [Value]currCBTotal = %d")
+
+	TRC_MSG(TRC_MMI_CB_IS_IDLE_MSG_SUBSCRIBE,	"[CB][File]CellBroadcast.c [Function]mmi_msg_cb_is_idle_msg_subscribe()[0] [Value]index = %d")
+	TRC_MSG(TRC_MMI_CB_IS_IDLE_MSG_SUBSCRIBE_1,	"[CB][File]CellBroadcast.c [Function]mmi_msg_cb_is_idle_msg_subscribe()[1] [Value]mi = %d")
+
+	TRC_MSG(TRC_MMI_CB_NEED_DISPLAY_IN_IDLE,	"[CB][File]CellBroadcast.c [Function]mmi_msg_cb_need_display_in_idle() [Value]currCBTotal = %d")
+
+
+#endif /* _MMI_COMMON_APP_TRC_H_ */
+

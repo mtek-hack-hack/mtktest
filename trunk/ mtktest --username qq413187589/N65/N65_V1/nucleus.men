@@ -1,0 +1,368 @@
+; Additional Nucleus+ Menues
+
+add
+menu
+(
+  popup "&Nucleus+"
+  (
+    if y.exist(T32OUT)
+    (
+      menuitem "&DBUG+ Terminal" "TERM T32OUT T32IN"
+      separator
+    )
+    default
+    menuitem "Display &Tasks"      "TASK.TaskStat"
+    menuitem "Display &Mailboxes"  "TASK.MbxStat"
+    menuitem "Display &Queues"     "TASK.QueueStat"
+    menuitem "Display &Pipes"      "TASK.PipeStat"
+    menuitem "Display &Semaphores" "TASK.SemaStat"
+    menuitem "Display &Events"     "TASK.EventStat"
+    menuitem "Display T&imers"     "TASK.TImerstat"
+    menuitem "Display &Partitions" "TASK.PartMem"
+    menuitem "Display D&yn. Mem."  "TASK.DynMem"
+    menuitem "Display HISRs"       "TASK.HIsr"
+    if y.exist(HIC_History_Table)
+    (
+      separator
+      menuitem "Display History" "TASK.HISTory"
+    )
+    separator
+    popup "&Stack Coverage"
+    (
+      menuitem "List Stacks"           "TASK.STacK"
+      menuitem "Add Task to Cov"       "TASK.STacK.ADD"
+      menuitem "Remove Task from Cov"  "TASK.STacK.ReMove"
+      enable ice()||fire()
+      menuitem "Reset Coverage" "TASK.STK.RES"
+    )
+  )
+  popup "Trace"
+  (
+    popup "[:alist]List"
+    (
+      separator
+      menuitem "&Task Switches"     "Trace.List List.TASK"
+      menuitem "&Default and Tasks" "Trace.List List.TASK DEFault"
+    )
+  )
+  popup "Perf"
+  (
+    separator
+    popup "&Task Runtime"
+    (
+      menuitem "&Prepare"
+      (
+        if t.method.analyzer()
+        (
+          Analyzer.AutoInit on
+        )
+        if (ice()||fire())&&!a.mode.flow()
+        (
+          Analyzer.ReProgram
+          (
+            Sample.Enable if AlphaBreak&&Write
+          )
+          Break.Delete /Alpha
+          Break.Set task.config(magic)++(task.config(magicsize)-1) /Alpha
+        )
+        if a.mode.flow()
+        (
+          Break.Delete /TraceEnable
+          Break.Set task.config(magic) /TraceEnable
+        )
+      )
+      menuitem "[:perf]Show &Numerical"   "Trace.STATistic.TASK"
+      menuitem "[:achart]Show as &Timing" "Trace.CHART.TASK"
+      menuitem "[:achart]Tracking with Trace &List"
+      (
+        Trace.List List.TASK DEFault /Track
+        Trace.CHART.TASK /Track
+      )
+    )
+    popup "&Task Function Runtime"
+    (
+      menuitem "&Prepare"
+      (
+        if t.method.analyzer()
+        (
+          Analyzer.AutoInit on
+          Analyzer.STATistic.PreFetch on
+        )
+
+        if (ice()||fire())&&!a.mode.flow()
+        (
+          if a.config.hac()
+          (
+             Analyzer.ReProgram
+             (
+               Sample.Enable if AlphaBreak
+               Sample.Enable if BetaBreak
+               Mark.A        if AlphaBreak
+               Mark.B        if BetaBreak
+             )
+          )
+          else
+          (
+             Analyzer.ReProgram
+             (
+               Sample.Enable if AlphaBreak||BetaBreak
+               Mark.A if AlphaBreak
+               Mark.B if BetaBreak
+             )
+          )
+          Break.Delete /Alpha /Beta /Charly
+          Break.SetFunc
+          Break.Set task.config(magic)++(task.config(magicsize)-1) /Alpha
+	    )
+        if a.mode.flow()
+        (
+          Break.Delete /TraceData
+          Break.Set task.config(magic) /TraceData
+        )
+      )
+      menuitem "[:perf]Show &Numerical"     "Trace.STATistic.TASKFUNC"
+      menuitem "[:perf]Show as &Tree"       "Trace.STATistic.TASKTREE"
+      menuitem "[:perf]Show &Detailed Tree" "Trace.STATistic.TASKTREE ALL"
+      menuitem "[:achart]Show as &Timing"   "Trace.CHART.TASKFUNC"
+      menuitem "[:alist]Show N&esting"      "Trace.List List.TASK FUNC TI.FUNC"
+    )
+    popup "Task &Status"
+    (
+      menuitem "&Prepare"
+      (
+        if t.method.analyzer()
+        (
+          Analyzer.AutoInit on
+        )
+        if (ice()||fire())&&!a.mode.flow()
+        (
+          Analyzer.ReProgram
+          (
+            Sample.Enable if AlphaBreak&&Write
+          )
+          Break.Delete /Alpha
+          Break.Set task.config(magic)++(task.config(magicsize)-1) /Alpha
+          TASK.TASKState
+        )
+      )
+      menuitem "[:perf]Show &Numerical"   "Trace.STATistic.TASKSTATE"
+      menuitem "[:achart]Show as &Timing" "Trace.CHART.TASKSTATE"
+      menuitem "[:achart]Tracking with Trace &List"
+      (
+        Trace.List List.TASK DEFault /Track
+        Trace.CHART.TASKSTATE /Track
+      )
+    )
+  )
+  popup "&Help"
+  (
+     menuitem "Nucleus+ Multitask Debugger Manual" "HELP __RTOS_NUCLEUS_"
+  )
+)
+
+
+if y.exist(KERNEL_tsk_list)
+(
+  add
+  menu
+  (
+    popup "&µiPLUS"
+    (
+      menuitem "Display &Tasks"       "TASK.UITSK"
+      menuitem "Display &Semaphores"  "TASK.UISEM"
+      menuitem "Display &Event Flags" "TASK.UIFLG"
+      menuitem "Display &Data Queues" "TASK.UIDTQ"
+      menuitem "Display &Mailboxes"   "TASK.UIMBX"
+      menuitem "Display &Mem Pools (f)" "TASK.UIMPF"
+      menuitem "Display &Mem Pools (v)" "TASK.UIMPL"
+    )
+     popup "&Help"
+     (
+        menuitem "Nucleus+ Multitask Debugger Manual" "HELP __RTOS_UIPLUS_"
+     )
+  )
+)
+
+
+menu "task.ts"
+(
+  default
+  menuitem "Display Detailed"  "TASK.TaskStat track.address()"
+  menuitem "Display TCB"
+  (
+    &address=address.offset(track.address())
+    Var.View %m (TC_TCB*)&address
+  )
+  menuitem "Display Stack Frame"  "Var.Frame /Locals /Caller /Task track.address()"
+  menuitem "Switch Context"       "Register.TASK track.address()"
+  separator
+  menuitem "Add to Stack Cov"  "TASK.STK.ADD address.offset(track.address())"
+  menuitem "Rm from Stack Cov" "TASK.STK.RM  address.offset(track.address())"
+  separator
+  menuitem "Dump TCB"          "Data.dump track.address()"
+)
+
+
+menu "task.qs"
+(
+  default
+  menuitem "Display Detailed"  "TASK.QueueStat track.address()"
+  menuitem "Display QCB"
+  (
+    &address=address.offset(track.address())
+    Var.View %m (QU_QCB*)&address
+  )
+  menuitem "Dump QCB"          "Data.dump track.address()"
+)
+
+
+menu "task.ps"
+(
+  default
+  menuitem "Display Detailed"  "TASK.PipeStat track.address()"
+  menuitem "Display PCB"
+  (
+    &address=address.offset(track.address())
+    Var.View %m (PI_PCB*)&address
+  )
+  menuitem "Dump PCB"          "Data.dump track.address()"
+)
+
+
+menu "task.dm"
+(
+  default
+  menuitem "Display Detailed"  "TASK.DynMem track.address()"
+  menuitem "Display PCB"
+  (
+    &address=address.offset(track.address())
+    Var.View %m (DM_PCB*)&address
+  )
+  menuitem "Dump PCB"          "Data.dump track.address()"
+)
+
+
+menu "task.hi"
+(
+  default
+  menuitem "Display Detailed"  "TASK.HIsr track.address()"
+  menuitem "Display HCB"
+  (
+    &address=address.offset(track.address())
+    Var.View %m (TC_HCB*)&address
+  )
+  menuitem "Dump HCB"          "Data.dump track.address()"
+)
+
+
+menu "task.uitsk"
+(
+  default
+  menuitem "Display Detailed"  
+  (
+    ;&tid=task.uitskid(track.address())
+    &tid=address.offset(track.address())
+    TASK.UITSK &tid
+  )
+  menuitem "Display CTSK"
+  (
+    &address=address.offset(track.address())
+    Var.View %m (T_CTSK*)&address
+  )
+  ;menuitem "Display Stack Frame"  "Var.Frame /Locals /Caller /Task track.address()"
+  ;menuitem "Switch Context"       "Register.TASK track.address()"
+  ;separator
+  ;menuitem "Add to Stack Cov"  "TASK.STK.ADD address.offset(track.address())"
+  ;menuitem "Rm from Stack Cov" "TASK.STK.RM  address.offset(track.address())"
+  separator
+  menuitem "Dump CTSK"
+  (
+    &address=address.offset(track.address())
+    Data.dump &address
+  )
+)
+
+
+menu "task.uisem"
+(
+  default
+  menuitem "Display Detailed"
+  (
+    ;&id=task.uisemid(track.address())
+    &id=address.offset(track.address())
+    TASK.UISEM &id
+  )
+  menuitem "Display CSEM"
+  (
+    &address=address.offset(track.address())
+    Var.View %m (T_CSEM*)&address
+  )
+  menuitem "Dump CSEM"
+  (
+    &address=address.offset(track.address())
+    Data.dump &address
+  )
+)
+
+menu "task.uiflg"
+(
+  default
+  menuitem "Display Detailed"
+  (
+    ;&id=task.uiflgid(track.address())
+    &id=address.offset(track.address())
+    TASK.UIFLG &id
+  )
+  menuitem "Display CFLG"
+  (
+    &address=address.offset(track.address())
+    Var.View %m (T_CFLG*)&address
+  )
+  menuitem "Dump CFLG"
+  (
+    &address=address.offset(track.address())
+    Data.dump &address
+  )
+)
+
+menu "task.uidtq"
+(
+  default
+  menuitem "Display Detailed"
+  (
+    ;&id=task.uidtqid(track.address())
+    &id=address.offset(track.address())
+    TASK.UIDTQ &id
+  )
+  menuitem "Display CDTQ"
+  (
+    &address=address.offset(track.address())
+    Var.View %m (T_CDTQ*)&address
+  )
+  menuitem "Dump CDTQ"
+  (
+    &address=address.offset(track.address())
+    Data.dump &address
+  )
+)
+
+menu "task.uimbx"
+(
+  default
+  menuitem "Display Detailed"
+  (
+    ;&id=task.uimbxid(track.address())
+    &id=address.offset(track.address())
+    TASK.UIMBX &id
+  )
+  menuitem "Display CMBX"
+  (
+    &address=address.offset(track.address())
+    Var.View %m (T_CMBX*)&address
+  )
+  menuitem "Dump CMBX"
+  (
+    &address=address.offset(track.address())
+    Data.dump &address
+  )
+)

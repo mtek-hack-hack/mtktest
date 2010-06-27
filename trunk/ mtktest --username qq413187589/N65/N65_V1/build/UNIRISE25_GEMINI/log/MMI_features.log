@@ -1,0 +1,1586 @@
+
+***********************************************************************
+[Summary]
+***********************************************************************
+
+Mismatch Config count = 20
+Defined Feature count = 259
+Undefined Feature count = 506
+All Feature count = 765
+
+
+***********************************************************************
+[Mismatch Configs (20)]
+***********************************************************************
+
+<CFG name>                           <original>     <result>
+-----------------------------------------------------------------------
+CFG_MMI_LANG_VIETNAMESE              __ON__         __OFF__
+CFG_MMI_LANG_ENGLISH                 __OFF__        __ON__
+CFG_MMI_LANG_PORTUGUESE              __OFF__        __ON__
+CFG_MMI_LANG_SPANISH                 __OFF__        __ON__
+CFG_MMI_LANG_HINDI                   __ON__         __OFF__
+CFG_MMI_LANG_ITALIAN                 __ON__         __OFF__
+CFG_MMI_CHSET_ARABIC_WIN             __OFF__        __ON__
+CFG_MMI_LANG_ARABIC                  __OFF__        __ON__
+CFG_MMI_LANG_THAI                    __OFF__        __ON__
+CFG_MMI_CHSET_ARABIC_ISO             __OFF__        __ON__
+CFG_MMI_LANG_SM_CHINESE              __ON__         __OFF__
+CFG_MMI_LANG_PERSIAN                 __OFF__        __ON__
+CFG_MMI_LANG_FRENCH                  __OFF__        __ON__
+CFG_MMI_LANG_INDONESIAN              __ON__         __OFF__
+CFG_MMI_LANG_RUSSIAN                 __OFF__        __ON__
+CFG_MMI_LANG_TURKISH                 __OFF__        __ON__
+CFG_MMI_LANG_GREEK                   __ON__         __OFF__
+CFG_MMI_SET_DEF_ENCODING_TYPE        __ON__         __OFF__
+CFG_MMI_LANG_MALAY                   __ON__         __OFF__
+CFG_MMI_LANG_GERMAN                  __ON__         __OFF__
+
+
+***********************************************************************
+[Defined Features (259/765)]
+***********************************************************************
+
+[D] MMI_MAIN_BASE_LAYER_BITS_PER_PIXEL                             16 
+[D] MMI_SUB_BASE_LAYER_BITS_PER_PIXEL                              16 
+[D] UI_SMALL_IMAGE_SELECTOR_SCREEN                                 
+[D] UI_SMALL_LIST_SCREEN                                           
+[D] UI_SMALL_PIN_EDITOR_SCREEN                                     
+[D] _MUTILANG_TEMPLATE_                                            
+[D] _NETWORK_CIPHER_SUPPORT_                                       
+[D] __DIRECT_ENTRY_FACTORY_MODE_ON_BOOTUP__                        
+[D] __DUALMODE_TOUCH_DIAL_SCREEN_WITH_SLAVE_FUNCTION__             
+[D] __GDI_MEMORY_PROFILE_2__                                       
+[D] __MMI_A2DP_SUPPORT__                                           
+[D] __MMI_ADVANCED_TODO__                                          
+[D] __MMI_ALM_ALERT_TYPE__                                         
+[D] __MMI_ALM_AUDIO_OPTIONS__                                      
+[D] __MMI_ALM_CUSTOMIZE_TONE__                                     
+[D] __MMI_ALM_SNOOZE_SETTING__                                     
+[D] __MMI_ALPHA_BLENDING__                                         
+[D] __MMI_ANALOG_TV_SIGNAL__                                       
+[D] __MMI_ANALOT_TV_LOGO__                                         
+[D] __MMI_ANIMATED_WALLPAPERS__                                    
+[D] __MMI_ARSHAPING_ENGINE__                                       
+[D] __MMI_AUDIO_PLAYER_A2DP_BLOCK_SPECTRUM__                       
+[D] __MMI_AUDIO_PLAYER_AUTO_REFRESH_LIST_AUTOGEN_ON__              
+[D] __MMI_AUDIO_PLAYER_DETAIL_SHOW_MORE_INFO__                     
+[D] __MMI_AUDIO_PLAYER_LYRIC_DISPLAY__                             
+[D] __MMI_AUDIO_PLAYER_LYRIC_SCREEN_BASED_ASM__                    
+[D] __MMI_AUDIO_PLAYER_SKIN_SHOW_REPEAT_SHUFFLE__                  
+[D] __MMI_AUDIO_PLAYER__                                           
+[D] __MMI_AUDIO_SPECTRUM_DISPLAY__                                 
+[D] __MMI_AUTO_KEYPAD_LOCK__                                       
+[D] __MMI_AVRCP_SUPPORT__                                          
+[D] __MMI_BIDI_ALG__                                               
+[D] __MMI_BIRTHDAY_REMINDER__                                      
+[D] __MMI_BPP_SUPPORT__                                            
+[D] __MMI_BT_MTK_SUPPORT__                                         
+[D] __MMI_BT_PROFILE__                                             
+[D] __MMI_BT_SUPPORT__                                             
+[D] __MMI_CALCULATOR__                                             
+[D] __MMI_CALENDAR_V2__                                            
+[D] __MMI_CALENDAR__                                               
+[D] __MMI_CALLERGROUP_NO_ALERT__                                   
+[D] __MMI_CAMERA__                                                 
+[D] __MMI_CCA_SUPPORT__                                            
+[D] __MMI_CFU_SEPARATE_LINE__                                      
+[D] __MMI_CHSET_ARABIC_ISO__                                       
+[D] __MMI_CHSET_ARABIC_WIN__                                       
+[D] __MMI_CHSET_GB2312__                                           
+[D] __MMI_CHSET_PERSIAN_CP1097__                                   
+[D] __MMI_CHSET_PERSIAN_CP1098__                                   
+[D] __MMI_CHSET_THAI_WINDOWS__                                     
+[D] __MMI_CHSET_TURKISH_ISO__                                      
+[D] __MMI_CHSET_TURKISH_WIN__                                      
+[D] __MMI_CHSET_WESTERN_WIN__                                      
+[D] __MMI_CH_DELETE_ALL_LOGS__                                     
+[D] __MMI_CH_MIXED_CALL_LOG__                                      
+[D] __MMI_CH_OPTIONS_SENDMMS__                                     
+[D] __MMI_CH_OPTIONS_SENDSMS__                                     
+[D] __MMI_CH_QUICK_END__                                           
+[D] __MMI_CLAMOPEN_STOP_SCRSAVER__                                 
+[D] __MMI_CLNDR_ICON_SUPPORT__                                     
+[D] __MMI_CLNDR_WEEKLY_VIEW_SUPPORT__                              
+[D] __MMI_COLOR_DIALLING_FONT__                                    
+[D] __MMI_CSP_LANG_SEL_MENU_ALWAYS_ON__                            
+[D] __MMI_CSP_SMS_COMMON_SETTING_ALWAYS_ON__                       
+[D] __MMI_CURRENCY_CONVERTER__                                     
+[D] __MMI_DATA_STORE__                                             
+[D] __MMI_DEDICATED_KEY_SHORTCUTS__                                
+[D] __MMI_DEDI_AMR_REC__                                           
+[D] __MMI_DEFAULT_THEME_1__                                        
+[D] __MMI_DEVICE_BMP_FORMAT__                                      16  
+[D] __MMI_DOWNLOAD_AGENT__                                         
+[D] __MMI_DRAW_MANAGER__                                           
+[D] __MMI_DUAL_PROFILE_SUPPORT__                                   
+[D] __MMI_DUAL_SIM_MASTER__                                        
+[D] __MMI_DUAL_SIM_SINGLE_CALL_SLAVE__                             
+[D] __MMI_DUAL_SIM_SINGLE_CALL__                                   
+[D] __MMI_DUAL_SIM__                                               
+[D] __MMI_DUN_SUPPORT__                                            
+[D] __MMI_EBOOK_READER__                                           
+[D] __MMI_EDITOR_PEN_VK_UNFOLD__                                   
+[D] __MMI_EM_BT_RF_TEST__                                          
+[D] __MMI_ENGINEER_MODE__                                          
+[D] __MMI_EONS_SUPPORT__                                           
+[D] __MMI_EXT_DEVICE__                                             
+[D] __MMI_FACTORY_MODE__                                           
+[D] __MMI_FEATURES__                                               
+[D] __MMI_FILE_MANAGER__                                           
+[D] __MMI_FMGR_APP_STORAGE__                                       
+[D] __MMI_FM_RADIO_FIRST_CHANNEL__                                 
+[D] __MMI_FM_RADIO_LOUD_SPEAK__                                    
+[D] __MMI_FM_RADIO_PRESET_TOP_N__                                  
+[D] __MMI_FM_RADIO_RECORD__                                        
+[D] __MMI_FM_RADIO__                                               
+[D] __MMI_FM_SLIM_SKIN__                                           
+[D] __MMI_FTC_MULTIPULL_SUPPORT__                                  
+[D] __MMI_FTC_SUPPORT__                                            
+[D] __MMI_FTS_SUPPORT__                                            
+[D] __MMI_GAME_MENU__                                              
+[D] __MMI_GAME_MULTICHANNEL_SOUND__                                
+[D] __MMI_GAME_MULTI_LANGUAGE_SUPPORT__                            
+[D] __MMI_GAME_VSMJ_240x320__                                      
+[D] __MMI_GAME_VSMJ__                                              
+[D] __MMI_GAME__                                                   
+[D] __MMI_GPRS_FEATURES__                                          
+[D] __MMI_HANDWRITING_WORD_PREDICTION__                            
+[D] __MMI_HFP_SUPPORT__                                            
+[D] __MMI_HSP_SUPPORT__                                            
+[D] __MMI_IDLE_FULL_SCREEN__                                       
+[D] __MMI_IMAGEVIEWER_ADV__                                        
+[D] __MMI_IMAGE_VIEWER__                                           
+[D] __MMI_IMEISV_SUPPORT__                                         
+[D] __MMI_KEYPAD_LOCK_PATTERN_1__                                  
+[D] __MMI_KEYPAD_LOCK_PROMPT_TEXT__                                
+[D] __MMI_LANG_ARABIC__                                            
+[D] __MMI_LANG_CHSET_DEPENDENCE__                                  
+[D] __MMI_LANG_ENGLISH__                                           
+[D] __MMI_LANG_FRENCH__                                            
+[D] __MMI_LANG_PERSIAN__                                           
+[D] __MMI_LANG_PORTUGUESE__                                        
+[D] __MMI_LANG_RUSSIAN__                                           
+[D] __MMI_LANG_SPANISH__                                           
+[D] __MMI_LANG_THAI__                                              
+[D] __MMI_LANG_TURKISH__                                           
+[D] __MMI_LCD_PARTIAL_ON__                                         
+[D] __MMI_LITE_DISPLAY__                                           
+[D] __MMI_MAINMENU_MATRIX_SUPPORT__                                
+[D] __MMI_MAINMENU_STYLE_CHANGE_EN__                               
+[D] __MMI_MAINMENU_TYPE__                                          MATRIX 
+[D] __MMI_MAIN_BASE_LAYER_FORMAT__                                 GDI_COLOR_FORMAT_16 
+[D] __MMI_MAIN_MENU_TYPE__                                         ( (0) )  
+[D] __MMI_MATRIX_MAIN_MENU_OPTIMIZE__                              
+[D] __MMI_MEMORY_CARD_SUPPORT__                                    
+[D] __MMI_MESSAGES_CB_CHNL_WITH_NAME__                             
+[D] __MMI_MESSAGES_CB_MSG_STORED_LIST__                            
+[D] __MMI_MESSAGES_CHAT__                                          
+[D] __MMI_MESSAGES_CONCAT_SMS__                                    
+[D] __MMI_MESSAGES_COPY__                                          
+[D] __MMI_MESSAGES_EMS_REMAINING_COUNTER__                         
+[D] __MMI_MESSAGES_EMS__                                           
+[D] __MMI_MESSAGES_MOSES_FEATURE__                                 
+[D] __MMI_MESSAGES_MULTI_APP__                                     
+[D] __MMI_MESSAGES_PREFER_STORAGE_MEMORY_STATUS__                  
+[D] __MMI_MESSAGES_SEND_BY_GROUP__                                 
+[D] __MMI_MESSAGES_SEND_TO_MANY__                                  
+[D] __MMI_MESSAGES_SINGLE_DELIVERY_REPORT__                        
+[D] __MMI_MESSAGES_TEMPLATE__                                      
+[D] __MMI_MESSAGES_TWO_CB_MODES_DISPLAY__                          
+[D] __MMI_MESSAGES_USE_URL__                                       
+[D] __MMI_MExE_SUPPORT__                                           
+[D] __MMI_MMS_TEMPLATES_NUM__                                      (5)  
+[D] __MMI_MMS__                                                    
+[D] __MMI_MULTITAP_ARABIC__                                        
+[D] __MMI_MULTITAP_FRENCH__                                        
+[D] __MMI_MULTITAP_PERSIAN__                                       
+[D] __MMI_MULTITAP_PORTUGUESE__                                    
+[D] __MMI_MULTITAP_RUSSIAN__                                       
+[D] __MMI_MULTITAP_SPANISH__                                       
+[D] __MMI_MULTITAP_THAI_PROFILE_2__                                
+[D] __MMI_MULTITAP_THAI__                                          
+[D] __MMI_MULTITAP_TURKISH__                                       
+[D] __MMI_NITZ_TZ_SUPPORT__                                        
+[D] __MMI_NITZ__                                                   
+[D] __MMI_NORMAL_KEYPAD__                                          
+[D] __MMI_NO_CONTRAST_LEVEL__                                      
+[D] __MMI_OBIGO_Q03C_MMS_USER_DEFINED_TEMPLATES__                  
+[D] __MMI_OMA_DD_DOWNLOAD__                                        
+[D] __MMI_OPP_SUPPORT__                                            
+[D] __MMI_PHB_ADV_NUM_MATCH_MOBILE__                               
+[D] __MMI_PHB_BIRTHDAY_FIELD__                                     
+[D] __MMI_PHB_CALLERGROUP_MEMBER_LIST__                            
+[D] __MMI_PHB_CALLER_RES_SETTING__                                 
+[D] __MMI_PHB_CALL_SHOW_PICTURE_FROM_FILE__                        
+[D] __MMI_PHB_DELETE_ALL_CHECK_PHONE_LOCK__                        
+[D] __MMI_PHB_IP_DIAL_FROM_PHB__                                   
+[D] __MMI_PHB_PINYIN_SORT__                                        
+[D] __MMI_PHB_QUICK_SEARCH__                                       
+[D] __MMI_PHB_RSK_QUICK_SEARCH__                                   
+[D] __MMI_PHB_SEND_MMS_FROM_PHB__                                  
+[D] __MMI_PHB_SEND_SMS_FROM_PHB__                                  
+[D] __MMI_PHB_UPDATE_CALL_LOG_AFTER_SAVE__                         
+[D] __MMI_POWER_ON_OFF_DISPLAY__                                   
+[D] __MMI_PROFILE_EXTMELODY_SUPPORT__                              
+[D] __MMI_RECEIVE_USSD_TONE__                                      
+[D] __MMI_RES_TYPE_ACTIVE_SCREEN_SEL__                             ( (0) )  
+[D] __MMI_RES_TYPE_ACTIVE_SCREEN__                                 "GIF" 
+[D] __MMI_RES_TYPE_MAINMENU_BIDEGREE_ANI_SEL__                     ( (0) )  
+[D] __MMI_RES_TYPE_MAINMENU_BIDEGREE_ANI__                         ".GIF" 
+[D] __MMI_RES_TYPE_MAINMENU_BIDEGREE_SEL__                         ( (0) )  
+[D] __MMI_RES_TYPE_MAINMENU_BIDEGREE__                             ".GIF" 
+[D] __MMI_RES_TYPE_MAINMENU_MATRIX_ANI_SEL__                       ( (0) )  
+[D] __MMI_RES_TYPE_MAINMENU_MATRIX_ANI__                           ".GIF" 
+[D] __MMI_RES_TYPE_MAINMENU_MATRIX_SEL__                           ( (0) )  
+[D] __MMI_RES_TYPE_MAINMENU_MATRIX__                               ".GIF" 
+[D] __MMI_RES_TYPE_POPUP_SCREEN_SEL__                              ( (0) )  
+[D] __MMI_RES_TYPE_POPUP_SCREEN__                                  ".GIF" 
+[D] __MMI_RES_TYPE_POWER_ONOFF_SEL__                               ( (0) )  
+[D] __MMI_RES_TYPE_POWER_ONOFF__                                   "GIF" 
+[D] __MMI_RES_TYPE_SCREEN_SAVER_SEL__                              ( (0) )  
+[D] __MMI_RES_TYPE_SCREEN_SAVER__                                  "GIF" 
+[D] __MMI_RES_TYPE_SUBLCD_WALLPAPER__                              "GIF" 
+[D] __MMI_RES_TYPE_WALLPAPER_SEL__                                 ( (0) )  
+[D] __MMI_RES_TYPE_WALLPAPER__                                     "GIF" 
+[D] __MMI_SCREEN_ROTATE_DEGREE_270__                               
+[D] __MMI_SCREEN_ROTATE__                                          
+[D] __MMI_SHOW_CMP_FILE_EXT__                                      
+[D] __MMI_SHOW_FILE_EXT__                                          
+[D] __MMI_SLEEP_OUT_BACKLIGHT_ON__                                 
+[D] __MMI_SLIM_AUDIO_PLAYER__                                      
+[D] __MMI_SLIM_CALENDAR__                                          
+[D] __MMI_SOUND_RECORDER__                                         
+[D] __MMI_SPECIFIC_CALENDAR__                                      
+[D] __MMI_SPP_SUPPORT__                                            
+[D] __MMI_STATUS_BAR_NO_UNDERLINE__                                
+[D] __MMI_STATUS_ICON_EN_EARPHONE__                                
+[D] __MMI_STATUS_ICON_MMS__                                        
+[D] __MMI_STATUS_ICON_SIGNAL_WITH_LINE_SWITCH__                    
+[D] __MMI_STOPWATCH__                                              
+[D] __MMI_SUB_BASE_LAYER_FORMAT__                                  GDI_COLOR_FORMAT_16 
+[D] __MMI_SUPPORT_DUMP_SCREEN_STRING__                             
+[D] __MMI_TODOLIST__                                               
+[D] __MMI_TOUCH_CALCULATOR__                                       
+[D] __MMI_TOUCH_DIAL_SCREEN_WITH_FUNCTION__                        
+[D] __MMI_TOUCH_DIAL_SCREEN__                                      
+[D] __MMI_TOUCH_SCREEN__                                           
+[D] __MMI_UCM__                                                    
+[D] __MMI_UI_CALENDAR_WITH_INFO_BOX__                              
+[D] __MMI_UI_FADE_EFFECT_STYLE__                                   ( (1) )  
+[D] __MMI_UI_HINT_TOGGLE_TRANSITION__                              
+[D] __MMI_UI_INLINE_EDIT_DEFAULT_TEXT_EFFECT__                     
+[D] __MMI_UI_LIST_CACHE_BACKGROUND__                               
+[D] __MMI_UI_MAIN_MENU_MATRIX_HIGHLIGHT_EFFECT_TYPE__              ( (0) )  
+[D] __MMI_UI_SMALL_SCREEN_SUPPORT__                                
+[D] __MMI_UI_SOFTKEY_STYLE__                                       (0)  
+[D] __MMI_UI_STATUSBAR_STYLE__                                     (0)  
+[D] __MMI_USB_SUPPORT__                                            
+[D] __MMI_USSD_REPLY_UCS2__                                        
+[D] __MMI_USSR_TIMER__                                             
+[D] __MMI_VCALENDAR__                                              
+[D] __MMI_VCARD_NAME_IN_ENGLISH_FORMAT__                           
+[D] __MMI_VCARD_V30__                                              
+[D] __MMI_VCARD__                                                  
+[D] __MMI_VERSION_2__                                              
+[D] __MMI_VIDEO_PLAYER__                                           
+[D] __MMI_VIDEO_RECORDER__                                         
+[D] __MMI_WALLPAPER_NUM__                                          (5)  
+[D] __MMI_WAP_DUAL_SIM__                                           
+[D] __MMI_WCLOCK_CITY_LIST_3__                                     
+[D] __MMI_WCSS_INPUT_FORMAT_SUPPORT__                              
+[D] __MMI_WC_TZ_SUPPORT__                                          
+[D] __MMI_WEBCAM__                                                 
+[D] __MMI_WGUI_CSK_ENABLE__                                        
+[D] __MMI_WORLDCLOCK_DST__                                         
+[D] __MMI_WORLD_CLOCK__                                            
+[D] __MMI_ZI_MULTITAP_PHONETIC_INPUT__                             
+[D] __MMI_ZI_PRC_ENGLISH__                                         
+[D] __MMI_ZI_SMART_PHONETIC_INPUT__                                
+[D] __MMI_ZI_STROKE_INPUT__                                        
+[D] __UCS2_ENCODING                                                
+[D] __UI_PAGING_IN_MULTILINE_EDITOR__                              
+
+
+***********************************************************************
+[Undefined Features (506/765)]
+***********************************************************************
+
+[U] UI_SMALL_CATEGORY_EDITOR
+[U] __CMS_WAP__
+[U] __DISABLE_SHORTCUTS_IMPL__
+[U] __DISABLE_SHORTCUTS_MENU__
+[U] __DUAL_SIM_IDLE_TEXT_AT_SAME_POSITION__
+[U] __GDI_MEMORY_PROFILE_1__
+[U] __LARGE_CHINESE_DB_V7__
+[U] __MMI_16X16_CHINESE_FONT__
+[U] __MMI_3D_GAME_BROGENT_GGR2_176x220__
+[U] __MMI_3D_GAME_BROGENT_GGR2_240x320__
+[U] __MMI_3D_GAME_BROGENT_HB2_176x220__
+[U] __MMI_3D_GAME_BROGENT_HB2_240x320__
+[U] __MMI_3D_GAME_INTERGRAFX_PETFISH_176x220__
+[U] __MMI_3D_GAME_INTERGRAFX_PETFISH_240x320__
+[U] __MMI_3D_GAME_INTERGRAFX_ROLLINGBALL_176x220__
+[U] __MMI_3D_GAME_INTERGRAFX_ROLLINGBALL_240x320__
+[U] __MMI_3D_GAME__
+[U] __MMI_AB_REPEATER__
+[U] __MMI_ALARM_SIDE_KEY_CONTROL__
+[U] __MMI_ANALOG_CLOCK__
+[U] __MMI_AUDIO_EQUALIZER__
+[U] __MMI_AUDIO_PLAYER_ANIMATION__
+[U] __MMI_AUDIO_PLAYER_AUTO_REFRESH_LIST_AUTOGEN_OFF__
+[U] __MMI_AUDIO_PLAYER_ON_SUBLCD__
+[U] __MMI_AUDIO_PLAYER_SHOW_PLAY_LIST_ON_SUBLCD__
+[U] __MMI_AUDIO_PLAYER_SKIN_SHOW_REPEAT_SHUFFLE_ON_SUBLCD__
+[U] __MMI_AUDIO_REVERB_EFFECT__
+[U] __MMI_AUDIO_SURROUND_BIND_EARPHONE__
+[U] __MMI_AUDIO_SURROUND_EFFECT__
+[U] __MMI_AUDIO_TIME_STRETCH__
+[U] __MMI_AVATAR__
+[U] __MMI_BARCODEREADER__
+[U] __MMI_BG_SOUND_EFFECT__
+[U] __MMI_BIP_SUPPORT__
+[U] __MMI_BI_DEGREE_MAIN_MENU_STYLE__
+[U] __MMI_BMI__
+[U] __MMI_BROWSER_2__
+[U] __MMI_BT_AUDIO_VIA_SCO__
+[U] __MMI_BT_FM_VIA_SCO__
+[U] __MMI_CALORIE__
+[U] __MMI_CASCADE_MENU__
+[U] __MMI_CAT265_SUPPORT__
+[U] __MMI_CAT44X_SUPPORT__
+[U] __MMI_CHAR_SET_BIG5__
+[U] __MMI_CHAR_SET_GB2312__
+[U] __MMI_CHECK_DUPLICATED_NITZ__
+[U] __MMI_CHINESE_WITH_SMALL_FONT__
+[U] __MMI_CHSET_BALTIC_ISO__
+[U] __MMI_CHSET_BALTIC_WIN__
+[U] __MMI_CHSET_BIG5__
+[U] __MMI_CHSET_CEURO_ISO__
+[U] __MMI_CHSET_CEURO_WIN__
+[U] __MMI_CHSET_EUCKR_WIN__
+[U] __MMI_CHSET_GB18030__
+[U] __MMI_CHSET_GREEK_ISO__
+[U] __MMI_CHSET_GREEK_WIN__
+[U] __MMI_CHSET_HEBREW_ISO__
+[U] __MMI_CHSET_HEBREW_WIN__
+[U] __MMI_CHSET_LATIN_ISO__
+[U] __MMI_CHSET_NORDIC_ISO__
+[U] __MMI_CHSET_SEURO_ISO__
+[U] __MMI_CHSET_UTF7__
+[U] __MMI_CHSET_VIETNAMESE_WINDOWS__
+[U] __MMI_CHSET_WESTERN_ISO__
+[U] __MMI_CLAMCLOSE_BACK2IDLE__
+[U] __MMI_CLAMSHELL__
+[U] __MMI_CLNDR_SMALL_SIZE_SCREEN__
+[U] __MMI_CM_BLACK_LIST__
+[U] __MMI_CM_DATA_CALL_ONLY_PLAY_TONE__
+[U] __MMI_CSB_BROWSER__
+[U] __MMI_CSTAR_DANISH__
+[U] __MMI_CSTAR_DUTCH__
+[U] __MMI_CSTAR_ENGLISH__
+[U] __MMI_CSTAR_FRENCH__
+[U] __MMI_CSTAR_GERMAN__
+[U] __MMI_CSTAR_GREEK__
+[U] __MMI_CSTAR_HUNGARIAN__
+[U] __MMI_CSTAR_ITALIAN__
+[U] __MMI_CSTAR_MULTITAP_PHONETIC_INPUT__
+[U] __MMI_CSTAR_POLISH__
+[U] __MMI_CSTAR_PORTUGUESE__
+[U] __MMI_CSTAR_SMART_PHONETIC_INPUT__
+[U] __MMI_CSTAR_SM_CHINESE__
+[U] __MMI_CSTAR_SPANISH__
+[U] __MMI_CSTAR_STROKE_INPUT__
+[U] __MMI_CSTAR_TR_CHINESE__
+[U] __MMI_CSTAR_USER_DICT__
+[U] __MMI_CSTAR_USE_CUSTOMIZED_THEME__
+[U] __MMI_CUST_KEYPAD_TONE__
+[U] __MMI_DEFAULT_MAIN_MENU_HIGHLIGHT_MESSAGE__
+[U] __MMI_DICTIONARY_SMALL_SCREEN__
+[U] __MMI_DICTIONARY_TTS__
+[U] __MMI_DICTIONARY_WELCOME_SCREEN__
+[U] __MMI_DICTIONARY_WILDCARD_SEARCH__
+[U] __MMI_DICTIONARY__
+[U] __MMI_DICT_GVCN__
+[U] __MMI_DIGITAL_CLOCK__
+[U] __MMI_DISPCHAR_M3D_BALL__
+[U] __MMI_DISPCHAR_M3D_FISH__
+[U] __MMI_DISPCHAR_M3D_PENGUIN__
+[U] __MMI_DISPCHAR_M3D__
+[U] __MMI_DISPLAY_CHAR_HIDE_MENU_FROM_FILE__
+[U] __MMI_DLT_CACHE_SUPPORT__
+[U] __MMI_DM_SELF_REGISTER_SUPPORT__
+[U] __MMI_DOWNLOADABLE_THEMES_SUPPORT__
+[U] __MMI_DUAL_SIM_DUAL_CALL__
+[U] __MMI_EDITABLE_AUDIO_EQUALIZER__
+[U] __MMI_EMAIL_ADD_ADDR_TO_PHB__
+[U] __MMI_EMAIL_BCC__
+[U] __MMI_EMAIL_COMPOSE_SIZE__
+[U] __MMI_EMAIL_COPY_ON_SERVER__
+[U] __MMI_EMAIL_DEL_SERVER_MAILS__
+[U] __MMI_EMAIL_DOWNLOAD_OPTION__
+[U] __MMI_EMAIL_DOWNLOAD_PROMPT__
+[U] __MMI_EMAIL_DRM_SUPPORT__
+[U] __MMI_EMAIL_FROM_DISP__
+[U] __MMI_EMAIL_OTAP__
+[U] __MMI_EMAIL_RECEIVING_NUM_IND__
+[U] __MMI_EMAIL_SIZE_DISP__
+[U] __MMI_EMAIL_TEMPLATE__
+[U] __MMI_EMAIL__
+[U] __MMI_EM_FIXED_GAIN_FOR_HELIOS2__
+[U] __MMI_EM_MT6223_DEBUG_MODE__
+[U] __MMI_EXIF__
+[U] __MMI_FAX_SUPPORT__
+[U] __MMI_FM_RADIO_ANIMATION_SUBLCD__
+[U] __MMI_FM_RADIO_ANIMATION__
+[U] __MMI_FM_RADIO_BIND_EARPHONE_SUBLCD__
+[U] __MMI_FM_RADIO_BIND_EARPHONE__
+[U] __MMI_FM_RADIO_LOUD_SPEAK_SUBLCD__
+[U] __MMI_FM_RADIO_ON_SUBLCD__
+[U] __MMI_FM_RADIO_SCHEDULE_REC__
+[U] __MMI_FOTA_OTAP_DMP__
+[U] __MMI_FOURWAYS_KEY_DISABLE__
+[U] __MMI_FULL_SCREEN_EDITOR__
+[U] __MMI_FWU_VIA_FILE__
+[U] __MMI_FWU_VIA_HTTP__
+[U] __MMI_FWU_VIA_TFTP__
+[U] __MMI_GAME_CHICKEN_128x128__
+[U] __MMI_GAME_CHICKEN_128x160__
+[U] __MMI_GAME_CHICKEN__
+[U] __MMI_GAME_COLORBALLS__
+[U] __MMI_GAME_COPTER_128x128__
+[U] __MMI_GAME_COPTER_128x160__
+[U] __MMI_GAME_COPTER_176x220__
+[U] __MMI_GAME_COPTER__
+[U] __MMI_GAME_DANCE_176x220__
+[U] __MMI_GAME_DANCE__
+[U] __MMI_GAME_DOLL__
+[U] __MMI_GAME_F1RACE__
+[U] __MMI_GAME_FRUIT_176x220__
+[U] __MMI_GAME_FRUIT__
+[U] __MMI_GAME_HANOI__
+[U] __MMI_GAME_JET_128x128__
+[U] __MMI_GAME_JET_128x160__
+[U] __MMI_GAME_JET_176x220__
+[U] __MMI_GAME_JET__
+[U] __MMI_GAME_MAGICSUSHI_240x320__
+[U] __MMI_GAME_MAGICSUSHI_320x240__
+[U] __MMI_GAME_MAGICSUSHI__
+[U] __MMI_GAME_MAJUNG_176x220__
+[U] __MMI_GAME_MAJUNG_240x320__
+[U] __MMI_GAME_MAJUNG_320x240__
+[U] __MMI_GAME_MAJUNG__
+[U] __MMI_GAME_MONKEY_128x128__
+[U] __MMI_GAME_MONKEY_128x160__
+[U] __MMI_GAME_MONKEY_176x220__
+[U] __MMI_GAME_MONKEY__
+[U] __MMI_GAME_PANDA_128x128__
+[U] __MMI_GAME_PANDA_128x160__
+[U] __MMI_GAME_PANDA_176x220__
+[U] __MMI_GAME_PANDA__
+[U] __MMI_GAME_PUZZLE_128x128__
+[U] __MMI_GAME_PUZZLE_128x160__
+[U] __MMI_GAME_PUZZLE_176x220__
+[U] __MMI_GAME_PUZZLE_240x320__
+[U] __MMI_GAME_PUZZLE_320x240__
+[U] __MMI_GAME_PUZZLE__
+[U] __MMI_GAME_RICHES__
+[U] __MMI_GAME_ROBOT_128x160__
+[U] __MMI_GAME_ROBOT_176x220__
+[U] __MMI_GAME_ROBOT__
+[U] __MMI_GAME_SMASH__
+[U] __MMI_GAME_SNAKE__
+[U] __MMI_GAME_SUBMARINE_128x128__
+[U] __MMI_GAME_SUBMARINE_128x160__
+[U] __MMI_GAME_SUBMARINE_176x220__
+[U] __MMI_GAME_SUBMARINE__
+[U] __MMI_GAME_UFO_128x128__
+[U] __MMI_GAME_UFO_128x160__
+[U] __MMI_GAME_UFO_176x220__
+[U] __MMI_GAME_UFO__
+[U] __MMI_GAME_VSMJ_320x240__
+[U] __MMI_GPIO_DISABLE_SLEEP_MODE__
+[U] __MMI_HANDWRITING_MULTI_BLOCK__
+[U] __MMI_HIDD_SUPPORT__
+[U] __MMI_HOMEZONE_STATUS_ICON__
+[U] __MMI_HUMAN_VOICE_KEYPAD_TONE__
+[U] __MMI_IMELODY_SUPPORT__
+[U] __MMI_IMG_DEC_PROFILING__
+[U] __MMI_IMPS_OTA__
+[U] __MMI_IMPS__
+[U] __MMI_INCOMING_CALL_VIDEO__
+[U] __MMI_INDIC_ALG__
+[U] __MMI_INTELLIGENT_CALL_ALERT__
+[U] __MMI_INTERACTIVE_PROFILNG__
+[U] __MMI_IRDA_CARD_SUPPORT__
+[U] __MMI_IRDA_RECEIVED_NOTIFY_IN_IDLE__
+[U] __MMI_IRDA_RECEIVED_NOTIFY_POPUP__
+[U] __MMI_IRDA_SUPPORT__
+[U] __MMI_ITAP_ENGLISH__
+[U] __MMI_ITAP_SMART_PHONETIC_INPUT__
+[U] __MMI_ITAP_SM_CHINESE__
+[U] __MMI_ITAP_TR_CHINESE__
+[U] __MMI_JATAAYU_BRW_ADVANCED_PICTOGRAM__
+[U] __MMI_JATAAYU_BRW_ADVANCED_RENDERED_PAGE_OPTIONS__
+[U] __MMI_JATAAYU_BRW_OFFLINE_PAGES__
+[U] __MMI_JATAAYU_MMS_ADD_NUMBER_BY_GROUP__
+[U] __MMI_JATAAYU_MMS_ADVANCED_VIEW_SCREEN__
+[U] __MMI_JATAAYU_MMS_DEFER_SILENT__
+[U] __MMI_JATAAYU_MMS_DISPLAY_NAME_FROM_PHB__
+[U] __MMI_JATAAYU_MMS_REPLY_BY_SMS__
+[U] __MMI_JMMS_DEFERRED_NOT_AVAILABLE_AT_HOME_NW__
+[U] __MMI_LANGLN_BK__
+[U] __MMI_LANGLN_DK__
+[U] __MMI_LANGLN_EK__
+[U] __MMI_LANGLN_LK__
+[U] __MMI_LANGLN_SK__
+[U] __MMI_LANGLN_WK_ALARM__
+[U] __MMI_LANGLN_WK__
+[U] __MMI_LANGLN__
+[U] __MMI_LANG_BENGALI__
+[U] __MMI_LANG_BULGARIAN__
+[U] __MMI_LANG_CROATIAN__
+[U] __MMI_LANG_CZECH__
+[U] __MMI_LANG_DANISH__
+[U] __MMI_LANG_DUTCH__
+[U] __MMI_LANG_FINNISH__
+[U] __MMI_LANG_GERMAN__
+[U] __MMI_LANG_GREEK__
+[U] __MMI_LANG_HEBREW__
+[U] __MMI_LANG_HINDI__
+[U] __MMI_LANG_HUNGARIAN__
+[U] __MMI_LANG_INDONESIAN__
+[U] __MMI_LANG_ITALIAN__
+[U] __MMI_LANG_MALAY__
+[U] __MMI_LANG_MARATHI__
+[U] __MMI_LANG_NORWEGIAN__
+[U] __MMI_LANG_POLISH__
+[U] __MMI_LANG_PUNJABI__
+[U] __MMI_LANG_ROMANIAN__
+[U] __MMI_LANG_SLOVAK__
+[U] __MMI_LANG_SLOVENIAN__
+[U] __MMI_LANG_SM_CHINESE__
+[U] __MMI_LANG_SWEDISH__
+[U] __MMI_LANG_TAMIL__
+[U] __MMI_LANG_TELUGU__
+[U] __MMI_LANG_TR_CHINESE__
+[U] __MMI_LANG_UKRAINIAN__
+[U] __MMI_LANG_URDU__
+[U] __MMI_LANG_VIETNAMESE__
+[U] __MMI_LCD_PARTIAL_ON_ENABLED__
+[U] __MMI_MAINMENU_CIRCULAR_SUPPORT__
+[U] __MMI_MAINMENU_LIST_SUPPORT__
+[U] __MMI_MAINMENU_PAGE_SUPPORT__
+[U] __MMI_MAINMENU_ROTATE_SUPPORT__
+[U] __MMI_MAINMENU_TAB_SUPPORT__
+[U] __MMI_MENSTRUAL__
+[U] __MMI_MESSAGES_DRAFT_BOX__
+[U] __MMI_MESSAGES_PREFER_STORAGE_ONLY_FOR_MO_SMS__
+[U] __MMI_MIXED_LANG_SUPPORT__
+[U] __MMI_MMS_2__
+[U] __MMI_MMS_BGSR_CANCEL_PROHIBIT__
+[U] __MMI_MMS_BGSR_SUPPORT__
+[U] __MMI_MMS_OMA_SUBJECT_LENGTH_SUPPORT__
+[U] __MMI_MMS_SIGNATURE__
+[U] __MMI_MOBILE_TV_PLAYER__
+[U] __MMI_MOTIONGAME_DICE_176x220__
+[U] __MMI_MOTIONGAME_DICE__
+[U] __MMI_MOTIONGAME_DJ_176x220__
+[U] __MMI_MOTIONGAME_DJ__
+[U] __MMI_MOTION_APP__
+[U] __MMI_MULTITAP_BENGALI__
+[U] __MMI_MULTITAP_BULGARIAN__
+[U] __MMI_MULTITAP_CROATIAN__
+[U] __MMI_MULTITAP_CZECH__
+[U] __MMI_MULTITAP_DANISH__
+[U] __MMI_MULTITAP_DUTCH__
+[U] __MMI_MULTITAP_FINNISH__
+[U] __MMI_MULTITAP_FOR_STAR_AND_POUND__
+[U] __MMI_MULTITAP_GERMAN__
+[U] __MMI_MULTITAP_GREEK__
+[U] __MMI_MULTITAP_HEBREW__
+[U] __MMI_MULTITAP_HINDI__
+[U] __MMI_MULTITAP_HUNGARIAN__
+[U] __MMI_MULTITAP_INDONESIAN__
+[U] __MMI_MULTITAP_ITALIAN__
+[U] __MMI_MULTITAP_KEY_0__
+[U] __MMI_MULTITAP_MALAY__
+[U] __MMI_MULTITAP_MARATHI__
+[U] __MMI_MULTITAP_NORWEGIAN__
+[U] __MMI_MULTITAP_POLISH__
+[U] __MMI_MULTITAP_PUNJABI__
+[U] __MMI_MULTITAP_ROMANIAN__
+[U] __MMI_MULTITAP_SLOVAK__
+[U] __MMI_MULTITAP_SLOVENIAN__
+[U] __MMI_MULTITAP_SWEDISH__
+[U] __MMI_MULTITAP_TAMIL__
+[U] __MMI_MULTITAP_TELUGU__
+[U] __MMI_MULTITAP_THAI_PROFILE_1__
+[U] __MMI_MULTITAP_UKRAINIAN__
+[U] __MMI_MULTITAP_URDU__
+[U] __MMI_MULTITAP_VIETNAMESE__
+[U] __MMI_NONBLOCKING_DECODE__
+[U] __MMI_ONLY_ONE_UART_AVAILABLE__
+[U] __MMI_PENPOWER_PHRASE__
+[U] __MMI_PENPOWER_RUSSIAN__
+[U] __MMI_PHB_ALS_SUPPORT__
+[U] __MMI_PHB_CALLERGROUP_IN_SIM__
+[U] __MMI_PHB_COMBINE_COPY_DUPLICATE__
+[U] __MMI_PHB_DISPLAY_ONE_MSISDN__
+[U] __MMI_PHB_INFO_FIELD__
+[U] __MMI_PHB_MULTI_OPERATION__
+[U] __MMI_PHB_NAME_AND_NUM_REQUIRE__
+[U] __MMI_PHB_NAME_LIST_FILTER__
+[U] __MMI_PHB_NO_OPTIONAL_FIELD__
+[U] __MMI_PHB_SOS_NUM_EDIT__
+[U] __MMI_PHB_TWO_LINE_MENUITEM_DISPLAY__
+[U] __MMI_PHB_VOIP_FIELD__
+[U] __MMI_PHNSET_TWO_LINE_MENUITEM_DISPLAY__
+[U] __MMI_PHOTOEDITOR__
+[U] __MMI_PICT_BRIDGE_MULTI_FILE_PRINT__
+[U] __MMI_PICT_BRIDGE_SUPPORT__
+[U] __MMI_POC_ADHOC_STR_INPUT__
+[U] __MMI_POC__
+[U] __MMI_POWER_ON_OFF_BY_POWER_KEY__
+[U] __MMI_POWER_ON_OFF_DISPLAY_VIDEO__
+[U] __MMI_PREFER_INPUT_METHOD__
+[U] __MMI_PREFER_WRITING_LANG__
+[U] __MMI_PURE_AUDIO__
+[U] __MMI_PUSH_SHOW_SENDER_ADDR__
+[U] __MMI_REDUCED_KEYPAD__
+[U] __MMI_RESOURCE_ENFB_SUPPORT__
+[U] __MMI_RES_TYPE_SUBLCD_WALLPAPER_SEL__
+[U] __MMI_RING_COMPOSER__
+[U] __MMI_RMGR__
+[U] __MMI_SAT_SHOW_ITEM_IN_CALL__
+[U] __MMI_SCREENSAVER_DISPLAY_VIDEO__
+[U] __MMI_SEPARATE_DT_SETTING__
+[U] __MMI_SET_DEF_ENCODING_TYPE__
+[U] __MMI_SHOW_DAF_FILE_EXT__
+[U] __MMI_SIMAP_SUPPORT__
+[U] __MMI_SLIDESHOW__
+[U] __MMI_SLIDE__
+[U] __MMI_SLIM_EMAIL_NO_IMAP4__
+[U] __MMI_SLIM_FILE_MANAGER__
+[U] __MMI_SMART_FIRST_UPPERCASE_ABC__
+[U] __MMI_SOUND_EFFECT__
+[U] __MMI_SOUND_RECORDER_STYLE_X__
+[U] __MMI_SUBLCD_COLOR__
+[U] __MMI_SUBLCD_MASTER_MODE__
+[U] __MMI_SUBLCD_SHOW_DATE__
+[U] __MMI_SUBLCD_SHOW_ONE_CITY__
+[U] __MMI_SUBLCD_SHOW_TIME__
+[U] __MMI_SUBLCD_SHOW_WORLD_CLOCK__
+[U] __MMI_SUBLCD__
+[U] __MMI_SUB_WALLPAPER__
+[U] __MMI_SVG__
+[U] __MMI_SWFLASH__
+[U] __MMI_SYNCML_CCA_SUPPORT__
+[U] __MMI_SYNCML_DM_OTAP__
+[U] __MMI_SYNC_LCD_GPIO_MODE__
+[U] __MMI_T9_ARABIC__
+[U] __MMI_T9_BULGARIAN__
+[U] __MMI_T9_CROATIAN__
+[U] __MMI_T9_CZECH__
+[U] __MMI_T9_DANISH__
+[U] __MMI_T9_DEFAULT_KEY_DEFINITION__
+[U] __MMI_T9_DUTCH__
+[U] __MMI_T9_ENGLISH__
+[U] __MMI_T9_FINNISH__
+[U] __MMI_T9_FRENCH__
+[U] __MMI_T9_GERMAN__
+[U] __MMI_T9_GREEK__
+[U] __MMI_T9_HEBREW__
+[U] __MMI_T9_HINDI__
+[U] __MMI_T9_HUNGARIAN__
+[U] __MMI_T9_INDONESIAN__
+[U] __MMI_T9_ITALIAN__
+[U] __MMI_T9_MALAY__
+[U] __MMI_T9_MULTITAP_PHONETIC_INPUT__
+[U] __MMI_T9_NORWEGIAN__
+[U] __MMI_T9_POLISH__
+[U] __MMI_T9_PORTUGUESE__
+[U] __MMI_T9_ROMANIAN__
+[U] __MMI_T9_RUSSIAN__
+[U] __MMI_T9_SLOVAK__
+[U] __MMI_T9_SLOVENIAN__
+[U] __MMI_T9_SMART_PHONETIC_INPUT__
+[U] __MMI_T9_SM_CHINESE__
+[U] __MMI_T9_SPANISH__
+[U] __MMI_T9_STROKE_INPUT__
+[U] __MMI_T9_SWEDISH__
+[U] __MMI_T9_THAI__
+[U] __MMI_T9_TR_CHINESE__
+[U] __MMI_T9_TURKISH__
+[U] __MMI_T9_VIETNAMESE__
+[U] __MMI_THEMES_APPLICATION__
+[U] __MMI_THEMES_V2_SUPPORT__
+[U] __MMI_TOUCH_IDLESCREEN_SHORTCUTS__
+[U] __MMI_TOUCH_PANEL_SHORTCUT__
+[U] __MMI_TOUCH_RING_COMPOSER__
+[U] __MMI_TVOUT__
+[U] __MMI_UC_SUB_PREFIX_MMS__
+[U] __MMI_UI_ANIMATED_TITLE_EFFECT_TYPE__
+[U] __MMI_UI_ANIMATED_TITLE_EFFECT__
+[U] __MMI_UI_BENCHMARK__
+[U] __MMI_UI_CALL_LOG_IN_TAB_PANE__
+[U] __MMI_UI_HINTS_IN_MENUITEM__
+[U] __MMI_UI_LIST_HIGHLIGHT_EFFECTS__
+[U] __MMI_UI_LIST_HIGHLIGHT_EFFECT_TYPE__
+[U] __MMI_UI_LIST_TRANSITION__
+[U] __MMI_UI_POPUP_DESCRIPTION_DEFAULT_STYLE_1__
+[U] __MMI_UI_POPUP_DESCRIPTION_DEFAULT_STYLE_2__
+[U] __MMI_UI_POPUP_DESCRIPTION_DEFAULT_STYLE_3__
+[U] __MMI_UI_POPUP_DESCRIPTION_DEFAULT_STYLE__
+[U] __MMI_UI_SCROLLBAR_DEFAULT_STYLE_1__
+[U] __MMI_UI_SCROLLBAR_DEFAULT_STYLE_2__
+[U] __MMI_UI_SCROLLBAR_DEFAULT_STYLE_3__
+[U] __MMI_UI_SCROLLBAR_DEFAULT_STYLE_4__
+[U] __MMI_UI_SCROLLBAR_DEFAULT_STYLE_5__
+[U] __MMI_UI_SCROLLBAR_DEFAULT_STYLE__
+[U] __MMI_UI_STATUS_BAR_AT_BOTTOM__
+[U] __MMI_UI_TECHNO_IDLESCREEN_BAR__
+[U] __MMI_UI_TECHNO_MAINMENU__
+[U] __MMI_UI_TITLE_TRANSITION__
+[U] __MMI_UI_TRANSPARENT_EFFECT__
+[U] __MMI_UI_TWO_LINE_MENUITEM_STYLES__
+[U] __MMI_UNIFIED_COMPOSER__
+[U] __MMI_UNIFIED_MESSAGE__
+[U] __MMI_UNIT_CONVERTER__
+[U] __MMI_USB_COPY_RIGHT__
+[U] __MMI_VBOOKMARK__
+[U] __MMI_VCARD_TEL_VOICE_CELL_DIFFERENT__
+[U] __MMI_VIDEO_EDITOR__
+[U] __MMI_VIDEO_PDL__
+[U] __MMI_VIDEO_STREAM__
+[U] __MMI_VOIP_OTAP_DMP__
+[U] __MMI_VOIP_UNATTENDED_TRNASFER__
+[U] __MMI_VOIP__
+[U] __MMI_VRSD_AUDPLAYER__
+[U] __MMI_VRSD_DIAL__
+[U] __MMI_VRSD_PROFILE__
+[U] __MMI_VRSD_REDIAL__
+[U] __MMI_VRSD_SHORTCUT__
+[U] __MMI_VRSD__
+[U] __MMI_VRSI_DIGIT_ADAPT__
+[U] __MMI_VRSI_TRAIN_TAG__
+[U] __MMI_VRSI__
+[U] __MMI_WITH_C_KEY__
+[U] __MMI_WITH_WAP_KEY__
+[U] __MMI_WLAN_FEATURES__
+[U] __MMI_WLAN_OTAP_DMP__
+[U] __MMI_ZI_ARABIC__
+[U] __MMI_ZI_BENGALI__
+[U] __MMI_ZI_BULGARIAN__
+[U] __MMI_ZI_BZ_PORTUGUESE__
+[U] __MMI_ZI_CROATIAN__
+[U] __MMI_ZI_CZECH__
+[U] __MMI_ZI_DANISH__
+[U] __MMI_ZI_DUTCH__
+[U] __MMI_ZI_EU_FRENCH__
+[U] __MMI_ZI_FINNISH__
+[U] __MMI_ZI_GERMAN__
+[U] __MMI_ZI_GREEK__
+[U] __MMI_ZI_HEBREW__
+[U] __MMI_ZI_HINDI__
+[U] __MMI_ZI_HUNGARIAN__
+[U] __MMI_ZI_INDONESIAN__
+[U] __MMI_ZI_ITALIAN__
+[U] __MMI_ZI_MALAY__
+[U] __MMI_ZI_MARATHI__
+[U] __MMI_ZI_NORWEGIAN__
+[U] __MMI_ZI_PERSIAN__
+[U] __MMI_ZI_POLISH__
+[U] __MMI_ZI_PUNJABI__
+[U] __MMI_ZI_ROMANIAN__
+[U] __MMI_ZI_RUSSIAN__
+[U] __MMI_ZI_SA_PORTUGUESE__
+[U] __MMI_ZI_SA_SPANISH__
+[U] __MMI_ZI_SLOVAK__
+[U] __MMI_ZI_SLOVENIAN__
+[U] __MMI_ZI_SM_CHINESE__
+[U] __MMI_ZI_SWEDISH__
+[U] __MMI_ZI_TAMIL__
+[U] __MMI_ZI_TELUGU__
+[U] __MMI_ZI_THAI__
+[U] __MMI_ZI_TR_CHINESE__
+[U] __MMI_ZI_TURKISH__
+[U] __MMI_ZI_UKRAINIAN__
+[U] __MMI_ZI_URDU__
+[U] __MMI_ZI_USING_PSCRATCH_BUFFER__
+[U] __MMI_ZI_VIETNAMESE__
+[U] __PHOEDT_FEATURE_IMGTILE__
+[U] __UI_MMS_VIEWER_CATEGORY__
+[U] __UI_UNIFIED_COMPOSER_EDITOR_CATEGORY__
+
+
+***********************************************************************
+[All Detected Features (765)]
+***********************************************************************
+
+MMI_MAIN_BASE_LAYER_BITS_PER_PIXEL
+MMI_SUB_BASE_LAYER_BITS_PER_PIXEL
+UI_SMALL_CATEGORY_EDITOR
+UI_SMALL_IMAGE_SELECTOR_SCREEN
+UI_SMALL_LIST_SCREEN
+UI_SMALL_PIN_EDITOR_SCREEN
+_MUTILANG_TEMPLATE_
+_NETWORK_CIPHER_SUPPORT_
+__CMS_WAP__
+__DIRECT_ENTRY_FACTORY_MODE_ON_BOOTUP__
+__DISABLE_SHORTCUTS_IMPL__
+__DISABLE_SHORTCUTS_MENU__
+__DUALMODE_TOUCH_DIAL_SCREEN_WITH_SLAVE_FUNCTION__
+__DUAL_SIM_IDLE_TEXT_AT_SAME_POSITION__
+__GDI_MEMORY_PROFILE_1__
+__GDI_MEMORY_PROFILE_2__
+__LARGE_CHINESE_DB_V7__
+__MMI_16X16_CHINESE_FONT__
+__MMI_3D_GAME_BROGENT_GGR2_176x220__
+__MMI_3D_GAME_BROGENT_GGR2_240x320__
+__MMI_3D_GAME_BROGENT_HB2_176x220__
+__MMI_3D_GAME_BROGENT_HB2_240x320__
+__MMI_3D_GAME_INTERGRAFX_PETFISH_176x220__
+__MMI_3D_GAME_INTERGRAFX_PETFISH_240x320__
+__MMI_3D_GAME_INTERGRAFX_ROLLINGBALL_176x220__
+__MMI_3D_GAME_INTERGRAFX_ROLLINGBALL_240x320__
+__MMI_3D_GAME__
+__MMI_A2DP_SUPPORT__
+__MMI_AB_REPEATER__
+__MMI_ADVANCED_TODO__
+__MMI_ALARM_SIDE_KEY_CONTROL__
+__MMI_ALM_ALERT_TYPE__
+__MMI_ALM_AUDIO_OPTIONS__
+__MMI_ALM_CUSTOMIZE_TONE__
+__MMI_ALM_SNOOZE_SETTING__
+__MMI_ALPHA_BLENDING__
+__MMI_ANALOG_CLOCK__
+__MMI_ANALOG_TV_SIGNAL__
+__MMI_ANALOT_TV_LOGO__
+__MMI_ANIMATED_WALLPAPERS__
+__MMI_ARSHAPING_ENGINE__
+__MMI_AUDIO_EQUALIZER__
+__MMI_AUDIO_PLAYER_A2DP_BLOCK_SPECTRUM__
+__MMI_AUDIO_PLAYER_ANIMATION__
+__MMI_AUDIO_PLAYER_AUTO_REFRESH_LIST_AUTOGEN_OFF__
+__MMI_AUDIO_PLAYER_AUTO_REFRESH_LIST_AUTOGEN_ON__
+__MMI_AUDIO_PLAYER_DETAIL_SHOW_MORE_INFO__
+__MMI_AUDIO_PLAYER_LYRIC_DISPLAY__
+__MMI_AUDIO_PLAYER_LYRIC_SCREEN_BASED_ASM__
+__MMI_AUDIO_PLAYER_ON_SUBLCD__
+__MMI_AUDIO_PLAYER_SHOW_PLAY_LIST_ON_SUBLCD__
+__MMI_AUDIO_PLAYER_SKIN_SHOW_REPEAT_SHUFFLE_ON_SUBLCD__
+__MMI_AUDIO_PLAYER_SKIN_SHOW_REPEAT_SHUFFLE__
+__MMI_AUDIO_PLAYER__
+__MMI_AUDIO_REVERB_EFFECT__
+__MMI_AUDIO_SPECTRUM_DISPLAY__
+__MMI_AUDIO_SURROUND_BIND_EARPHONE__
+__MMI_AUDIO_SURROUND_EFFECT__
+__MMI_AUDIO_TIME_STRETCH__
+__MMI_AUTO_KEYPAD_LOCK__
+__MMI_AVATAR__
+__MMI_AVRCP_SUPPORT__
+__MMI_BARCODEREADER__
+__MMI_BG_SOUND_EFFECT__
+__MMI_BIDI_ALG__
+__MMI_BIP_SUPPORT__
+__MMI_BIRTHDAY_REMINDER__
+__MMI_BI_DEGREE_MAIN_MENU_STYLE__
+__MMI_BMI__
+__MMI_BPP_SUPPORT__
+__MMI_BROWSER_2__
+__MMI_BT_AUDIO_VIA_SCO__
+__MMI_BT_FM_VIA_SCO__
+__MMI_BT_MTK_SUPPORT__
+__MMI_BT_PROFILE__
+__MMI_BT_SUPPORT__
+__MMI_CALCULATOR__
+__MMI_CALENDAR_V2__
+__MMI_CALENDAR__
+__MMI_CALLERGROUP_NO_ALERT__
+__MMI_CALORIE__
+__MMI_CAMERA__
+__MMI_CASCADE_MENU__
+__MMI_CAT265_SUPPORT__
+__MMI_CAT44X_SUPPORT__
+__MMI_CCA_SUPPORT__
+__MMI_CFU_SEPARATE_LINE__
+__MMI_CHAR_SET_BIG5__
+__MMI_CHAR_SET_GB2312__
+__MMI_CHECK_DUPLICATED_NITZ__
+__MMI_CHINESE_WITH_SMALL_FONT__
+__MMI_CHSET_ARABIC_ISO__
+__MMI_CHSET_ARABIC_WIN__
+__MMI_CHSET_BALTIC_ISO__
+__MMI_CHSET_BALTIC_WIN__
+__MMI_CHSET_BIG5__
+__MMI_CHSET_CEURO_ISO__
+__MMI_CHSET_CEURO_WIN__
+__MMI_CHSET_EUCKR_WIN__
+__MMI_CHSET_GB18030__
+__MMI_CHSET_GB2312__
+__MMI_CHSET_GREEK_ISO__
+__MMI_CHSET_GREEK_WIN__
+__MMI_CHSET_HEBREW_ISO__
+__MMI_CHSET_HEBREW_WIN__
+__MMI_CHSET_LATIN_ISO__
+__MMI_CHSET_NORDIC_ISO__
+__MMI_CHSET_PERSIAN_CP1097__
+__MMI_CHSET_PERSIAN_CP1098__
+__MMI_CHSET_SEURO_ISO__
+__MMI_CHSET_THAI_WINDOWS__
+__MMI_CHSET_TURKISH_ISO__
+__MMI_CHSET_TURKISH_WIN__
+__MMI_CHSET_UTF7__
+__MMI_CHSET_VIETNAMESE_WINDOWS__
+__MMI_CHSET_WESTERN_ISO__
+__MMI_CHSET_WESTERN_WIN__
+__MMI_CH_DELETE_ALL_LOGS__
+__MMI_CH_MIXED_CALL_LOG__
+__MMI_CH_OPTIONS_SENDMMS__
+__MMI_CH_OPTIONS_SENDSMS__
+__MMI_CH_QUICK_END__
+__MMI_CLAMCLOSE_BACK2IDLE__
+__MMI_CLAMOPEN_STOP_SCRSAVER__
+__MMI_CLAMSHELL__
+__MMI_CLNDR_ICON_SUPPORT__
+__MMI_CLNDR_SMALL_SIZE_SCREEN__
+__MMI_CLNDR_WEEKLY_VIEW_SUPPORT__
+__MMI_CM_BLACK_LIST__
+__MMI_CM_DATA_CALL_ONLY_PLAY_TONE__
+__MMI_COLOR_DIALLING_FONT__
+__MMI_CSB_BROWSER__
+__MMI_CSP_LANG_SEL_MENU_ALWAYS_ON__
+__MMI_CSP_SMS_COMMON_SETTING_ALWAYS_ON__
+__MMI_CSTAR_DANISH__
+__MMI_CSTAR_DUTCH__
+__MMI_CSTAR_ENGLISH__
+__MMI_CSTAR_FRENCH__
+__MMI_CSTAR_GERMAN__
+__MMI_CSTAR_GREEK__
+__MMI_CSTAR_HUNGARIAN__
+__MMI_CSTAR_ITALIAN__
+__MMI_CSTAR_MULTITAP_PHONETIC_INPUT__
+__MMI_CSTAR_POLISH__
+__MMI_CSTAR_PORTUGUESE__
+__MMI_CSTAR_SMART_PHONETIC_INPUT__
+__MMI_CSTAR_SM_CHINESE__
+__MMI_CSTAR_SPANISH__
+__MMI_CSTAR_STROKE_INPUT__
+__MMI_CSTAR_TR_CHINESE__
+__MMI_CSTAR_USER_DICT__
+__MMI_CSTAR_USE_CUSTOMIZED_THEME__
+__MMI_CURRENCY_CONVERTER__
+__MMI_CUST_KEYPAD_TONE__
+__MMI_DATA_STORE__
+__MMI_DEDICATED_KEY_SHORTCUTS__
+__MMI_DEDI_AMR_REC__
+__MMI_DEFAULT_MAIN_MENU_HIGHLIGHT_MESSAGE__
+__MMI_DEFAULT_THEME_1__
+__MMI_DEVICE_BMP_FORMAT__
+__MMI_DICTIONARY_SMALL_SCREEN__
+__MMI_DICTIONARY_TTS__
+__MMI_DICTIONARY_WELCOME_SCREEN__
+__MMI_DICTIONARY_WILDCARD_SEARCH__
+__MMI_DICTIONARY__
+__MMI_DICT_GVCN__
+__MMI_DIGITAL_CLOCK__
+__MMI_DISPCHAR_M3D_BALL__
+__MMI_DISPCHAR_M3D_FISH__
+__MMI_DISPCHAR_M3D_PENGUIN__
+__MMI_DISPCHAR_M3D__
+__MMI_DISPLAY_CHAR_HIDE_MENU_FROM_FILE__
+__MMI_DLT_CACHE_SUPPORT__
+__MMI_DM_SELF_REGISTER_SUPPORT__
+__MMI_DOWNLOADABLE_THEMES_SUPPORT__
+__MMI_DOWNLOAD_AGENT__
+__MMI_DRAW_MANAGER__
+__MMI_DUAL_PROFILE_SUPPORT__
+__MMI_DUAL_SIM_DUAL_CALL__
+__MMI_DUAL_SIM_MASTER__
+__MMI_DUAL_SIM_SINGLE_CALL_SLAVE__
+__MMI_DUAL_SIM_SINGLE_CALL__
+__MMI_DUAL_SIM__
+__MMI_DUN_SUPPORT__
+__MMI_EBOOK_READER__
+__MMI_EDITABLE_AUDIO_EQUALIZER__
+__MMI_EDITOR_PEN_VK_UNFOLD__
+__MMI_EMAIL_ADD_ADDR_TO_PHB__
+__MMI_EMAIL_BCC__
+__MMI_EMAIL_COMPOSE_SIZE__
+__MMI_EMAIL_COPY_ON_SERVER__
+__MMI_EMAIL_DEL_SERVER_MAILS__
+__MMI_EMAIL_DOWNLOAD_OPTION__
+__MMI_EMAIL_DOWNLOAD_PROMPT__
+__MMI_EMAIL_DRM_SUPPORT__
+__MMI_EMAIL_FROM_DISP__
+__MMI_EMAIL_OTAP__
+__MMI_EMAIL_RECEIVING_NUM_IND__
+__MMI_EMAIL_SIZE_DISP__
+__MMI_EMAIL_TEMPLATE__
+__MMI_EMAIL__
+__MMI_EM_BT_RF_TEST__
+__MMI_EM_FIXED_GAIN_FOR_HELIOS2__
+__MMI_EM_MT6223_DEBUG_MODE__
+__MMI_ENGINEER_MODE__
+__MMI_EONS_SUPPORT__
+__MMI_EXIF__
+__MMI_EXT_DEVICE__
+__MMI_FACTORY_MODE__
+__MMI_FAX_SUPPORT__
+__MMI_FEATURES__
+__MMI_FILE_MANAGER__
+__MMI_FMGR_APP_STORAGE__
+__MMI_FM_RADIO_ANIMATION_SUBLCD__
+__MMI_FM_RADIO_ANIMATION__
+__MMI_FM_RADIO_BIND_EARPHONE_SUBLCD__
+__MMI_FM_RADIO_BIND_EARPHONE__
+__MMI_FM_RADIO_FIRST_CHANNEL__
+__MMI_FM_RADIO_LOUD_SPEAK_SUBLCD__
+__MMI_FM_RADIO_LOUD_SPEAK__
+__MMI_FM_RADIO_ON_SUBLCD__
+__MMI_FM_RADIO_PRESET_TOP_N__
+__MMI_FM_RADIO_RECORD__
+__MMI_FM_RADIO_SCHEDULE_REC__
+__MMI_FM_RADIO__
+__MMI_FM_SLIM_SKIN__
+__MMI_FOTA_OTAP_DMP__
+__MMI_FOURWAYS_KEY_DISABLE__
+__MMI_FTC_MULTIPULL_SUPPORT__
+__MMI_FTC_SUPPORT__
+__MMI_FTS_SUPPORT__
+__MMI_FULL_SCREEN_EDITOR__
+__MMI_FWU_VIA_FILE__
+__MMI_FWU_VIA_HTTP__
+__MMI_FWU_VIA_TFTP__
+__MMI_GAME_CHICKEN_128x128__
+__MMI_GAME_CHICKEN_128x160__
+__MMI_GAME_CHICKEN__
+__MMI_GAME_COLORBALLS__
+__MMI_GAME_COPTER_128x128__
+__MMI_GAME_COPTER_128x160__
+__MMI_GAME_COPTER_176x220__
+__MMI_GAME_COPTER__
+__MMI_GAME_DANCE_176x220__
+__MMI_GAME_DANCE__
+__MMI_GAME_DOLL__
+__MMI_GAME_F1RACE__
+__MMI_GAME_FRUIT_176x220__
+__MMI_GAME_FRUIT__
+__MMI_GAME_HANOI__
+__MMI_GAME_JET_128x128__
+__MMI_GAME_JET_128x160__
+__MMI_GAME_JET_176x220__
+__MMI_GAME_JET__
+__MMI_GAME_MAGICSUSHI_240x320__
+__MMI_GAME_MAGICSUSHI_320x240__
+__MMI_GAME_MAGICSUSHI__
+__MMI_GAME_MAJUNG_176x220__
+__MMI_GAME_MAJUNG_240x320__
+__MMI_GAME_MAJUNG_320x240__
+__MMI_GAME_MAJUNG__
+__MMI_GAME_MENU__
+__MMI_GAME_MONKEY_128x128__
+__MMI_GAME_MONKEY_128x160__
+__MMI_GAME_MONKEY_176x220__
+__MMI_GAME_MONKEY__
+__MMI_GAME_MULTICHANNEL_SOUND__
+__MMI_GAME_MULTI_LANGUAGE_SUPPORT__
+__MMI_GAME_PANDA_128x128__
+__MMI_GAME_PANDA_128x160__
+__MMI_GAME_PANDA_176x220__
+__MMI_GAME_PANDA__
+__MMI_GAME_PUZZLE_128x128__
+__MMI_GAME_PUZZLE_128x160__
+__MMI_GAME_PUZZLE_176x220__
+__MMI_GAME_PUZZLE_240x320__
+__MMI_GAME_PUZZLE_320x240__
+__MMI_GAME_PUZZLE__
+__MMI_GAME_RICHES__
+__MMI_GAME_ROBOT_128x160__
+__MMI_GAME_ROBOT_176x220__
+__MMI_GAME_ROBOT__
+__MMI_GAME_SMASH__
+__MMI_GAME_SNAKE__
+__MMI_GAME_SUBMARINE_128x128__
+__MMI_GAME_SUBMARINE_128x160__
+__MMI_GAME_SUBMARINE_176x220__
+__MMI_GAME_SUBMARINE__
+__MMI_GAME_UFO_128x128__
+__MMI_GAME_UFO_128x160__
+__MMI_GAME_UFO_176x220__
+__MMI_GAME_UFO__
+__MMI_GAME_VSMJ_240x320__
+__MMI_GAME_VSMJ_320x240__
+__MMI_GAME_VSMJ__
+__MMI_GAME__
+__MMI_GPIO_DISABLE_SLEEP_MODE__
+__MMI_GPRS_FEATURES__
+__MMI_HANDWRITING_MULTI_BLOCK__
+__MMI_HANDWRITING_WORD_PREDICTION__
+__MMI_HFP_SUPPORT__
+__MMI_HIDD_SUPPORT__
+__MMI_HOMEZONE_STATUS_ICON__
+__MMI_HSP_SUPPORT__
+__MMI_HUMAN_VOICE_KEYPAD_TONE__
+__MMI_IDLE_FULL_SCREEN__
+__MMI_IMAGEVIEWER_ADV__
+__MMI_IMAGE_VIEWER__
+__MMI_IMEISV_SUPPORT__
+__MMI_IMELODY_SUPPORT__
+__MMI_IMG_DEC_PROFILING__
+__MMI_IMPS_OTA__
+__MMI_IMPS__
+__MMI_INCOMING_CALL_VIDEO__
+__MMI_INDIC_ALG__
+__MMI_INTELLIGENT_CALL_ALERT__
+__MMI_INTERACTIVE_PROFILNG__
+__MMI_IRDA_CARD_SUPPORT__
+__MMI_IRDA_RECEIVED_NOTIFY_IN_IDLE__
+__MMI_IRDA_RECEIVED_NOTIFY_POPUP__
+__MMI_IRDA_SUPPORT__
+__MMI_ITAP_ENGLISH__
+__MMI_ITAP_SMART_PHONETIC_INPUT__
+__MMI_ITAP_SM_CHINESE__
+__MMI_ITAP_TR_CHINESE__
+__MMI_JATAAYU_BRW_ADVANCED_PICTOGRAM__
+__MMI_JATAAYU_BRW_ADVANCED_RENDERED_PAGE_OPTIONS__
+__MMI_JATAAYU_BRW_OFFLINE_PAGES__
+__MMI_JATAAYU_MMS_ADD_NUMBER_BY_GROUP__
+__MMI_JATAAYU_MMS_ADVANCED_VIEW_SCREEN__
+__MMI_JATAAYU_MMS_DEFER_SILENT__
+__MMI_JATAAYU_MMS_DISPLAY_NAME_FROM_PHB__
+__MMI_JATAAYU_MMS_REPLY_BY_SMS__
+__MMI_JMMS_DEFERRED_NOT_AVAILABLE_AT_HOME_NW__
+__MMI_KEYPAD_LOCK_PATTERN_1__
+__MMI_KEYPAD_LOCK_PROMPT_TEXT__
+__MMI_LANGLN_BK__
+__MMI_LANGLN_DK__
+__MMI_LANGLN_EK__
+__MMI_LANGLN_LK__
+__MMI_LANGLN_SK__
+__MMI_LANGLN_WK_ALARM__
+__MMI_LANGLN_WK__
+__MMI_LANGLN__
+__MMI_LANG_ARABIC__
+__MMI_LANG_BENGALI__
+__MMI_LANG_BULGARIAN__
+__MMI_LANG_CHSET_DEPENDENCE__
+__MMI_LANG_CROATIAN__
+__MMI_LANG_CZECH__
+__MMI_LANG_DANISH__
+__MMI_LANG_DUTCH__
+__MMI_LANG_ENGLISH__
+__MMI_LANG_FINNISH__
+__MMI_LANG_FRENCH__
+__MMI_LANG_GERMAN__
+__MMI_LANG_GREEK__
+__MMI_LANG_HEBREW__
+__MMI_LANG_HINDI__
+__MMI_LANG_HUNGARIAN__
+__MMI_LANG_INDONESIAN__
+__MMI_LANG_ITALIAN__
+__MMI_LANG_MALAY__
+__MMI_LANG_MARATHI__
+__MMI_LANG_NORWEGIAN__
+__MMI_LANG_PERSIAN__
+__MMI_LANG_POLISH__
+__MMI_LANG_PORTUGUESE__
+__MMI_LANG_PUNJABI__
+__MMI_LANG_ROMANIAN__
+__MMI_LANG_RUSSIAN__
+__MMI_LANG_SLOVAK__
+__MMI_LANG_SLOVENIAN__
+__MMI_LANG_SM_CHINESE__
+__MMI_LANG_SPANISH__
+__MMI_LANG_SWEDISH__
+__MMI_LANG_TAMIL__
+__MMI_LANG_TELUGU__
+__MMI_LANG_THAI__
+__MMI_LANG_TR_CHINESE__
+__MMI_LANG_TURKISH__
+__MMI_LANG_UKRAINIAN__
+__MMI_LANG_URDU__
+__MMI_LANG_VIETNAMESE__
+__MMI_LCD_PARTIAL_ON_ENABLED__
+__MMI_LCD_PARTIAL_ON__
+__MMI_LITE_DISPLAY__
+__MMI_MAINMENU_CIRCULAR_SUPPORT__
+__MMI_MAINMENU_LIST_SUPPORT__
+__MMI_MAINMENU_MATRIX_SUPPORT__
+__MMI_MAINMENU_PAGE_SUPPORT__
+__MMI_MAINMENU_ROTATE_SUPPORT__
+__MMI_MAINMENU_STYLE_CHANGE_EN__
+__MMI_MAINMENU_TAB_SUPPORT__
+__MMI_MAINMENU_TYPE__
+__MMI_MAIN_BASE_LAYER_FORMAT__
+__MMI_MAIN_MENU_TYPE__
+__MMI_MATRIX_MAIN_MENU_OPTIMIZE__
+__MMI_MEMORY_CARD_SUPPORT__
+__MMI_MENSTRUAL__
+__MMI_MESSAGES_CB_CHNL_WITH_NAME__
+__MMI_MESSAGES_CB_MSG_STORED_LIST__
+__MMI_MESSAGES_CHAT__
+__MMI_MESSAGES_CONCAT_SMS__
+__MMI_MESSAGES_COPY__
+__MMI_MESSAGES_DRAFT_BOX__
+__MMI_MESSAGES_EMS_REMAINING_COUNTER__
+__MMI_MESSAGES_EMS__
+__MMI_MESSAGES_MOSES_FEATURE__
+__MMI_MESSAGES_MULTI_APP__
+__MMI_MESSAGES_PREFER_STORAGE_MEMORY_STATUS__
+__MMI_MESSAGES_PREFER_STORAGE_ONLY_FOR_MO_SMS__
+__MMI_MESSAGES_SEND_BY_GROUP__
+__MMI_MESSAGES_SEND_TO_MANY__
+__MMI_MESSAGES_SINGLE_DELIVERY_REPORT__
+__MMI_MESSAGES_TEMPLATE__
+__MMI_MESSAGES_TWO_CB_MODES_DISPLAY__
+__MMI_MESSAGES_USE_URL__
+__MMI_MExE_SUPPORT__
+__MMI_MIXED_LANG_SUPPORT__
+__MMI_MMS_2__
+__MMI_MMS_BGSR_CANCEL_PROHIBIT__
+__MMI_MMS_BGSR_SUPPORT__
+__MMI_MMS_OMA_SUBJECT_LENGTH_SUPPORT__
+__MMI_MMS_SIGNATURE__
+__MMI_MMS_TEMPLATES_NUM__
+__MMI_MMS__
+__MMI_MOBILE_TV_PLAYER__
+__MMI_MOTIONGAME_DICE_176x220__
+__MMI_MOTIONGAME_DICE__
+__MMI_MOTIONGAME_DJ_176x220__
+__MMI_MOTIONGAME_DJ__
+__MMI_MOTION_APP__
+__MMI_MULTITAP_ARABIC__
+__MMI_MULTITAP_BENGALI__
+__MMI_MULTITAP_BULGARIAN__
+__MMI_MULTITAP_CROATIAN__
+__MMI_MULTITAP_CZECH__
+__MMI_MULTITAP_DANISH__
+__MMI_MULTITAP_DUTCH__
+__MMI_MULTITAP_FINNISH__
+__MMI_MULTITAP_FOR_STAR_AND_POUND__
+__MMI_MULTITAP_FRENCH__
+__MMI_MULTITAP_GERMAN__
+__MMI_MULTITAP_GREEK__
+__MMI_MULTITAP_HEBREW__
+__MMI_MULTITAP_HINDI__
+__MMI_MULTITAP_HUNGARIAN__
+__MMI_MULTITAP_INDONESIAN__
+__MMI_MULTITAP_ITALIAN__
+__MMI_MULTITAP_KEY_0__
+__MMI_MULTITAP_MALAY__
+__MMI_MULTITAP_MARATHI__
+__MMI_MULTITAP_NORWEGIAN__
+__MMI_MULTITAP_PERSIAN__
+__MMI_MULTITAP_POLISH__
+__MMI_MULTITAP_PORTUGUESE__
+__MMI_MULTITAP_PUNJABI__
+__MMI_MULTITAP_ROMANIAN__
+__MMI_MULTITAP_RUSSIAN__
+__MMI_MULTITAP_SLOVAK__
+__MMI_MULTITAP_SLOVENIAN__
+__MMI_MULTITAP_SPANISH__
+__MMI_MULTITAP_SWEDISH__
+__MMI_MULTITAP_TAMIL__
+__MMI_MULTITAP_TELUGU__
+__MMI_MULTITAP_THAI_PROFILE_1__
+__MMI_MULTITAP_THAI_PROFILE_2__
+__MMI_MULTITAP_THAI__
+__MMI_MULTITAP_TURKISH__
+__MMI_MULTITAP_UKRAINIAN__
+__MMI_MULTITAP_URDU__
+__MMI_MULTITAP_VIETNAMESE__
+__MMI_NITZ_TZ_SUPPORT__
+__MMI_NITZ__
+__MMI_NONBLOCKING_DECODE__
+__MMI_NORMAL_KEYPAD__
+__MMI_NO_CONTRAST_LEVEL__
+__MMI_OBIGO_Q03C_MMS_USER_DEFINED_TEMPLATES__
+__MMI_OMA_DD_DOWNLOAD__
+__MMI_ONLY_ONE_UART_AVAILABLE__
+__MMI_OPP_SUPPORT__
+__MMI_PENPOWER_PHRASE__
+__MMI_PENPOWER_RUSSIAN__
+__MMI_PHB_ADV_NUM_MATCH_MOBILE__
+__MMI_PHB_ALS_SUPPORT__
+__MMI_PHB_BIRTHDAY_FIELD__
+__MMI_PHB_CALLERGROUP_IN_SIM__
+__MMI_PHB_CALLERGROUP_MEMBER_LIST__
+__MMI_PHB_CALLER_RES_SETTING__
+__MMI_PHB_CALL_SHOW_PICTURE_FROM_FILE__
+__MMI_PHB_COMBINE_COPY_DUPLICATE__
+__MMI_PHB_DELETE_ALL_CHECK_PHONE_LOCK__
+__MMI_PHB_DISPLAY_ONE_MSISDN__
+__MMI_PHB_INFO_FIELD__
+__MMI_PHB_IP_DIAL_FROM_PHB__
+__MMI_PHB_MULTI_OPERATION__
+__MMI_PHB_NAME_AND_NUM_REQUIRE__
+__MMI_PHB_NAME_LIST_FILTER__
+__MMI_PHB_NO_OPTIONAL_FIELD__
+__MMI_PHB_PINYIN_SORT__
+__MMI_PHB_QUICK_SEARCH__
+__MMI_PHB_RSK_QUICK_SEARCH__
+__MMI_PHB_SEND_MMS_FROM_PHB__
+__MMI_PHB_SEND_SMS_FROM_PHB__
+__MMI_PHB_SOS_NUM_EDIT__
+__MMI_PHB_TWO_LINE_MENUITEM_DISPLAY__
+__MMI_PHB_UPDATE_CALL_LOG_AFTER_SAVE__
+__MMI_PHB_VOIP_FIELD__
+__MMI_PHNSET_TWO_LINE_MENUITEM_DISPLAY__
+__MMI_PHOTOEDITOR__
+__MMI_PICT_BRIDGE_MULTI_FILE_PRINT__
+__MMI_PICT_BRIDGE_SUPPORT__
+__MMI_POC_ADHOC_STR_INPUT__
+__MMI_POC__
+__MMI_POWER_ON_OFF_BY_POWER_KEY__
+__MMI_POWER_ON_OFF_DISPLAY_VIDEO__
+__MMI_POWER_ON_OFF_DISPLAY__
+__MMI_PREFER_INPUT_METHOD__
+__MMI_PREFER_WRITING_LANG__
+__MMI_PROFILE_EXTMELODY_SUPPORT__
+__MMI_PURE_AUDIO__
+__MMI_PUSH_SHOW_SENDER_ADDR__
+__MMI_RECEIVE_USSD_TONE__
+__MMI_REDUCED_KEYPAD__
+__MMI_RESOURCE_ENFB_SUPPORT__
+__MMI_RES_TYPE_ACTIVE_SCREEN_SEL__
+__MMI_RES_TYPE_ACTIVE_SCREEN__
+__MMI_RES_TYPE_MAINMENU_BIDEGREE_ANI_SEL__
+__MMI_RES_TYPE_MAINMENU_BIDEGREE_ANI__
+__MMI_RES_TYPE_MAINMENU_BIDEGREE_SEL__
+__MMI_RES_TYPE_MAINMENU_BIDEGREE__
+__MMI_RES_TYPE_MAINMENU_MATRIX_ANI_SEL__
+__MMI_RES_TYPE_MAINMENU_MATRIX_ANI__
+__MMI_RES_TYPE_MAINMENU_MATRIX_SEL__
+__MMI_RES_TYPE_MAINMENU_MATRIX__
+__MMI_RES_TYPE_POPUP_SCREEN_SEL__
+__MMI_RES_TYPE_POPUP_SCREEN__
+__MMI_RES_TYPE_POWER_ONOFF_SEL__
+__MMI_RES_TYPE_POWER_ONOFF__
+__MMI_RES_TYPE_SCREEN_SAVER_SEL__
+__MMI_RES_TYPE_SCREEN_SAVER__
+__MMI_RES_TYPE_SUBLCD_WALLPAPER_SEL__
+__MMI_RES_TYPE_SUBLCD_WALLPAPER__
+__MMI_RES_TYPE_WALLPAPER_SEL__
+__MMI_RES_TYPE_WALLPAPER__
+__MMI_RING_COMPOSER__
+__MMI_RMGR__
+__MMI_SAT_SHOW_ITEM_IN_CALL__
+__MMI_SCREENSAVER_DISPLAY_VIDEO__
+__MMI_SCREEN_ROTATE_DEGREE_270__
+__MMI_SCREEN_ROTATE__
+__MMI_SEPARATE_DT_SETTING__
+__MMI_SET_DEF_ENCODING_TYPE__
+__MMI_SHOW_CMP_FILE_EXT__
+__MMI_SHOW_DAF_FILE_EXT__
+__MMI_SHOW_FILE_EXT__
+__MMI_SIMAP_SUPPORT__
+__MMI_SLEEP_OUT_BACKLIGHT_ON__
+__MMI_SLIDESHOW__
+__MMI_SLIDE__
+__MMI_SLIM_AUDIO_PLAYER__
+__MMI_SLIM_CALENDAR__
+__MMI_SLIM_EMAIL_NO_IMAP4__
+__MMI_SLIM_FILE_MANAGER__
+__MMI_SMART_FIRST_UPPERCASE_ABC__
+__MMI_SOUND_EFFECT__
+__MMI_SOUND_RECORDER_STYLE_X__
+__MMI_SOUND_RECORDER__
+__MMI_SPECIFIC_CALENDAR__
+__MMI_SPP_SUPPORT__
+__MMI_STATUS_BAR_NO_UNDERLINE__
+__MMI_STATUS_ICON_EN_EARPHONE__
+__MMI_STATUS_ICON_MMS__
+__MMI_STATUS_ICON_SIGNAL_WITH_LINE_SWITCH__
+__MMI_STOPWATCH__
+__MMI_SUBLCD_COLOR__
+__MMI_SUBLCD_MASTER_MODE__
+__MMI_SUBLCD_SHOW_DATE__
+__MMI_SUBLCD_SHOW_ONE_CITY__
+__MMI_SUBLCD_SHOW_TIME__
+__MMI_SUBLCD_SHOW_WORLD_CLOCK__
+__MMI_SUBLCD__
+__MMI_SUB_BASE_LAYER_FORMAT__
+__MMI_SUB_WALLPAPER__
+__MMI_SUPPORT_DUMP_SCREEN_STRING__
+__MMI_SVG__
+__MMI_SWFLASH__
+__MMI_SYNCML_CCA_SUPPORT__
+__MMI_SYNCML_DM_OTAP__
+__MMI_SYNC_LCD_GPIO_MODE__
+__MMI_T9_ARABIC__
+__MMI_T9_BULGARIAN__
+__MMI_T9_CROATIAN__
+__MMI_T9_CZECH__
+__MMI_T9_DANISH__
+__MMI_T9_DEFAULT_KEY_DEFINITION__
+__MMI_T9_DUTCH__
+__MMI_T9_ENGLISH__
+__MMI_T9_FINNISH__
+__MMI_T9_FRENCH__
+__MMI_T9_GERMAN__
+__MMI_T9_GREEK__
+__MMI_T9_HEBREW__
+__MMI_T9_HINDI__
+__MMI_T9_HUNGARIAN__
+__MMI_T9_INDONESIAN__
+__MMI_T9_ITALIAN__
+__MMI_T9_MALAY__
+__MMI_T9_MULTITAP_PHONETIC_INPUT__
+__MMI_T9_NORWEGIAN__
+__MMI_T9_POLISH__
+__MMI_T9_PORTUGUESE__
+__MMI_T9_ROMANIAN__
+__MMI_T9_RUSSIAN__
+__MMI_T9_SLOVAK__
+__MMI_T9_SLOVENIAN__
+__MMI_T9_SMART_PHONETIC_INPUT__
+__MMI_T9_SM_CHINESE__
+__MMI_T9_SPANISH__
+__MMI_T9_STROKE_INPUT__
+__MMI_T9_SWEDISH__
+__MMI_T9_THAI__
+__MMI_T9_TR_CHINESE__
+__MMI_T9_TURKISH__
+__MMI_T9_VIETNAMESE__
+__MMI_THEMES_APPLICATION__
+__MMI_THEMES_V2_SUPPORT__
+__MMI_TODOLIST__
+__MMI_TOUCH_CALCULATOR__
+__MMI_TOUCH_DIAL_SCREEN_WITH_FUNCTION__
+__MMI_TOUCH_DIAL_SCREEN__
+__MMI_TOUCH_IDLESCREEN_SHORTCUTS__
+__MMI_TOUCH_PANEL_SHORTCUT__
+__MMI_TOUCH_RING_COMPOSER__
+__MMI_TOUCH_SCREEN__
+__MMI_TVOUT__
+__MMI_UCM__
+__MMI_UC_SUB_PREFIX_MMS__
+__MMI_UI_ANIMATED_TITLE_EFFECT_TYPE__
+__MMI_UI_ANIMATED_TITLE_EFFECT__
+__MMI_UI_BENCHMARK__
+__MMI_UI_CALENDAR_WITH_INFO_BOX__
+__MMI_UI_CALL_LOG_IN_TAB_PANE__
+__MMI_UI_FADE_EFFECT_STYLE__
+__MMI_UI_HINTS_IN_MENUITEM__
+__MMI_UI_HINT_TOGGLE_TRANSITION__
+__MMI_UI_INLINE_EDIT_DEFAULT_TEXT_EFFECT__
+__MMI_UI_LIST_CACHE_BACKGROUND__
+__MMI_UI_LIST_HIGHLIGHT_EFFECTS__
+__MMI_UI_LIST_HIGHLIGHT_EFFECT_TYPE__
+__MMI_UI_LIST_TRANSITION__
+__MMI_UI_MAIN_MENU_MATRIX_HIGHLIGHT_EFFECT_TYPE__
+__MMI_UI_POPUP_DESCRIPTION_DEFAULT_STYLE_1__
+__MMI_UI_POPUP_DESCRIPTION_DEFAULT_STYLE_2__
+__MMI_UI_POPUP_DESCRIPTION_DEFAULT_STYLE_3__
+__MMI_UI_POPUP_DESCRIPTION_DEFAULT_STYLE__
+__MMI_UI_SCROLLBAR_DEFAULT_STYLE_1__
+__MMI_UI_SCROLLBAR_DEFAULT_STYLE_2__
+__MMI_UI_SCROLLBAR_DEFAULT_STYLE_3__
+__MMI_UI_SCROLLBAR_DEFAULT_STYLE_4__
+__MMI_UI_SCROLLBAR_DEFAULT_STYLE_5__
+__MMI_UI_SCROLLBAR_DEFAULT_STYLE__
+__MMI_UI_SMALL_SCREEN_SUPPORT__
+__MMI_UI_SOFTKEY_STYLE__
+__MMI_UI_STATUSBAR_STYLE__
+__MMI_UI_STATUS_BAR_AT_BOTTOM__
+__MMI_UI_TECHNO_IDLESCREEN_BAR__
+__MMI_UI_TECHNO_MAINMENU__
+__MMI_UI_TITLE_TRANSITION__
+__MMI_UI_TRANSPARENT_EFFECT__
+__MMI_UI_TWO_LINE_MENUITEM_STYLES__
+__MMI_UNIFIED_COMPOSER__
+__MMI_UNIFIED_MESSAGE__
+__MMI_UNIT_CONVERTER__
+__MMI_USB_COPY_RIGHT__
+__MMI_USB_SUPPORT__
+__MMI_USSD_REPLY_UCS2__
+__MMI_USSR_TIMER__
+__MMI_VBOOKMARK__
+__MMI_VCALENDAR__
+__MMI_VCARD_NAME_IN_ENGLISH_FORMAT__
+__MMI_VCARD_TEL_VOICE_CELL_DIFFERENT__
+__MMI_VCARD_V30__
+__MMI_VCARD__
+__MMI_VERSION_2__
+__MMI_VIDEO_EDITOR__
+__MMI_VIDEO_PDL__
+__MMI_VIDEO_PLAYER__
+__MMI_VIDEO_RECORDER__
+__MMI_VIDEO_STREAM__
+__MMI_VOIP_OTAP_DMP__
+__MMI_VOIP_UNATTENDED_TRNASFER__
+__MMI_VOIP__
+__MMI_VRSD_AUDPLAYER__
+__MMI_VRSD_DIAL__
+__MMI_VRSD_PROFILE__
+__MMI_VRSD_REDIAL__
+__MMI_VRSD_SHORTCUT__
+__MMI_VRSD__
+__MMI_VRSI_DIGIT_ADAPT__
+__MMI_VRSI_TRAIN_TAG__
+__MMI_VRSI__
+__MMI_WALLPAPER_NUM__
+__MMI_WAP_DUAL_SIM__
+__MMI_WCLOCK_CITY_LIST_3__
+__MMI_WCSS_INPUT_FORMAT_SUPPORT__
+__MMI_WC_TZ_SUPPORT__
+__MMI_WEBCAM__
+__MMI_WGUI_CSK_ENABLE__
+__MMI_WITH_C_KEY__
+__MMI_WITH_WAP_KEY__
+__MMI_WLAN_FEATURES__
+__MMI_WLAN_OTAP_DMP__
+__MMI_WORLDCLOCK_DST__
+__MMI_WORLD_CLOCK__
+__MMI_ZI_ARABIC__
+__MMI_ZI_BENGALI__
+__MMI_ZI_BULGARIAN__
+__MMI_ZI_BZ_PORTUGUESE__
+__MMI_ZI_CROATIAN__
+__MMI_ZI_CZECH__
+__MMI_ZI_DANISH__
+__MMI_ZI_DUTCH__
+__MMI_ZI_EU_FRENCH__
+__MMI_ZI_FINNISH__
+__MMI_ZI_GERMAN__
+__MMI_ZI_GREEK__
+__MMI_ZI_HEBREW__
+__MMI_ZI_HINDI__
+__MMI_ZI_HUNGARIAN__
+__MMI_ZI_INDONESIAN__
+__MMI_ZI_ITALIAN__
+__MMI_ZI_MALAY__
+__MMI_ZI_MARATHI__
+__MMI_ZI_MULTITAP_PHONETIC_INPUT__
+__MMI_ZI_NORWEGIAN__
+__MMI_ZI_PERSIAN__
+__MMI_ZI_POLISH__
+__MMI_ZI_PRC_ENGLISH__
+__MMI_ZI_PUNJABI__
+__MMI_ZI_ROMANIAN__
+__MMI_ZI_RUSSIAN__
+__MMI_ZI_SA_PORTUGUESE__
+__MMI_ZI_SA_SPANISH__
+__MMI_ZI_SLOVAK__
+__MMI_ZI_SLOVENIAN__
+__MMI_ZI_SMART_PHONETIC_INPUT__
+__MMI_ZI_SM_CHINESE__
+__MMI_ZI_STROKE_INPUT__
+__MMI_ZI_SWEDISH__
+__MMI_ZI_TAMIL__
+__MMI_ZI_TELUGU__
+__MMI_ZI_THAI__
+__MMI_ZI_TR_CHINESE__
+__MMI_ZI_TURKISH__
+__MMI_ZI_UKRAINIAN__
+__MMI_ZI_URDU__
+__MMI_ZI_USING_PSCRATCH_BUFFER__
+__MMI_ZI_VIETNAMESE__
+__PHOEDT_FEATURE_IMGTILE__
+__UCS2_ENCODING
+__UI_MMS_VIEWER_CATEGORY__
+__UI_PAGING_IN_MULTILINE_EDITOR__
+__UI_UNIFIED_COMPOSER_EDITOR_CATEGORY__
+

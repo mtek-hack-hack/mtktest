@@ -1,0 +1,10 @@
+init\src\init.c 
+init\src\bootarm.s
+init\src\Eint.c
+init\src\init_memory_stack.c
+init\src\intrCtrl.c
+init\src\pdn.c
+init\src\regioninit_ads.s
+init\src\cache.c
+init\src\nfb_loader.c
+init\include\nfb_loader.h

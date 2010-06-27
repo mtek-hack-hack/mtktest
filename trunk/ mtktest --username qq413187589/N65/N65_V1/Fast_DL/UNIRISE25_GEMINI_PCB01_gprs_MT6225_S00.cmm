@@ -1,0 +1,110 @@
+; Copyright Statement:
+; --------------------
+; This software is protected by Copyright and the information contained
+; herein is confidential. The software may not be copied and the information
+; contained herein may not be used or disclosed except with the written
+; permission of MediaTek Inc. (C) 2005
+; 
+; BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+; THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+; RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+; AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+; NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+; SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+; SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+; THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+; NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+; SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+; 
+; BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+; LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+; AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+; OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+; MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+; 
+; THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+; WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+; LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+; RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+; THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+
+; FastDLCMMAutoGen v0.52 by Joe Wang
+
+; specify_reset_func
+SYStem.RESet
+SYStem.CPU ARM9E
+;SYStem.JtagClock 2000000.
+SYStem.JtagClock RTCK.
+sys.o cflush on
+SYStem.Up
+setup.IMASKHLL ON
+setup.IMASKASM ON
+; disable_watchdog
+D.S SD:0x80040000 %LE %WORD 0x2200
+; remapping
+D.S SD:0x80010060 %LE %WORD 0x02       ; Remap BOOTROM and \CS0 
+; delay_1_second
+WAIT 1.s
+; latch_up_power
+D.S SD:0x80210000 %LE %WORD 0x431f
+D.S SD:0x80210050 %LE %WORD 0xa357
+D.S SD:0x80210054 %LE %WORD 0x67d2
+; enable_flash_write
+D.S SD:0x80000200 %LE %WORD 0xFFFF     ; Enable Write Flash
+; setting_EMI
+D.S SD:0x80010000 %LE %LONG 0x22894648
+D.S SD:0x80010008 %LE %LONG 0x22894648
+D.S SD:0x80010068 %LE %LONG 0x4a808000 ; turn-on clock
+D.S SD:0x80010070 %LE %LONG 0x63186318 ; driving
+; specify_env_for_bin
+D.S SD:0x4000fff0 %LE %Long 0x100000  ;/*1M ram*/
+D.S SD:0x4000fff4 %LE %Long 0x1c00000  ;/*FAT start address*/
+D.S SD:0x4000fff8 %LE %Long 0x400000  ;/*FAT length*/
+D.S SD:0x4000fffc %LE %Long 0x02000000  ;/*flash size*/
+D.S SD:0x80160004 %LE %WORD 0x806    ;BIT0: Output debug information (115200-8-N-1)
+                                       ;BIT1: Format FAT  
+                                       ;BIT3~BIT2: RAM start address
+                                       ;           (00:0x10000000)
+                                       ;           (01:0x08000000)
+                                       ;BIT6: Force not to erase flash in advanced
+                                       ;BIT7: Erasing whole flash chip except FAT area
+                                       ;BIT15~BIT08: flash type ( 0:32Mbit)
+                                       ;                        ( 1:64Mbit, AMD29DL640)
+                                       ;                        ( 2:128Mbit, AMD29PDL128)
+                                       ;                        ( 3:64Mbit, MB84VD23280FA, AM41DL640BG)
+                                       ;                        ( 4:32Mbit, Intel 28F320W30)                                      
+                                       ;                        ( 5:256Mbit, Intel Tyax, but only 16MB available)
+                                       ;                        ( 6:128Mbit, Intel Tyax)
+                                       ;                        ( 7:256Mbit, Intel Tyax)
+                                       ;                        ( 8:128Mbit/256Mbit(2 deis), Spansion)
+                                       ;                        ( 9:Destination at RAM)
+                                       ;                        ( a:Renesas 16MB 3-in-1 MCP)
+                                       ;                        ( b:Toshiba 32MB 3-in-1 MCP, 104MHz)
+                                       ;                        ( c:INTEL Sibley 512Mbis, 104MHz)
+
+D.LOAD.ELF .\FastDL_V1.elf /word
+break.set 0x40000834
+
+FLASH.RES
+
+flash.target 0x40000800 0x8000000 0x10000 ;information which target base program will be done
+                                          ;locate algorithm at 0x40000000
+                                          ;parameter and buffer is located at 0x0x40003ff0
+;FLASH.List
+flash.create 0--0x01ffffff target word
+FLASH.ERASE 0--0x01ffffff
+FLASH.PROGRAM 0--0x01ffffff
+
+D.LOAD.b .\..\BUILD\UNIRISE25_GEMINI\UNIRISE25_GEMINI_PCB01_GPRS_MT6225_S00.MAUI_GEMINI_W08_12_V3.bin 0 /word
+FLASH.PROGRAM OFF
+;y.spath ..\..\src
+
+D.S SD:0x80210050 %LE %WORD 0x1234
+D.S SD:0x80210054 %LE %WORD 0x5678
+
+winclear
+d.l
+enddo
+

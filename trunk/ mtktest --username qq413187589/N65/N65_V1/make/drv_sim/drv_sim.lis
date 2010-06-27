@@ -1,0 +1,11 @@
+MoDIS\drv_sim\src\uart_sim_if.c
+MoDIS\drv_sim\src\uart_sim_main.c
+MoDIS\drv_sim\src\w32_audio.c
+MoDIS\drv_sim\src\w32_dummy_drv.c
+MoDIS\drv_sim\src\w32_dummy_wndrv.c
+MoDIS\drv_sim\src\w32_freeimage.c
+MoDIS\drv_sim\src\w32_keys.c
+MoDIS\drv_sim\src\w32_l1.c
+MoDIS\drv_sim\src\w32_l4c.c
+MoDIS\drv_sim\src\w32_uart.c
+MoDIS\drv_sim\src\w32_socket.c

@@ -1,0 +1,17 @@
+ps\l4\src
+ps\l4\l4c\src\common
+ps\l4\l4c\src\mmi
+ps\l4\l4c\src\proc
+ps\l4\uem\src
+ps\l4\smu\src
+ps\l4\uem\src 
+ps\l4\csm
+ps\l4\csm\cc\src 
+ps\l4\csm\ss\src 
+ps\l4\phb\src
+ps\l4\smsal\src
+ps\l4\rac\src
+ps\l4\l4a\src
+ps\l4\tcm\src
+ps\gen\sme_tt
+ps\l4\btvcsr_hp

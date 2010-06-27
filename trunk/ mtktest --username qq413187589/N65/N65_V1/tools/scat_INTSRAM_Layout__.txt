@@ -1,0 +1,540 @@
+;/*****************************************************************************
+;*  Copyright Statement:
+;*  --------------------
+;*  This software is protected by Copyright and the information contained
+;*  herein is confidential. The software may not be copied and the information
+;*  contained herein may not be used or disclosed except with the written
+;*  permission of MediaTek Inc. (C) 2007
+;*
+;*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+;*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+;*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+;*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+;*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+;*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+;*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+;*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+;*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+;*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+;*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+;*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+;*
+;*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+;*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+;*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+;*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+;*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+;*
+;*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+;*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+;*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+;*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+;*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+;*
+;*****************************************************************************/
+;
+;/*****************************************************************************
+; *
+; * Filename:
+; * ---------
+; *   scat_INTSRAM_Layout__.txt
+; *
+; * Project:
+; * --------
+; *   Maui_Software
+; *
+; * Description:
+; * ------------
+; *   Example for INTSRAM scatter file and Overlay layout by BB Chip
+; *
+; * Author:
+; * -------
+; *   Produced by system service team
+; *
+; ****************************************************************************/
+; *============================================================================
+; *             HISTORY
+; * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+; *----------------------------------------------------------------------------
+; * $Revision:$
+; * $Modtime:$
+; * $Log:$
+; *
+; * Sep 12 2007 mtk01077
+; * [MAUI_00546461] [Custom] update scatter file template
+; * 
+; *----------------------------------------------------------------------------
+; * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+;*=============================================================================
+;*****************************************************************************/
+;--------------------------
+; PLATFORM : MT6229, MT6230
+;--------------------------
+
+ROM 0x-------- 0x--------
+{
+    ROM 0x-------- 0x--------
+    {
+    }
+    EXTSRAM_LARGEPOOL_NORMAL 0x--------
+    {
+    }
+    EXTSRAM +0x00 
+    {
+    }
+    EXTSRAM_DSP_TX 0x-------- 0x20000
+    {
+         dps_misc.obj (EXTRAM_TXDATA)
+         rr_create.obj (EXTRAM_TXDATA)
+         rlc_main.obj (EXTRAM_TXDATA)
+         mpal_main.obj (EXTRAM_TXDATA)
+         v110.obj (EXTRAM_TXDATA)
+         m12161.obj (EXTRAM_TXDATA)
+         m12150.obj (EXTRAM_TXDATA)
+         dps_rlc_func.obj (EXTRAM_TXDATA)
+         csd_ra.obj (EXTRAM_TXDATA)
+    }
+    EXTSRAM_DSP_RX 0x-------- 0x20000
+    {
+         m11006.obj (EXTRAM_RXDATA)
+         v110.obj (EXTRAM_RXDATA)
+         m12161.obj (EXTRAM_RXDATA)
+         irdbg_drv.obj (EXTRAM_RXDATA)
+    }
+    INTSRAM_CODE 0xA0000000 0x00010400
+    {
+; system-realted CODE , STANDARD set
+; Nucleus-related CODE , STANDARD set
+; THREADX-related CODE , STANDARD set
+; common used C library
+; INTSRAM_CODE_OBJ_others_6228
+    }
+    INTSRAM_DATA 0xA0010400 0x00008400
+    {
+; system-realted data
+; Nucleus-related data ; Standard set
+; THREADX-related data ; Standard set
+; INTSRAM_DATA_OBJ_others_6228
+    }
+    DYNAMIC_CODE2 0xa0018800 OVERLAY 0x2800
+    {
+         * (G3D_DYNAMIC_CODE, G3D_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE1 0xa001b000 OVERLAY 0x5000
+    {
+         * (AMR515_DYNAMIC_CODE, AMR515_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE3 0xa001b000 OVERLAY 0x5000
+    {
+         * (CTM_DYNAMIC_CODE, CTM_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE4 0xa001b000 OVERLAY 0x5000
+    {
+         * (G729_DYNAMIC_CODE, G729_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE5 0xa001b000 OVERLAY 0x5000
+    {
+         * (SBC_DYNAMIC_CODE, SBC_DYNAMIC_ZI)
+    }
+    INTSRAM_MULTIMEDIA 0x40000000 0x00020000
+    {
+         ae.obj (INTERNRW1, INTERNZI1) 
+         isp_comm.obj (INTERNRW1, INTERNZI1) 
+         med_main.obj (INTERNRW1, INTERNZI1) 
+    }
+}
+
+;--------------------------
+; PLATFORM : MT6228
+;--------------------------
+
+ROM 0x-------- 0x--------
+{
+    ROM 0x-------- 0x--------
+    {
+    }
+    EXTSRAM_LARGEPOOL_NORMAL 0x--------
+    {
+    }
+    EXTSRAM +0x00 
+    {
+    }
+    DUMMY_END 0x-------- 0x4
+    {
+         bootarm.obj (DUMMY_POOL)
+    }
+    INTSRAM_CODE 0xA0000000 0x00010400
+    {
+; system-realted CODE , STANDARD set
+; Nucleus-related CODE , STANDARD set
+; THREADX-related CODE , STANDARD set
+; common used C library
+; INTSRAM_CODE_OBJ_others_6228
+    }
+    INTSRAM_DATA 0xA0010400 0x00008400
+    {
+; system-realted data
+; Nucleus-related data ; Standard set
+; THREADX-related data ; Standard set
+; INTSRAM_DATA_OBJ_others_6228
+    }
+    DYNAMIC_CODE2 0xa0018800 OVERLAY 0x2800
+    {
+         * (G3D_DYNAMIC_CODE, G3D_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE1 0xa001b000 OVERLAY 0x5000
+    {
+         * (AMR515_DYNAMIC_CODE, AMR515_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE3 0xa001b000 OVERLAY 0x5000
+    {
+         * (CTM_DYNAMIC_CODE, CTM_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE4 0xa001b000 OVERLAY 0x5000
+    {
+         * (G729_DYNAMIC_CODE, G729_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE5 0xa001b000 OVERLAY 0x5000
+    {
+         * (SBC_DYNAMIC_CODE, SBC_DYNAMIC_ZI)
+    }
+    INTSRAM_MULTIMEDIA 0x40000000 0x00020000
+    {
+         ae.obj (INTERNRW1, INTERNZI1) 
+         isp_comm.obj (INTERNRW1, INTERNZI1) 
+         med_main.obj (INTERNRW1, INTERNZI1) 
+    }
+}
+
+;--------------------------
+; PLATFORM : MT6225
+;--------------------------
+
+ROM 0x-------- 0x--------
+{
+    ROM 0x-------- 0x--------
+    {
+    }
+    EXTSRAM_LARGEPOOL_NORMAL 0x--------
+    {
+    }
+    EXTSRAM +0x00 
+    {
+    }
+    DUMMY_END 0x-------- 0x4
+    {
+         bootarm.obj (DUMMY_POOL)
+    }
+    INTSRAM_CODE 0xA0000000 0x7600
+    {
+; system-realted CODE , SMALL set
+; Nucleus-related CODE , SMALL set
+; THREADX-related CODE , SMALL set
+; common used C library
+; INTSRAM_CODE_OBJ_others_6225
+    }
+    INTSRAM_DATA 0xA0007600 0x5A00
+    {
+; system-realted data
+; Nucleus-related data ; Standard set
+; THREADX-related data ; Standard set
+; INTSRAM_DATA_OBJ_others_6225
+    }   
+    DYNAMIC_CODE1 0xa000d000 OVERLAY 0x5000
+    {
+         * (AMR515_DYNAMIC_CODE, AMR515_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE2 0xa000d000 OVERLAY 0x5000
+    {
+         * (G3D_DYNAMIC_CODE, G3D_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE3 0xa000d000 OVERLAY 0x5000
+    {
+         * (CTM_DYNAMIC_CODE, CTM_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE4 0xa000d000 OVERLAY 0x5000
+    {
+         * (G729_DYNAMIC_CODE, G729_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE5 0xa000d000 OVERLAY 0x5000
+    {
+         * (SBC_DYNAMIC_CODE, SBC_DYNAMIC_ZI)
+    }
+    INTSRAM_MULTIMEDIA 0x40000000 0xC000
+    {
+         med_main.obj (INTERNRW1, INTERNZI1)
+         isp_comm.obj (INTERNRW1, INTERNZI1)
+    }
+}
+
+;--------------------------
+; PLATFORM : MT6227, MT6226, MT6226M
+;--------------------------
+
+ROM 0x-------- 0x--------
+{
+    ROM 0x-------- 0x--------
+    {
+    }
+    EXTSRAM_LARGEPOOL_NORMAL 0x--------
+    {
+    }
+    EXTSRAM +0x00 
+    {
+    }
+    DUMMY_END 0x-------- 0x4
+    {
+         bootarm.obj (DUMMY_POOL)
+    }
+    INTSRAM_CODE 0x40000380 0x0000FC00
+    {
+; system-realted CODE , STANDARD set
+; Nucleus-related CODE , STANDARD set
+; THREADX-related CODE , STANDARD set
+; common used C library
+; INTSRAM_CODE_OBJ_others_6227
+    }
+    INTSRAM_DATA 0x4000FF80 0x00008880
+    {
+; system-realted data
+; Nucleus-related data ; Standard set
+; THREADX-related data ; Standard set
+; INTSRAM_DATA_OBJ_others_6227
+    }
+    DYNAMIC_CODE1 0x40018800 OVERLAY 0x5000
+    {
+         * (AMR515_DYNAMIC_CODE, AMR515_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE3 0x40018800 OVERLAY 0x5000
+    {
+         * (CTM_DYNAMIC_CODE, CTM_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE4 0x40018800 OVERLAY 0x5000
+    {
+         * (G729_DYNAMIC_CODE, G729_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE5 0x40018800 OVERLAY 0x5000
+    {
+         * (SBC_DYNAMIC_CODE, SBC_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE6 0x40018800 OVERLAY 0x5000
+    {
+         * (BCODE_DYNAMIC_CODE, BCODE_DYNAMIC_ZI)
+    }
+    INTSRAM_MULTIMEDIA 0x4001D800 0x00029800
+    {
+         med_main.obj (INTERNRW1, INTERNZI1)
+         isp_comm.obj (INTERNRW1, INTERNZI1)
+    }
+}
+
+
+;--------------------------
+; PLATFORM : MT6219
+;--------------------------
+
+ROM 0x-------- 0x--------
+{
+    ROM 0x-------- 0x--------
+    {
+    }
+    EXTSRAM_LARGEPOOL_NORMAL 0x--------
+    {
+    }
+    EXTSRAM +0x00 
+    {
+    }
+    DUMMY_END 0x-------- 0x4
+    {
+         bootarm.obj (DUMMY_POOL)
+    }
+    INTSRAM_CODE 0x40000000 0x00014000
+    {
+; system-realted CODE , STANDARD set
+; Nucleus-related CODE , STANDARD set
+; THREADX-related CODE , STANDARD set
+; common used C library
+; INTSRAM_CODE_OBJ_others_6219
+    }
+    INTSRAM_DATA 0x40014000 0x0000c000
+    {
+; system-realted data
+; Nucleus-related data ; Standard set
+; THREADX-related data ; Standard set
+; INTSRAM_DATA_OBJ_others_6219
+    }   
+    INTSRAM_MULTIMEDIA 0x40020000 0x00060000
+    {
+         med_main.obj (INTERNRW1, INTERNZI1) 
+         gdi_layer.obj (INTERNRW1, INTERNZI1) 
+         gdi_image_gif.obj (INTERNZI)
+    }
+}
+
+;--------------------------
+; PLATFORM : MT6217, MT6218B
+;--------------------------
+ROM 0x-------- 0x--------
+{
+    ROM 0x-------- 0x--------
+    {
+    }
+    EXTSRAM_LARGEPOOL_NORMAL 0x--------
+    {
+    }
+    EXTSRAM +0x00 
+    {
+    }
+    DUMMY_END 0x-------- 0x4
+    {
+         bootarm.obj (DUMMY_POOL)
+    }
+    INTSRAM_CODE 0x40000000 0x00014000
+    {
+; system-realted CODE , STANDARD set
+; Nucleus-related CODE , STANDARD set
+; THREADX-related CODE , STANDARD set
+; common used C library
+; INTSRAM_CODE_OBJ_others_6217
+    }
+    INTSRAM_DATA 0x40014000 0x0000c000
+    {
+; system-realted data
+; Nucleus-related data ; Standard set
+; THREADX-related data ; Standard set
+; INTSRAM_DATA_OBJ_others_6217
+    }   
+}
+
+;--------------------------
+; PLATFORM : MT6205B
+;--------------------------
+ROM 0x-------- 0x--------
+{
+    ROM 0x-------- 0x--------
+    {
+    }
+    EXTSRAM 0x--------
+    {
+    }
+    DUMMY_END 0x-------- 0x4
+    {
+    }
+    INTSRAM 0x40000000 0x00008000
+    {
+; system-realted CODE/RW/ZI , STANDARD set  or Single-Bank set
+; misc CODE/RW/ZI
+; common C library
+; Low-Cost Single Bank Support (Optional)
+; Enhanced Single Bank Support (Optional)
+    }
+}
+
+;--------------------------
+; PLATFORM : MT6227D
+;--------------------------
+
+ROM 0x-------- 0x--------
+{
+    ROM 0x-------- 0x--------
+    {
+    }
+    EXTSRAM_LARGEPOOL_NORMAL 0x--------
+    {
+    }
+    EXTSRAM +0x00 
+    {
+    }
+    DUMMY_END 0x-------- 0x4
+    {
+         bootarm.obj (DUMMY_POOL)
+    }
+    INTSRAM_CODE 0x40000000 0x0000FC00
+    {
+; system-realted CODE , STANDARD set
+; Nucleus-related CODE , STANDARD set
+; THREADX-related CODE , STANDARD set
+; common used C library
+; INTSRAM_CODE_OBJ_others_6227
+    }
+    INTSRAM_DATA 0x4000FC00 0x00008C00
+    {
+; system-realted data
+; Nucleus-related data ; Standard set
+; THREADX-related data ; Standard set
+; INTSRAM_DATA_OBJ_others_6227
+    }
+    DYNAMIC_CODE1 0x40018800 OVERLAY 0x5000
+    {
+         * (AMR515_DYNAMIC_CODE, AMR515_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE3 0x40018800 OVERLAY 0x5000
+    {
+         * (CTM_DYNAMIC_CODE, CTM_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE4 0x40018800 OVERLAY 0x5000
+    {
+         * (G729_DYNAMIC_CODE, G729_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE5 0x40018800 OVERLAY 0x5000
+    {
+         * (SBC_DYNAMIC_CODE, SBC_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE6 0x40018800 OVERLAY 0x5000
+    {
+         * (BCODE_DYNAMIC_CODE, BCODE_DYNAMIC_ZI)
+    }
+    INTSRAM_MULTIMEDIA 0x4001D800 0x00029800
+    {
+         med_main.obj (INTERNRW1, INTERNZI1)
+         isp_comm.obj (INTERNRW1, INTERNZI1)
+    }
+}
+
+;--------------------------
+; PLATFORM : MT6223
+;--------------------------
+ROM 0x-------- 0x--------
+{
+    ROM 0x-------- 0x--------
+    {
+    }
+    EXTSRAM 0x--------
+    {
+    }
+    EXTSRAM_DSP_TX 0x-------- 0x20000
+    {
+         dps_misc.obj (EXTRAM_TXDATA)
+         rr_create.obj (EXTRAM_TXDATA)
+         rlc_main.obj (EXTRAM_TXDATA)
+         mpal_main.obj (EXTRAM_TXDATA)
+         v110.obj (EXTRAM_TXDATA)
+         m12161.obj (EXTRAM_TXDATA)
+         m12150.obj (EXTRAM_TXDATA)
+         dps_rlc_func.obj (EXTRAM_TXDATA)
+         csd_ra.obj (EXTRAM_TXDATA)
+    }
+    EXTSRAM_DSP_RX 0x-------- 0x20000
+    {
+         m11006.obj (EXTRAM_RXDATA)
+         v110.obj (EXTRAM_RXDATA)
+         m12161.obj (EXTRAM_RXDATA)
+         irdbg_drv.obj (EXTRAM_RXDATA)
+    }
+    INTSRAM 0x40000000 0x00008D80
+    {
+; system-realted CODE
+; common C library
+; misc CODE
+; system-realted RW/ZI
+; misc RW/ZI
+    }
+    DYNAMIC_CODE3 0x40008D80 OVERLAY 0x1280
+    {
+         * (CTM_DYNAMIC_CODE, CTM_DYNAMIC_ZI)
+    }
+    DYNAMIC_CODE5 0x40008D80 OVERLAY 0x1280
+    {
+         * (SBC_DYNAMIC_CODE, SBC_DYNAMIC_ZI)
+    }
+}

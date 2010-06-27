@@ -1,0 +1,71 @@
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_0=11211, String=Image 1
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_1=11212, String=Image 2
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_2=11213, String=Image 3
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_3=11214, String=Image 4
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_4=11215, String=Image 5
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_5=11216, String=Image 6
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_6=11217, String=Image 7
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_7=11218, String=Image 8
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_8=11219, String=Image 9
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_9=11220, String=Image 10
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_10=11221, String=Image 11
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_11=11222, String=Image 12
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_12=11223, String=Image 13
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_13=11224, String=Image 14
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_14=11225, String=Image 15
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_15=11226, String=Image 16
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_0=11228, String=Animation 1
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_1=11229, String=Animation 2
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_2=11230, String=Animation 3
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_3=11231, String=Animation 4
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_4=11232, String=Animation 5
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_5=11233, String=Animation 6
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_6=11234, String=Animation 7
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_7=11235, String=Animation 8
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_8=11236, String=Animation 9
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_9=11237, String=Animation 10
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_10=11238, String=Animation 11
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_11=11239, String=Animation 12
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_12=11240, String=Animation 13
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_13=11241, String=Animation 14
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_14=11242, String=Animation 15
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_15=11243, String=Animation 16
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_0=11245, String=Video 1
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_1=11246, String=Video 2
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_2=11247, String=Video 3
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_3=11248, String=Video 4
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_4=11249, String=Video 5
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_5=11250, String=Video 6
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_6=11251, String=Video 7
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_7=11252, String=Video 8
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_8=11253, String=Video 9
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_9=11254, String=Video 10
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_10=11255, String=Video 11
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_11=11256, String=Video 12
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_12=11257, String=Video 13
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_13=11258, String=Video 14
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_14=11259, String=Video 15
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_15=11260, String=Video 16
+Can't open the directory: ..\\..\\Customer\\Images\\PLUTO240X320\\DispChar
+                ADD_APPLICATION_IMAGE3(IMG_ID_PHNSET_ON_0=11735, path=..\\..\\Customer\\Images\\PLUTO240X320\\MainLCD\\Active\\poweronoff\\POON.GIF)
+                ADD_APPLICATION_IMAGE3(IMG_ID_PHNSET_OFF_0=11767, path=..\\..\\Customer\\Images\\PLUTO240X320\\MainLCD\\Active\\poweronoff\\pooff.GIF)
+                ADD_APPLICATION_IMAGE3(i = 0, path=..\\..\\Customer\\Images\\PLUTO240X320\\MainLCD\\IdleScreen\\WallPaper\\wall01.GIF)
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_0=11211, String=Image 1
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_0=11228, String=Animation 1
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_0=11245, String=Video 1
+                ADD_APPLICATION_IMAGE3(i = 1, path=..\\..\\Customer\\Images\\PLUTO240X320\\MainLCD\\IdleScreen\\WallPaper\\wall02.GIF)
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_1=11212, String=Image 2
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_1=11229, String=Animation 2
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_1=11246, String=Video 2
+                ADD_APPLICATION_IMAGE3(i = 2, path=..\\..\\Customer\\Images\\PLUTO240X320\\MainLCD\\IdleScreen\\WallPaper\\wall03.GIF)
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_2=11213, String=Image 3
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_2=11230, String=Animation 3
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_2=11247, String=Video 3
+                ADD_APPLICATION_IMAGE3(i = 3, path=..\\..\\Customer\\Images\\PLUTO240X320\\MainLCD\\IdleScreen\\WallPaper\\wall04.GIF)
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_3=11214, String=Image 4
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_3=11231, String=Animation 4
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_3=11248, String=Video 4
+                ADD_APPLICATION_IMAGE3(i = 4, path=..\\..\\Customer\\Images\\PLUTO240X320\\MainLCD\\IdleScreen\\WallPaper\\wall05.GIF)
+Generate STR_ID_PHNSET_DISPCHAR_IMGID_4=11215, String=Image 5
+Generate STR_ID_PHNSET_DISPCHAR_ANMID_4=11232, String=Animation 5
+Generate STR_ID_PHNSET_DISPCHAR_VDOID_4=11249, String=Video 5

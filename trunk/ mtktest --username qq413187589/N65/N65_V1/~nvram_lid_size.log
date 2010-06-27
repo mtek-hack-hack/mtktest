@@ -1,0 +1,137 @@
+-----------------------------------------------------------
+   0                  34                    SYSTEM Record
+   0                  34                    SYSTEM Record
+   1                  34                    Branch verno
+   1                  34                    Branch verno
+   2                  34                    Cust Pack Bin Ver
+   2                  34                    Cust Pack Bin Ver
+   3                5120                    Exception Record
+   4                 428                    SYS Stat
+   5                 260                    AGC
+   5                 260                    AGC
+   6                 664                    RAMP GSM850
+   6                 664                    RAMP GSM850
+   7                 664                    RAMP GSM900
+   7                 664                    RAMP GSM900
+   8                 664                    RAMP DCS1800
+   8                 664                    RAMP DCS1800
+   9                 664                    RAMP PCS1900
+   9                 664                    RAMP PCS1900
+  18                   8                    AFC Data
+  18                   8                    AFC Data
+  19                  44                    TXIQ
+  19                  44                    TXIQ
+  20                 208                    RFSPECIALCOEF
+  20                 208                    RFSPECIALCOEF
+  21                  16                    IS RAMP GSM850
+  21                  16                    IS RAMP GSM850
+  22                  16                    IS RAMP GSM900
+  22                  16                    IS RAMP GSM900
+  23                  16                    IS RAMP DCS1800
+  23                  16                    IS RAMP DCS1800
+  24                  16                    IS RAMP PCS1900
+  24                  16                    IS RAMP PCS1900
+  25                  96                    CRYSTAL AFC Data
+  25                  96                    CRYSTAL AFC Data
+  26                   4                    CRYSTAL CAP Data
+  26                   4                    CRYSTAL CAP Data
+  34                 112                    EXTBCCH
+  34                 112                    EXTBCCH
+  35                  76                    EQ PLMN
+  35                  76                    EQ PLMN
+  36                  12                    BAND INFO
+  36                  12                    BAND INFO
+  37                 834                    TST Filter
+  38                 100                    CB Channel Info
+  39                  24                    SMSAL MWIS
+  40                  32                    TCM Stats
+  41                   4                    CFU Flag
+  42                 104                    MM EQPLMN_LOCIGPRS
+  44                   4                    ALS Line
+  45                   8                    MSCAP
+  45                   8                    MSCAP
+  46                  24                    CLASSMARK RACAP
+  46                  24                    CLASSMARK RACAP
+  47                1280                    SIM Assert Log
+  48                  16                    RTC Calibration
+  57                  56                    ADC
+  57                  56                    ADC
+  58                 440                    HW Level
+  59                 210                    UEM Manufact
+  60                 216                    UEM RMI
+  61                 183                    Accoustic
+  62                1466                    Audio Parameter
+  62                1466                    Audio Parameter
+  63                 500                    AutoTest
+  64                  28                    Port Settings
+  65                  64                    BARCODE
+  66                 400                    SYS_CACHE_OCTET
+  67                  20                    IMEI IMEISV
+  67                  20                    IMEI IMEISV
+  68               25800                    Phone Book
+  69               11088                    Last Dial Num
+  70                 860                    Phonebook SOS
+  71                1200                    Phonebook SpeedDial
+  72                2040                    Phonebook IDs
+  73               68700                    Phonebook Fields
+  74                  20                    Phonebook Settings
+  75                 260                    PHB Caller Group
+  76                 338                    PHB vcard
+  79                 120                    PHB LN Type Seq
+  80                   1                    PHB Compare Digit
+  81                2000                    PHB Birthday
+  87                2604                    SMS
+  88                 720                    SMS CB Channel
+  89                2820                    SMS CB SMS
+  90                  20                    SMS CB SMS INFO
+  94               36800                    SMSAL SMS
+  95                  96                    SMSAL MAILBOX
+  96                  28                    SMSAL COMMON
+  97                  40                    CB Default CH
+  98                 160                    SMSAL SMSP
+ 101                 120                    ChatInfo
+ 102                  48                    Call Time
+ 103                  84                    CAMERA SETTING
+ 104                  51                    VIDEO SETTING
+ 105                1532                    Camera Para
+ 110                  66                    IP Number
+ 111                1480                    CSD Profile
+ 112                2260                    ABM GPRS PROFILE
+ 126                1748                    External Melody
+ 113                 610                    Alarm queue
+ 114                  16                    Alarm SPOF data
+ 115                  60                    Alarm data
+ 116                8400                    Todo List
+ 109                2530                    TCM PDP Profile
+ 117                  60                    Greeting Txt
+ 118                 432                    Group Lists
+ 119                3684                    Dispchar path
+ 120                 500                    Shortcuts
+ 122                 812                    Profiles
+ 123                1152                    Stopwatch
+ 127                 396                    FM Radio
+ 131                1020                    Fmgr Path Pool Head
+ 132                  20                    Fmgr Path Pool Tail
+ 133                2000                    Bluetooth info
+ 135                 141                    BT Radio MT6601
+ 148                 400                    EONS Info
+ 163                   8                    Ebook Settings
+ 166                1944                    SIM-ME Lock
+ 169                 160                    AUDIO PLAYER BT SETTINGS
+ 174                 228                    EM NW Event Rings
+ 175                 110                    NITZ PLMN
+ 178                 332                    MS SECURITY
+ 178                 332                    MS SECURITY
+ 179                   4                    RAC Preference
+ 181                  60                    CSB Settings
+ 204                 720                    SMS CB Channel
+ 205                2820                    SMS CB SMS
+ 206                  20                    SMS CB SMS INFO
+ 207                  15                    Analog tv channel Settings
+ 208                 330                    Analog tv channel name Settings
+ 209                   2                    G Sensor Settings
+ 210                   6                    G Sensor Calibrantion Settings
+ 211                 512                    1-byte Setting
+ 212                 512                    2-byte Setting
+ 213                 512                    8-byte Setting
+-----------------------------------------------------------

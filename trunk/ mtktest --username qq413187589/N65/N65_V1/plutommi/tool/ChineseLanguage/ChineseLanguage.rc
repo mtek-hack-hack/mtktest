@@ -1,0 +1,280 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_DROP_DOWN MENU 
+BEGIN
+    POPUP "C&File"
+    BEGIN
+        MENUITEM "CE&xit",                      ID_MENU_EXIT
+    END
+    POPUP "C&Messages"
+    BEGIN
+        MENUITEM "C&Async Messages",            ID_MENU_ASYNC_MESSAGES
+        MENUITEM "C&Edit Message Attributes And Add-Edit DataSets", 
+                                                ID_MENU_EDIT_ADD_DATA
+    END
+    POPUP "C&Global"
+    BEGIN
+        MENUITEM "C&Responses",                 ID_GLOBAL_RESPONSES
+        MENUITEM "C&Frequency and Timer",       ID_GLOBAL_FREQUENCYANDTIMER
+    END
+    POPUP "C&Language"
+    BEGIN
+        MENUITEM "&English",                    ID_LANGUAGE_ENGLISH
+        MENUITEM "C&Chinese",                   ID_LANGUAGE_CHINESE
+    END
+    POPUP "C&Help"
+    BEGIN
+        MENUITEM "C&Contents",                  ID_HELP_CONTENTS
+        MENUITEM "C&AboutNetwork Simulator",    ID_ABOUT_NWSSIMEDITOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About MMINWSimulator..."
+    IDS_STRING_SAVED_DATASET_INDICATION "CDataSet Saved"
+    IDP_SOCKETS_INIT_FAILED "CWindows sockets initialization failed."
+    IDS_STRING_IMCMPLT_DATASET_INFO 
+                            "CPlease Fill In The Empty Fields In The DataSet"
+    IDS_STRING_SAVED_AND_SENT_MESSAGE_INDICATION 
+                            "CDataSet Saved And Sent With The Message"
+    IDS_STRING_SENT_MESSAGE_INDICATION "CThe Message Has Been Sent"
+    IDS_STRING_SAVE         "C&Save"
+    IDS_STRING_INVALID_ID_NOTIFICATION "CThe Message Id Is Invalid"
+    IDS_STRING_MESSAGE_NOT_FOUND "CNo Message Found"
+    IDS_STRING_ASK_FOR_DEFAULT_VAL_USE 
+                            "CWant To Have Default Values For Empty Fields"
+    IDS_STRING_NO_DEFAULT   "CSince There Is No Defaut DataSet, Please Enter The Data Yourself."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_INC_MSGS_FROM_MMI "CMessages coming from MMI"
+    IDS_STRING_OUTGOING_MSG_TO_MMI "CMessages Going To MMI"
+    IDS_STRING_MESSAGE_ID   "CMessage ID"
+    IDS_STRING_MESSAGE_NAME "CMessage Name"
+    IDS_STRING_MESSAGE_TIME "CMessage Time"
+    IDS_STRING_SEARCH_MSG   "CSearch &Message"
+    IDS_STRING_STATIC_APPID_COMBO "CApplication ID (ID:Name)"
+    IDS_STRING_STATIC_MSGID_COMBO "CMessage ID (ID:Name)"
+    IDS_STRING_STATIC_DSNAME_COMBO "CDataSet Name"
+    IDS_STRING_STATIC_DS_ATTRIBS "CDataSet Attributes"
+    IDS_STRING_STATIC_FREQ  "CFrequency"
+    IDS_STRING_STATIC_TIMER "CTimer"
+    IDS_STRING_DS_DETAILS   "CDetails of the selected DataSet"
+    IDS_STRING_NEW_DS       "CClick To Add DataSet"
+    IDS_STRING_CHG_ATTRIB   "CClick to Change Attributes"
+    IDS_STRING_CHG_ATTRIB_NU_DS "CAdd New DataSet"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_LONG_VAL_INDICATION "CToo Long A Value----------%1"
+    IDS_STRING_IMPROPER_VAL_INDICATION "CImproper Value ------------%1"
+    IDS_STRING_RNG_INDICATION "CThe Number is Out Of Range"
+    IDS_STRING_NOTIFY_LOSS_OF_DATA 
+                            "CAll data for the new data set will be lost. Do you want to continue?"
+    IDS_STRING_SAVENSEND    "CS&ave && Send"
+    IDS_STRING_SEND         "CS&end"
+    IDS_STRING_CLOSE        "C&Close"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MENU_FLOW            "CSelect the Flow type for the Applications"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_NU_DS_DESCR  "CNew DataSet Description"
+    IDS_STRING_NEW_DS_NAME  "CName"
+    IDS_STRING_NEW_DS_DESCR "CDescription"
+    IDS_STRING_ASYNC_MSG_ATTRIB "CIncoming Message Attributes"
+    IDS_STRING_DEFAULT_DS   "CDefault Data Set"
+    IDS_STRING_INPUT_MODE   "CInput Mode"
+    IDS_STRING_DS_INPUT_MODE "CDataSet"
+    IDS_STRING_DIALOG_INPUT_MODE "Dialog"
+    IDS_STRING_CHGATTRIB    "CChange Attr."
+    IDS_STRING_NU_DS        "C&New DataSet"
+    IDS_STRING_SEARCH_BY    "CSearch By"
+    IDS_STRING_BY_ID        "CBy Message ID"
+    IDS_STRING_BY_NAME      "CBy Message Name"
+    IDS_STRING_GO           "C&Go"
+    IDS_STRING_SRCH_RESULTS "CSearch Results"
+    IDS_STRING_ENTER_NAME   "CEnter Message Name"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_ENTER_ID     "CEnter Message ID"
+    IDS_STRING_ENTER        "CEnter"
+    IDS_STRING_VAR_NAME     "CVariable Name"
+    IDS_STRING_DATA_TYPE    "CData Type"
+    IDS_STRING_VALUE        "CValue"
+    IDS_STRING_MODECHG_INDICATION 
+                            "CPls Check/UnCheck Msg Id for Auto/Manual Response"
+    IDS_STRING_INC_MSG_DETAILS "CDetails Of Message From MMI"
+    IDS_STRING_INC_MSG_NAME "CIncoming Message Name"
+    IDS_STRING_INC_MSG_ID   "CIncoming Message ID"
+    IDS_STRING_OUTGOING_DETAILS "CResponse Message Details"
+    IDS_STRING_OUTGOING_NAME "CResponse Message Name"
+    IDS_STRING_OUTGOING_ID  "CResponse Message ID"
+    IDS_STRING_DATASET_DETAILS "CDataSet Details"
+    IDS_STRING_DESCRIPTION_DATA_VAL "CDescription"
+    IDS_STRING_MSG_DETAIL   "CMessage Detail"
+    IDS_STRING_RESP_MSG     "CResponse Message"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_RESP_VAL     "CResponse Value"
+    IDS_STRING_SEL_SEND_IND "CPlease select the Async Message and Click Send Button"
+    IDS_STRING_ASYNC_VIEW   "CAsyncronous Messages Viewer"
+    IDS_STRING_SEL_IND      "CSelect Application ID and Message ID "
+    IDS_STRING_SEL_ATTRIBS  "CSelect Attributes "
+    IDS_STRING_FREQ_ASYNC_MSG "CFrequency"
+    IDS_STRING_TIMER_ASYNC_MSG "CTimer"
+    IDS_STRING_ADD_DS       "CAdd DataSet"
+    IDS_STRING_ADD          "CAdd"
+    IDS_STRING_CHK_UCHK_FREQ_TIMER 
+                            "CPlease check/uncheck to modify Frequency Timer"
+    IDS_STRING_FREQ_TMR_DETAILS "CFrequency and Timer Details"
+    IDS_STRING_MSG_FREQ_TMR "CTotal No of Msgs with Freq && Timer enabled"
+    IDS_STRING_FREQ_OCCUR   "CFrequency [No. of Occurance]"
+    IDS_STRING_TIMER_OCUR   "CTimer [Specification of Time Interval]"
+    IDS_STRING_NO_REQUEST   "CCan't Send Message, Since No Request From MMI"
+    IDS_STRING_DLG_ADD_EDIT "CEdit Attributes And Add-Edit DataSets (For Incoming Messages)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_DLG_CHG_ATTRIB "CChange Incoming Message Attributes"
+    IDS_STRING_DLG_FREQ_TIMER 
+                            "CFrequency Timer Modification Of Incoming Messages"
+    IDS_STRING_DLG_GEN_INP  "CInput Dialog For Incoming Message"
+    IDS_STRING_DLG_POP_UP   "CSelect Message For Sending To MMI"
+    IDS_STRING_DLG_MSG_SRCH "CSearch Incoming Messages"
+    IDS_STRING_DLG_SEND_EVENTS "CSend Events To MMI"
+    IDS_STRING_DLG_NWS      "CNetwork Simulator"
+    IDS_STRING_DLG_RES_MOD  "CResponse Mode Modification Of OutGoing Messages"
+    IDS_STRING_SEL_DS_DESCR "CDescription Of The Selected DataSet"
+    IDS_STRING_NO_NAME_AND_DESCR 
+                            "CPlease Enter Name And Description For The New DataSet"
+    IDS_STRING_MESSAGE_WITH_PLUGIN "CPlugIn"
+    IDS_STRING_DS_VALUES    "CDataSet Values"
+    IDS_STRING_STOP_SEARCH  "CStop"
+    IDS_STRING_SELECT_MESSAGE 
+                            "CPlease Select A Message From Message Combo Box Before Proceeding"
+    IDS_STRING_ENTER_VALID_STRING "CEnter Valid Text For Search"
+    IDS_STRING_CANT_MAKE_FREQ_0 
+                            "CTimer Should Be > 0 In Case Of Frequency > 1 "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_NO_DEFAULT_DS "NULL"
+    IDS_STRING_NO_DATASETS  "CThere Are No DataSets For This Message, Use The New DataSet Button To Create NewOnes"
+    IDS_STRING_LOOSE_MSG_DATA 
+                            "CData For Message Will Be Lost....Do You Want To Continue?"
+    IDS_STRING_MSG_SAVED    "CMessage Attributes Have Been Saved"
+    IDS_STRING_DS_ALREADY_EXISTS "CDataSet With This Name Already Exists"
+    IDS_STRING_WANT_TO_SAVE_CHANGES "CDo You Want To Save Changes?"
+    IDS_STRING_EDITED_DATA_LOSS 
+                            "CEdited Data Will Be Lost. Do You Want To Continue?"
+    IDS_STRING_RESP_MODE_SAVE_CONFIRM 
+                            "CYou Are Going To Change The Response Mode Of Some Messages. Are You Sure?"
+    IDS_STRING_CANT_OPEN_DLL "CCould not find Chinese dll!!"
+    IDS_STRING_NAME_CANT_HAVE_SPACE 
+                            "CName Of The DataSet Can't Have Space Character"
+    IDS_STRING_DO_U_WANT_TO_SAVE_FT 
+                            "CDo you want to save Frequency and Timer?"
+    IDS_STRING_PLZ_SEL      "CPlease select Some sequence or Message or Dataset"
+    IDS_STRING_MODIFY_CONFIRM 
+                            "CYou have made some modifications, Do you want to Save?"
+    IDS_STRING_FT_SAVE_CONFIRMATION 
+                            "CYou are going to change Frequency and Timer for %1. Are You Sure?"
+    IDS_STRING_PLZ_SEL_ITEM "CPlease Select some item from tree viewer"
+    IDS_STRING_MSG_NAME_NOT_SUPPORTED "CMessage Not Supported"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CMB_STRING_DS_INPUT_MODE "DataSet"
+    IDS_ABOUT_NWSVER        "CNetwork Simulator Version 2.0"
+    IDS_ABOUT_CPRT          "CCopyright (C) 2004"
+    IDS_ABOUT_TITLE         "CAbout Network Simulator"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

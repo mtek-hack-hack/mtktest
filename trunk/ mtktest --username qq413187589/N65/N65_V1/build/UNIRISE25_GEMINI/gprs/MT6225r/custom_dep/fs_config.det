@@ -1,0 +1,37 @@
+#UPDATE#
+fs_config.obj:	kal\include\kal_release.h \
+		nucleus\inc\nucleus.h \
+		nucleus\inc\cs_defs.h \
+		nucleus\inc\tm_defs.h \
+		nucleus\inc\tc_defs.h \
+		nucleus\inc\mb_defs.h \
+		nucleus\inc\qu_defs.h \
+		nucleus\inc\pi_defs.h \
+		nucleus\inc\sm_defs.h \
+		nucleus\inc\ev_defs.h \
+		nucleus\inc\pm_defs.h \
+		nucleus\inc\dm_defs.h \
+		config\include\stack_config.h \
+		kal\include\kal_non_specific_general_types.h \
+		init\include\task_main_func.h \
+		kal\common\include\kal_common_defs.h \
+		kal\common\include\kal_internal_macros.h \
+		kal\nucleus\include\kal_nucleus_common_defs.h \
+		kal\nucleus\include\kal_nucleus.h \
+		kal\common\include\kal_internal.h \
+		stacklib\include\lcd_ip_cqueue.h \
+		kal\common\include\kal_debug_common_defs.h \
+		kal\nucleus\include\kal_debug_nucleus.h \
+		kal\include\kal_debug.h \
+		kal\include\kal_trace.h \
+		tst\database_classb\pstrace_db\ps_trace.h \
+		kal\common\include\kal_active_module.h \
+		kal\efs\include\fat_fs.h \
+		kal\efs\include\fs_errcode.h \
+		kal\efs\include\fs_type.h \
+		kal\efs\include\fs_func.h \
+		fdm\include\drvflash.h \
+		drv\include\msdc_def.h \
+		interface\hwdrv\dma_sw.h \
+		inc\reg_base.h
+#ENDUPDATE#

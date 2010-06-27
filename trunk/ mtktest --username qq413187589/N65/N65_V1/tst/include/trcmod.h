@@ -1,0 +1,35 @@
+#ifndef L1TRC_TrcMod_DEF_H
+#define L1TRC_TrcMod_DEF_H
+
+	#include "L1Trc.h"
+
+	#include "L1C_Trace_2.h"
+	#include "L1SC_Trace_2.h"
+	#include "l1i_cs_trace_2.h"
+	#include "L1D_Trace_2.h"
+	#include "l1i_ps_trace_2.h"
+	#include "L1C_csd_trace_2.h"
+	#include "l1c2_Trace_2.h"
+	#include "L1D2_Trace_2.h"
+	#include "l1audio_trace.h"
+	#include "l1i_amr_trace_2.h"
+	#include "l1t_amr_trace_2.h"
+	#include "l1c_egprs_trace_2.h"
+	#include "l1i_egprs_trace_2.h"
+	#include "l1D_EDGE_trace_2.h"
+	#include "L1C_Trace.h"
+	#include "L1SC_Trace.h"
+	#include "l1i_cs_trace.h"
+	#include "L1D_Trace.h"
+	#include "l1i_ps_trace.h"
+	#include "L1C_csd_trace.h"
+	#include "l1c2_Trace.h"
+	#include "L1D2_Trace.h"
+	#include "l1audio_trace.h"
+	#include "l1i_amr_trace.h"
+	#include "l1t_amr_trace.h"
+	#include "l1c_egprs_trace.h"
+	#include "l1i_egprs_trace.h"
+	#include "l1D_EDGE_trace.h"
+
+#endif

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Profile FormatVersion="1">
+<Tools>
+<Tool Filename="perl" AllowRemote="true" />
+<Tool Filename="make" AllowIntercept="true" />
+<Tool Filename="tcc" AllowRemote="true" />
+<Tool Filename="tcpp" AllowRemote="true" />
+<Tool Filename="armcc" AllowRemote="true" />
+<Tool Filename="armcpp" AllowRemote="true" />
+<Tool Filename="armasm" AllowRemote="true" />
+<Tool Filename="strcmpex" AllowRemote="true" />
+<Tool Filename="warp" AllowRemote="true" />
+<Tool Filename="armar" AllowRemote="false" />
+<Tool Filename="fromelf" AllowRemote="false" />
+</Tools>
+</Profile>

@@ -1,0 +1,170 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ResGenerator - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\RSP60F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\customerinc" /I "..\..\MMI\DebugLevels\DebugLevelInc" /I "..\..\MMI\Calls\CallsInc" /I "..\..\MMI\Inc" /I "..\..\MtkApp\MtkAppInc" /I "..\..\MMI\Framework\osl\oslinc" /I "..\..\MMI\alarm\alarminc" /I "..\..\MMI\calendar\calendarinc" /I "..\..\MMI\CallManagement\CommonFiles\CommonInc" /I "..\..\MMI\CallManagement\OutgoingCallManagement\OutgoingInc" /I "..\..\MMI\CallManagement\IncomingCallManagement\IncomingInc" /I "..\..\MMI\Setting\SettingInc" /I "..\..\MMI\PhoneBook\PhoneBookInc" /I "..\..\MMI\CommonScreens\CommonScreensInc" /I "..\..\MMI\Framework\Tasks\TasksInc" /I "..\..\MMI\Framework\EventHandling\EventsInc" /I "..\..\MMI\Framework\History\HistoryInc" /I "..\..\MMI\DataAccount\DataAccountInc" /I "..\..\MMI\FunAndGames\FunAndGamesInc" /I "..\..\MMI\gui\gui_inc" /I "..\..\MMI\DateTime\DateTimeInc" /I "..\..\MMI\MiscFramework\MiscFrameworkInc" /I "..\..\MMI\Help\HelpInc" /I "..\..\MMI\IdleScreen\IdleScreenInc" /I "..\..\MMI\Messages\MessagesInc" /I "..\..\MMI\NITZHandler\NITZInc" /I "..\..\MMI\PROFILES\ProfilesInc" /I "..\..\MMI\SAT\SATInc" /I "..\..\MMI\Shortcuts\ShortcutsInc" /I "..\..\MMI\SSC\SSCInc" /I "..\..\MMI\ToDoList\ToDoListInc" /I "..\..\MMI\Organizer\OrganizerInc" /I "..\..\MMI\CustResource" /I "..\..\MMI\FontData" /I "..\..\MMI\debuglevels\DebugLevelInc" /I "..\..\MMI\MainMenu\MainMenuInc" /I "..\..\MMI\ems\emsinc" /I "..\..\..\kal\include" /I "..\..\..\ps\interfaces\enum" /I "..\..\..\ps\l4\include" /I "..\..\..\ps\gen\mcd" /I "..\..\..\ps\interfaces\local_inc" /I "..\..\MMI\CPHS\CPHSInc" /I "..\..\MMI\audio\audioinc" /I "." /I "..\..\..\custom\audio\MT6208_CEVB" /I "..\Customize" /I "..\.." /I "..\..\..\custom\audio\CHICAGO2003_BB" /I "..\..\..\custom\audio\KLM2003_BB" /I "..\..\..\interface\mmi" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_CONSOLE" /D "__UCS2_ENCODING" /D "__RESOURCE_GEN_" /D "_L4_COMMON_STRUCT_H" /D "DEVELOPER_BUILD_FIRST_PASS" /D "__EM_MODE__" /D "MMI_ON_WIN32" /D "_AFXDLL" /D "__MOD_SMSAL__" /D "__SAT__" /D "SHORTCUTS_APP" /D "__POPULATE_ENGINE_" /D "DEBUG_WINDOW" /D "VM_SUPPORT" /FR"Debug/" /Fp"Debug/ResGenerator.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /Zm200 /c 
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Alarm.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Calendar.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_CallManagement.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Calls.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_CommonScreens.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_DataAccount.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Ems.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_FunAndGames.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Games.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Gui.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Help.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_IdleScreen.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_MainMenu.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Messages.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_MiscFramework.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_MtkApp.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_NITZHandler.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Organizer.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_PhoneBook.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Profiles.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_SAT.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Setting.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_Shortcuts.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_SSC.c"
+"G:\gemini\plutommi\Customer\Res_MMI\Res_ToDoList.c"
+"G:\gemini\plutommi\Customer\ResGenerator\CustResDeclare.c"
+"G:\gemini\plutommi\MMI\DebugLevels\DebugLevelSrc\DebugInit.c"
+"G:\gemini\plutommi\Customer\ResGenerator\ExportMMIFunc.c"
+"G:\gemini\plutommi\Customer\CustResource\FontRes.c"
+"G:\gemini\plutommi\Customer\ResGenerator\MainFrm.cpp"
+"G:\gemini\plutommi\MMI\Resource\PopulateRes.c"
+"G:\gemini\plutommi\MMI\Resource\ReadRes.c"
+"G:\gemini\plutommi\MMI\MiscFramework\MiscFrameworkSrc\UCS2.c"
+"G:\gemini\plutommi\MMI\Resource\WriteRes.c"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\RSP60F.tmp"" 
+Creating temporary file "C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\RSP610.tmp" with contents
+[
+MMICustomizer.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/ResGenerator.pdb" /debug /machine:I386 /out:"../Debug/ResGenerator.exe" /pdbtype:sept /libpath:"../customize" 
+.\Debug\Res_Alarm.obj
+.\Debug\Res_Calendar.obj
+.\Debug\Res_CallManagement.obj
+.\Debug\Res_Calls.obj
+.\Debug\Res_CommonScreens.obj
+.\Debug\Res_DataAccount.obj
+.\Debug\Res_Ems.obj
+.\Debug\Res_FunAndGames.obj
+.\Debug\Res_Games.obj
+.\Debug\Res_Gui.obj
+.\Debug\Res_Help.obj
+.\Debug\Res_IdleScreen.obj
+.\Debug\Res_MainMenu.obj
+.\Debug\Res_Messages.obj
+.\Debug\Res_MiscFramework.obj
+.\Debug\Res_MtkApp.obj
+.\Debug\Res_NITZHandler.obj
+.\Debug\Res_Organizer.obj
+.\Debug\Res_PhoneBook.obj
+.\Debug\Res_Profiles.obj
+.\Debug\Res_SAT.obj
+.\Debug\Res_Setting.obj
+.\Debug\Res_Shortcuts.obj
+.\Debug\Res_SSC.obj
+.\Debug\Res_ToDoList.obj
+.\Debug\CustResDeclare.obj
+.\Debug\Debug.obj
+.\Debug\DebugInit.obj
+.\Debug\ExportMMIFunc.obj
+.\Debug\FontRes.obj
+.\Debug\MainFrm.obj
+.\Debug\PopulateRes.obj
+.\Debug\ReadRes.obj
+.\Debug\ResGenerator.obj
+.\Debug\ResGeneratorDoc.obj
+.\Debug\ResGeneratorView.obj
+.\Debug\UCS2.obj
+.\Debug\WriteRes.obj
+\gemini\plutommi\Customer\Debug\ResGenerator.res
+]
+Creating command line "link.exe @"C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\RSP610.tmp""
+<h3>Output Window</h3>
+Compiling...
+Res_Alarm.c
+fatal error C1083: Cannot open source file: 'G:\gemini\plutommi\Customer\Res_MMI\Res_Alarm.c': No such file or directory
+Res_Calendar.c
+fatal error C1083: Cannot open source file: 'G:\gemini\plutommi\Customer\Res_MMI\Res_Calendar.c': No such file or directory
+Res_CallManagement.c
+fatal error C1083: Cannot open source file: 'G:\gemini\plutommi\Customer\Res_MMI\Res_CallManagement.c': No such file or directory
+Res_Calls.c
+fatal error C1083: Cannot open source file: 'G:\gemini\plutommi\Customer\Res_MMI\Res_Calls.c': No such file or directory
+Res_CommonScreens.c
+fatal error C1083: Cannot open source file: 'G:\gemini\plutommi\Customer\Res_MMI\Res_CommonScreens.c': No such file or directory
+Res_DataAccount.c
+fatal error C1083: Cannot open source file: 'G:\gemini\plutommi\Customer\Res_MMI\Res_DataAccount.c': No such file or directory
+Res_Ems.c
+fatal error C1083: Cannot open source file: 'G:\gemini\plutommi\Customer\Res_MMI\Res_Ems.c': No such file or directory
+Res_FunAndGames.c
+fatal error C1083: Cannot open source file: 'G:\gemini\plutommi\Customer\Res_MMI\Res_FunAndGames.c': No such file or directory
+Res_Games.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_Gui.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_Help.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_IdleScreen.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_MainMenu.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_Messages.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_MiscFramework.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_MtkApp.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_NITZHandler.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_Organizer.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_PhoneBook.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_Profiles.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_SAT.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_Setting.c
+fatal error C1083: Cannot open compiler intermediate file: 'C:\DOCUME~1\ºúÑÞÎ°\LOCALS~1\Temp\a02372ex': Permission denied
+Res_Shortcuts.c
+fatal error C1083: Cannot open source file: 'G:\gemini\plutommi\Customer\Res_MMI\Res_Shortcuts.c': No such file or directory
+Res_SSC.c
+fatal error C1083: Cannot open source file: 'G:\gemini\plutommi\Customer\Res_MMI\Res_SSC.c': No such file or directory
+Res_ToDoList.c
+fatal error C1083: Cannot open source file: 'G:\gemini\plutommi\Customer\Res_MMI\Res_ToDoList.c': No such file or directory
+CustResDeclare.c
+g:\gemini\plutommi\mmi\inc\mmi_features.h(854) : fatal error C1083: Cannot open include file: 'operator_mmi.h': No such file or directory
+DebugInit.c
+g:\gemini\plutommi\mmi\inc\mmi_features.h(854) : fatal error C1083: Cannot open include file: 'operator_mmi.h': No such file or directory
+ExportMMIFunc.c
+g:\gemini\plutommi\mmi\inc\unicodexdcl.h(114) : fatal error C1083: Cannot open include file: 'FrameworkBackwardCompatible.h': No such file or directory
+FontRes.c
+g:\gemini\plutommi\mmi\inc\mmi_features.h(854) : fatal error C1083: Cannot open include file: 'operator_mmi.h': No such file or directory
+MainFrm.cpp
+g:\gemini\plutommi\customer\resgenerator\mainfrm.cpp(42) : fatal error C1083: Cannot open include file: 'DCMLHandler.h': No such file or directory
+PopulateRes.c
+g:\gemini\plutommi\mmi\inc\mmi_features.h(854) : fatal error C1083: Cannot open include file: 'operator_mmi.h': No such file or directory
+ReadRes.c
+g:\gemini\plutommi\mmi\inc\mmi_features.h(854) : fatal error C1083: Cannot open include file: 'operator_mmi.h': No such file or directory
+UCS2.c
+g:\gemini\plutommi\mmi\inc\unicodexdcl.h(114) : fatal error C1083: Cannot open include file: 'FrameworkBackwardCompatible.h': No such file or directory
+WriteRes.c
+g:\gemini\plutommi\mmi\inc\mmi_features.h(854) : fatal error C1083: Cannot open include file: 'operator_mmi.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+ResGenerator.exe - 34 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

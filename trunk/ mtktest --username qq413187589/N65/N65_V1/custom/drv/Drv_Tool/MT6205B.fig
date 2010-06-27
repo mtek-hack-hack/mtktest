@@ -1,0 +1,43 @@
+[Chip Type]
+Chip = MT6205B
+
+[GPIO]
+GPIO0 = Mode0(GPIO0)    Mode1(DAICLK)    Mode2(LPT_CK)   Mode3(TDMA_CK) PD
+GPIO1 = Mode0(GPIO1)    Mode1(DAIPCMOUT) Mode2(LPT_D2)   Mode3(TDMA_D1) PD
+GPIO2 = Mode0(GPIO2)    Mode1(DAIPCMIN)  Mode2(LPT_D1)   Mode3(TDMA_D0) PU
+GPIO3 = Mode0(GPIO3)    Mode1(DAIRST)    Mode2(LPT_D0)   Mode3(TDMA_FS) PU
+GPIO4 = Mode0(GPIO4)    Mode1(BPI_BUS4)  Mode2()         Mode3() PD
+GPIO5 = Mode0(GPIO5)    Mode1(BPI_BUS5)  Mode2()         Mode3() PD
+GPIO6 = Mode0(GPIO6)    Mode1(BPI_BUS6)  Mode2(BFE_PRB0) Mode3() PD
+GPIO7 = Mode0(GPIO7)    Mode1(BSI_BUS7)  Mode2(BSI_CS1)  Mode3() PD
+GPIO8 = Mode0(GPIO8)    Mode1(LCD_DATA)  Mode2()         Mode3() PD
+GPIO9 = Mode0(GPIO9)    Mode1(LCD_A0)    Mode2()         Mode3() PD
+GPIO10 = Mode0(GPIO10)  Mode1(LCD_CLK)   Mode2()         Mode3() PD
+GPIO11 = Mode0(GPIO11)  Mode1(LCD_CS0)   Mode2()         Mode3() PU
+GPIO12 = Mode0(GPIO12)  Mode1(LCD_CS1)   Mode2()         Mode3(D1_TID0) PU
+GPIO13 = Mode0(GPIO13)  Mode1(13MHz)     Mode2()         Mode3() PD
+GPIO14 = Mode0(GPIO14)  Mode1()          Mode2()         Mode3() PD
+GPIO15 = Mode0(GPIO15)  Mode1()          Mode2()         Mode3() PD
+GPIO16 = Mode0(GPIO16)  Mode1(PWM)       Mode2()         Mode3() PD
+GPIO17 = Mode0(GPIO17)  Mode1(UCTS2)     Mode2(UDSR1)    Mode3() PU
+GPIO18 = Mode0(GPIO18)  Mode1(URTS2)     Mode2(UDTR1)    Mode3() PU
+GPIO19 = Mode0(GPIO19)  Mode1(URXD2)     Mode2()         Mode3() PU
+GPIO20 = Mode0(GPIO20)  Mode1(UTXD2)     Mode2()         Mode3() PU
+GPIO21 = Mode0(GPIO21)  Mode1(UREF_CLK)  Mode2(IRQ)      Mode3() PU
+
+[GPO]
+GPO0 = Mode0(GPO0) Mode1(XLCDE)     Mode2(EA22) Mode3()
+GPO1 = Mode0(GPO1) Mode1(SRCLKENAN) Mode2(PWM2) Mode3()
+GPO2 = Mode0(GPO2) Mode1(SRCLKENA)  Mode2()     Mode3()
+GPO3 = Mode0(GPO2) Mode1(ALERTER)   Mode2()     Mode3()
+
+[EINT]
+EINT_COUNT = 3
+EINT_DEBOUNCE_TIME_COUNT = 3
+
+[ADC]
+ADC_COUNT = 5
+
+[Keypad]
+KEY_ROW = 5
+KEY_COLUMN = 5

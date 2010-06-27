@@ -1,0 +1,4 @@
+l1audio\wav_codec.c
+l1audio\wav.c
+l1audio\midisyn.c
+l1audio\PCMRB32.c

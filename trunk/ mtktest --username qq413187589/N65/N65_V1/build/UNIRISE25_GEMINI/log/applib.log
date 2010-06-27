@@ -1,0 +1,86 @@
+make[1]: Entering directory `E:/SW/source/N65/N65/N65_V1'
+Compiling applib/misc/src/app_asyncfile.c ...
+Compiling applib/misc/src/app_base64.c ...
+Compiling applib/misc/src/app_datetime.c ...
+Compiling applib/misc/src/app_mime.c ...
+Compiling applib/misc/src/app_qp.c ...
+Compiling applib/misc/src/app_str.c ...
+Compiling applib/misc/src/app_md5.c ...
+Compiling applib/misc/src/app_usedetails.c ...
+Compiling applib/mem/src/app_mem.c ...
+Compiling applib/misc/src/app_crc.c ...
+Compiling applib/misc/src/che_api.c ...
+"applib\misc\src\che_api.c", line 135: Warning: C2207W: inventing 'extern int rand();'
+"applib\misc\src\che_api.c", line 470: Warning: C2871W: static 'che_mutex' declared but not used
+applib\misc\src\che_api.c: 2 warnings, 0 errors, 0 serious errors
+Compiling applib/misc/src/che_sw_driver.c ...
+"applib\misc\src\che_sw_driver.c", line 271: Warning: C3023E: objects that have been cast are not l-values
+"applib\misc\src\che_sw_driver.c", line 461: Warning: C2207W: inventing 'extern int CHE_AES_setup_enc_key();'
+"applib\misc\src\che_sw_driver.c", line 461: Warning: C2207W: inventing 'extern int CHE_AES_ctr_decrypt();'
+"applib\misc\src\che_sw_driver.c", line 461: Warning: C2207W: inventing 'extern int CHE_AES_setup_dec_key();'
+"applib\misc\src\che_sw_driver.c", line 469: Warning: C2207W: inventing 'extern int CHE_AES_WRAP();'
+"applib\misc\src\che_sw_driver.c", line 477: Warning: C2207W: inventing 'extern int CHE_AES_UNWRAP();'
+"applib\misc\src\che_sw_driver.c", line 565: Warning: C2870W: variable 'cipher_length' declared but not used
+"applib\misc\src\che_sw_driver.c", line 565: Warning: C2870W: variable 'pIV' declared but not used
+"applib\misc\src\che_sw_driver.c", line 766: Warning: C2207W: inventing 'extern int rsa_public_encrypt();'
+"applib\misc\src\che_sw_driver.c", line 771: Warning: C2207W: inventing 'extern int rsa_public_decrypt();'
+"applib\misc\src\che_sw_driver.c", line 776: Warning: C2207W: inventing 'extern int rsa_private_encrypt();'
+"applib\misc\src\che_sw_driver.c", line 781: Warning: C2207W: inventing 'extern int rsa_private_decrypt();'
+"applib\misc\src\che_sw_driver.c", line 443: Warning: C2874W: 'fill_length' may be used before being set
+applib\misc\src\che_sw_driver.c: 13 warnings, 0 errors, 0 serious errors
+Compiling applib/misc/src/app_url.c ...
+  0% 已复制  30% 已复制  61% 已复制  92% 已复制 100% 已复制 已复制         1 个文件。
+./build/UNIRISE25_GEMINI/gprs/MT6225o/lib/applib.lib is updated
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\app_asyncfile.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\app_base64.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\app_crc.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\app_datetime.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\app_md5.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\app_mem.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\app_mime.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\app_qp.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\app_str.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\app_url.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\app_usedetails.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\che_api.det
+
+
+
+.\build\UNIRISE25_GEMINI\gprs\MT6225r\applib_dep\che_sw_driver.det
+
+
+make[1]: Leaving directory `E:/SW/source/N65/N65/N65_V1'

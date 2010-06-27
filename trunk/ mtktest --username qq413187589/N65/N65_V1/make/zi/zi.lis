@@ -1,0 +1,7 @@
+vendor\InputMethod\zi\adaptation\src\zi8hmi.c
+vendor\InputMethod\zi\adaptation\src\zi8sdata.c
+
+vendor\InputMethod\zi\adaptation\include\zi8hmi.h
+vendor\InputMethod\zi\adaptation\include\ZiExtraCharacter.h
+vendor\InputMethod\zi\adaptation\include\ZiExtraCharacter12.h
+vendor\InputMethod\zi\adaptation\include\ZiExtraCharacter20.h
